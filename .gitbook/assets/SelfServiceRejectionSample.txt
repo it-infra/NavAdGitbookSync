@@ -1,0 +1,324 @@
+<style>
+    *
+    {
+    font-size: 11pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #555;
+    }
+    th
+    {
+    text-align: left;
+    }
+    h1
+    {
+    text-align: right;
+    color: #555;
+    }
+    .headerTable td
+    {
+    padding: 5px 5px 10px 0;
+    vertical-align: top;
+    }
+    .headerTable th
+    {
+    padding: 5px;
+    background-color: #f1f1f1;
+    }
+    .subHeader td
+    {
+    padding: 4px 0;
+    color: #555;
+    padding: 4px 0;
+    vertical-align: top;
+    }
+    .manualDataTable
+    {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    }
+    .manualDataTable th
+    {
+    background-color: rgb(245, 245, 245);
+    border: 1px solid #ccc;
+    }
+    .manualDataTable th,
+    .manualDataTable td
+    {
+    vertical-align: middle;
+    padding: 8px;
+    }
+    .manualDataTable tr &gt; td &gt; a,
+    .manualDataTable tr &gt; td &gt; a:hover,
+    .manualDataTable tr &gt; td &gt; a:visited
+    {
+    color: #000;
+    }
+    .manualDataTable tbody tr:nth-child(even)
+    {
+    background-color: rgb(245, 245, 245);
+    }
+</style>
+<div style="margin: 0 auto; max-width: 800px;">
+<table style="width: 100%;">
+    <tbody>
+        <tr>
+            <td style="width: 50%; vertical-align: top;">
+            &nbsp;
+            </td>
+            <td style="vertical-align: middle; text-align: center !important; font-size: 175%; font-weight: bold; text-transform: uppercase;">&nbsp;
+            <span style="display: block; font-size: 170%; font-weight: normal; color: #ff0000;">ORDER REJECTED
+            </span></td>
+        </tr>
+    </tbody>
+</table>
+<table style="width: 100%;">
+    <tbody>
+        <tr class="responsiveRow">
+            <td class="responsiveCell" style="width: 50%;   color: #555; padding: 0 5px 0 0; vertical-align: top;">
+            <div style="background-color: #593BDD; color: #fff; box-sizing: border-box; width: 100%; padding: 5px; font-size: 125% ;">
+            Order Summary
+            </div>
+            <div style="box-sizing: border-box; width: 100%; padding: 5px; line-height: 20px;">
+            <table class="subHeader" style="width: 100%;">
+                <tbody>
+                    <tr>
+                        <td style="width: 125px;color: #555;padding: 4px 0;vertical-align: top;">Order No.</td>
+                        <td style="border-bottom: 1px solid #ccc;color: #555;padding: 4px 0;vertical-align: top;">
+                        #CAMPAIGN_ID#
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 125px;color: #555;padding: 4px 0;vertical-align: top;">Order Date</td>
+                        <td style="border-bottom: 1px solid #ccc;color: #555;padding: 4px 0;vertical-align: top;">
+                        #ENTERED_DATE_LONG#
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="color: #555;padding: 4px 0;vertical-align: top;">Rejected Date</td>
+                        <td style="border-bottom: 1px solid #ccc;color: #555;padding: 4px 0;vertical-align: top;">
+                        #REJECTED_DATE_LONG#
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="color: #555;padding: 4px 0;vertical-align: top;">First Run Date</td>
+                        <td style="border-bottom: 1px solid #ccc;color: #555;padding: 4px 0;vertical-align: top;">
+                        #FIRST_RUN_DATE_LONG#
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 125px;color: #555;padding: 4px 0;vertical-align: top;">Advertiser</td>
+                        <td style="border-bottom: 1px solid #ccc;color: #555;padding: 4px 0;vertical-align: top;">
+                        #FULLNAME#
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="color: #555;padding: 4px 0;vertical-align: top;">Package</td>
+                        <td style="border-bottom: 1px solid #ccc;color: #555;padding: 4px 0;vertical-align: top;">
+                        #PACKAGE_NAME#
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="color: #555;padding: 4px 0;vertical-align: top;">Category</td>
+                        <td style="border-bottom: 1px solid #ccc;color: #555;padding: 4px 0;vertical-align: top;">
+                        #CATEGORY_TREE#
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="color: #555;padding: 4px 0;vertical-align: top;">Sub-Category</td>
+                        <td style="border-bottom: 1px solid #ccc;color: #555;padding: 4px 0;vertical-align: top;">
+                        #CATEGORY#
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="color: #555;padding: 4px 0;vertical-align: top;">Payment Received</td>
+                        <td style="border-bottom: 1px solid #ccc;color: #555;padding: 4px 0;vertical-align: top;">
+                        #TOTAL_WITH_TAX#
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="color: #555;padding: 4px 0;vertical-align: top;">Payment Ref.</td>
+                        <td style="border-bottom: 1px solid #ccc;color: #555;padding: 4px 0;vertical-align: top;">
+                        #PAYMENT_REF#
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+            </td>
+            <td class="responsiveCell" style="width: 50%;text-align: center;vertical-align: top;padding: 0 0 0 5px;color: #555;">
+            <div style="background-color: #593BDD; color: #fff; box-sizing: border-box; width: 100%; padding: 5px; font-size: 125% ;">
+            Print Ad Proof
+            </div>
+            <table style="width: 100%; padding: 0; border: 0; margin: 0;">
+                <tbody>
+                    <tr>
+                        <td class="imagePreview" style="background-color: #f1f1f1;vertical-align: middle;text-align: center;height: 350px;width: 300px;color: #555;padding: 5px 5px 10px 0;">
+                        <!-- #MATERIAL_START# -->
+                        <!-- #IMAGE_START# -->
+                        <img alt="" src="#IMAGE_URL#" />
+                        <!-- #IMAGE_END# -->
+                        <!-- #MATERIAL_END# -->
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<br />
+<!-- #LINES_PRINT_START# -->
+<!-- #HEADER_START# -->
+<div style="background-color: #593BDD; color: #fff; box-sizing: border-box; width: 100%; padding: 5px; font-size: 125% ;">
+Print Details
+</div>
+<table class="manualDataTable" style="width: 100%;border-collapse: collapse;border: 1px solid #ccc;">
+    <thead>
+        <tr>
+            <th style="color: #555;background-color: #f5f5f5;border: 1px solid #ccc;vertical-align: middle;padding: 8px;">
+            Line No.
+            </th>
+            <th style="color: #555;background-color: #f5f5f5;border: 1px solid #ccc;vertical-align: middle;padding: 8px;">
+            Product
+            </th>
+            <th style="color: #555;background-color: #f5f5f5;border: 1px solid #ccc;vertical-align: middle;padding: 8px;">
+            Issue / Run Date
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- #HEADER_END# -->
+        <!-- #ITEM_START# -->
+        <tr>
+            <td data-title="Line No." style="color: #555;vertical-align: middle;padding: 8px;">
+            #LINE_ID#
+            </td>
+            <td data-title="Product" style="color: #555;vertical-align: middle;padding: 8px;">
+            #WEBSITE_NAME#
+            </td>
+            <td data-title="Start" style="color: #555;vertical-align: middle;padding: 8px;">
+            #START_DATE#
+            </td>
+        </tr>
+        <!-- #ITEM_END# -->
+        <!-- #NO_ITEMS_START# -->
+        <tr class="noItems">
+            <td colspan="4" style="color: #555;vertical-align: middle;padding: 8px;">
+            -- No Line Items --
+            </td>
+        </tr>
+        <!-- #NO_ITEMS_END# -->
+        <!-- #FOOTER_START# -->
+    </tbody>
+</table>
+<br />
+<!-- #FOOTER_END# -->
+<!-- #LINES_PRINT_END# -->
+<!-- #LINES_DIGITAL_START# -->
+<!-- #HEADER_START# -->
+<div style="background-color: #593BDD; color: #fff; box-sizing: border-box; width: 100%; padding: 5px; font-size: 125%;">
+Online / Mobile Details
+</div>
+<table class="manualDataTable" style="width: 100%;border-collapse: collapse;border: 1px solid #ccc;">
+    <thead>
+        <tr>
+            <th style="color: #555;background-color: #f5f5f5;border: 1px solid #ccc;vertical-align: middle;padding: 8px;">
+            Line No.
+            </th>
+            <th style="color: #555;background-color: #f5f5f5;border: 1px solid #ccc;vertical-align: middle;padding: 8px;">
+            Product
+            </th>
+            <th style="color: #555;background-color: #f5f5f5;border: 1px solid #ccc;vertical-align: middle;padding: 8px;">
+            Start
+            </th>
+            <th style="color: #555;background-color: #f5f5f5;border: 1px solid #ccc;vertical-align: middle;padding: 8px;">
+            End
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- #HEADER_END# -->
+        <!-- #ITEM_START# -->
+        <tr>
+            <td data-title="Line No." style="color: #555;vertical-align: middle;padding: 8px;">
+            #LINE_ID#
+            </td>
+            <td data-title="Product" style="color: #555;vertical-align: middle;padding: 8px;">
+            #WEBSITE_NAME#
+            </td>
+            <td data-title="Start" style="color: #555;vertical-align: middle;padding: 8px;">
+            #START_DATE#
+            </td>
+            <td data-title="End" style="color: #555;vertical-align: middle;padding: 8px;">
+            #END_DATE#
+            </td>
+        </tr>
+        <!-- #ITEM_END# -->
+        <!-- #NO_ITEMS_START# -->
+        <tr class="noItems">
+            <td colspan="4" style="color: #555;vertical-align: middle;padding: 8px;">
+            -- No Line Items --
+            </td>
+        </tr>
+        <!-- #NO_ITEMS_END# -->
+        <!-- #FOOTER_START# -->
+    </tbody>
+</table>
+<br />
+<!-- #FOOTER_END# -->
+<!-- #LINES_DIGITAL_END# -->
+<!-- #LINES_START# -->
+<!-- #HEADER_START# -->
+<div style="background-color: #593BDD; color: #fff; box-sizing: border-box; width: 100%; padding: 5px; font-size: 125% ;">
+Other Lines
+</div>
+<table class="manualDataTable" style="width: 100%;border-collapse: collapse;border: 1px solid #ccc;">
+    <thead>
+        <tr>
+            <th style="color: #555;background-color: #f5f5f5;border: 1px solid #ccc;vertical-align: middle;padding: 8px;">
+            Line No.
+            </th>
+            <th style="color: #555;background-color: #f5f5f5;border: 1px solid #ccc;vertical-align: middle;padding: 8px;">
+            Product
+            </th>
+            <th style="color: #555;background-color: #f5f5f5;border: 1px solid #ccc;vertical-align: middle;padding: 8px;">
+            Start
+            </th>
+            <th style="color: #555;background-color: #f5f5f5;border: 1px solid #ccc;vertical-align: middle;padding: 8px;">
+            End
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- #HEADER_END# -->
+        <!-- #ITEM_START# -->
+        <tr>
+            <td data-title="Line No." style="color: #555;vertical-align: middle;padding: 8px;">
+            #LINE_ID#
+            </td>
+            <td data-title="Product" style="color: #555;vertical-align: middle;padding: 8px;">
+            #WEBSITE_NAME#
+            </td>
+            <td data-title="Start" style="color: #555;vertical-align: middle;padding: 8px;">
+            #START_DATE#
+            </td>
+            <td data-title="End" style="color: #555;vertical-align: middle;padding: 8px;">
+            #END_DATE#
+            </td>
+        </tr>
+        <!-- #ITEM_END# -->
+        <!-- #NO_ITEMS_START# -->
+        <tr class="noItems">
+            <td colspan="4" style="color: #555;vertical-align: middle;padding: 8px;">
+            -- No Line Items --
+            </td>
+        </tr>
+        <!-- #NO_ITEMS_END# -->
+        <!-- #FOOTER_START# -->
+    </tbody>
+</table>
+<br />
+<!-- #FOOTER_END# -->
+<!-- #LINES_END# -->
+</div>

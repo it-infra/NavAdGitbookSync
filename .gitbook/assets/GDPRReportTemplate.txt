@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            body, p, td
+            {
+            font-family: arial;
+            font-size: 12px;
+            line-height: 150%;
+            }
+            #page
+            {
+            width: 900px;
+            margin: 10px auto;
+            }
+            table.fields
+            {
+            margin-top: 10px;
+            border-collapse: separate;
+            width: 100%;
+            }
+            table.fields td
+            {
+            padding: 5px;
+            }
+            table.fields td.prompt
+            {
+            background-color: #f5f6f7;
+            border-bottom: 1px solid #ccc;
+            }
+            table.fields td.label
+            {
+            width: 150px;
+            white-space: nowrap;
+            }
+            table.dataTable
+            {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #ccc;
+            }
+            table.dataTable th
+            {
+            text-align: left;
+            color: #555;
+            font-weight: normal;
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            vertical-align: middle;
+            padding: 8px;
+            }
+            table.dataTable td
+            {
+            text-align: left;
+            color: #555;
+            vertical-align: middle;
+            padding: 8px;
+            }
+            table.dataTable tr:nth-child(even)
+            {
+            background-color: rgb(245, 245, 245);
+            }
+            .explanation
+            {
+            padding: 10px;
+            background-color: aliceblue;
+            box-sizing: border-box;
+            width: 100%;
+            border-right: 1px solid #ccc;
+            border-left: 1px solid #ccc
+            }
+        </style>
+    </head>
+    <body>
+        <div id="page">
+        <p>
+        <span style="font-size: 150%;"><strong>Personal Data Request</strong></span>
+        <br />
+        Provided by ACME Media
+        <br />
+        on #TODAY# at #TIME#
+        </p>
+        <h1>
+        #FULLNAME#
+        </h1>
+        <div style="width:100%; margin-top: 20px;">
+        <div style="padding:10px 0; background-color: #f1f1f1; padding: 10px; box-sizing:border-box;">
+        PLEASE NOTE: Some contact information such as your name, primary phone and/or email address is required to conduct normal business.
+        A billing address is also required if you are the bill-to or billing contact on file.
+        Other non-essential personal data retained in our system(s) requires your informed consent.
+        The "Personal Data Consent" flag [in Privacy Preferences below] indicates whether or not such consent has been given.
+        </div>
+        <!-- #REQUIRED_REASONS_START# -->
+        <!-- #HEADER_START# -->
+        <div style="padding:10px 0; background-color: lightpink; padding: 10px; box-sizing:border-box;">
+        ATTENTION: The retention of some contact information is required for the following reason(s):
+        <ul>
+            <!-- #HEADER_END# -->
+            <!-- #ITEM_START# -->
+            <li>#REASON#</li>
+            <!-- #ITEM_END# -->
+            <!-- #FOOTER_START# -->
+        </ul>
+        </div>
+        <!-- #FOOTER_END# -->
+        <!-- #REQUIRED_REASONS_END# -->
+        </div>
+        <div style="width:100%; margin-top: 20px;">
+        <div style="padding:10px 0; font-size:175%; background-color: #145675; color: #fff;padding: 10px; box-sizing:border-box;">
+        basic information
+        </div>
+        </div>
+        <table style="width:100%;">
+            <tbody>
+                <tr>
+                    <td style="vertical-align:top; width: 50%;">
+                    <table class="fields">
+                        <tbody>
+                            <tr>
+                                <td class="label">
+                                <strong>Account ID</strong>
+                                </td>
+                                <td class="prompt">
+                                #NAMEID#
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label">
+                                <strong>First Name</strong>
+                                </td>
+                                <td class="prompt">
+                                #FIRSTNAME#
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label">
+                                <strong>Middle Name</strong>
+                                </td>
+                                <td class="prompt">
+                                #MIDDLENAME#
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label">
+                                <strong>Last Name</strong>
+                                </td>
+                                <td class="prompt">
+                                #LASTNAME#
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label">
+                                <strong>Suffix</strong>
+                                </td>
+                                <td class="prompt">
+                                #SUFFIX#
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label">
+                                <strong>Informal / Nickname</strong>
+                                </td>
+                                <td class="prompt">
+                                #NICKNAME#
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </td>
+                    <td style="width:45px;">&nbsp;</td>
+                    <td style="vertical-align:top;width:50%;">
+                    <table class="fields">
+                        <tbody>
+                            <tr>
+                                <td class="label">
+                                <strong>Employer</strong>
+                                </td>
+                                <td class="prompt">
+                                #EMPLOYERNAME#
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label">
+                                <strong>Job Code</strong>
+                                </td>
+                                <td class="prompt">
+                                #JOBCODE#
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label">
+                                <strong>Title</strong>
+                                </td>
+                                <td class="prompt">
+                                #TITLE#
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label">
+                                <strong>Gender</strong>
+                                </td>
+                                <td class="prompt">
+                                #GENDER#
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div style="width:100%; margin-top: 20px;">
+        <div style="padding:10px 0; font-size:175%; background-color: #145675; color: #fff;padding: 10px; box-sizing:border-box;">
+        primary points of contact
+        </div>
+        </div>
+        <table style="width:100%;">
+            <tbody>
+                <tr>
+                    <td style="vertical-align:top; width: 50%;">
+                    <table class="fields">
+                        <tbody>
+                            <tr>
+                                <td class="label">
+                                <strong>Primary Email Address</strong>
+                                </td>
+                                <td class="prompt">
+                                #PRIMARYEMAIL#
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label" style="vertical-align:top;">
+                                <strong>Primary Address</strong>
+                                </td>
+                                <td class="prompt">
+                                #PRIMARYADDRESS#
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </td>
+                    <td style="width:45px;">&nbsp;</td>
+                    <td style="vertical-align:top;width:50%;">
+                    <table class="fields">
+                        <tbody>
+                            <tr>
+                                <td class="label">
+                                <strong>Primary Phone</strong>
+                                </td>
+                                <td class="prompt">
+                                #PHONE#
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label">
+                                <strong>Mobile Phone</strong>
+                                </td>
+                                <td class="prompt">
+                                #MOBILE#
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label">
+                                <strong>Other Phone</strong>
+                                </td>
+                                <td class="prompt">
+                                #OTHERPHONE#
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label">
+                                <strong>Fax Number</strong>
+                                </td>
+                                <td class="prompt">
+                                #FAX#
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div style="width:100%; margin-top: 20px;">
+        <div style="padding:10px 0; font-size:175%; background-color: #145675; color: #fff;padding: 10px; box-sizing:border-box;">
+        privacy preferences
+        </div>
+        </div>
+        <table style="width:100%;">
+            <tbody>
+                <tr>
+                    <td style="vertical-align:top; width: 50%;">
+                    <table class="fields">
+                        <tbody>
+                            <tr>
+                                <td class="label">
+                                <strong>Personal Data Consent</strong>
+                                </td>
+                                <td class="prompt">
+                                #DATACONSENT#
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label">
+                                <strong>Allow Contact via Email</strong>
+                                </td>
+                                <td class="prompt">
+                                #ALLOWEMAIL#
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label">
+                                <strong>Allow Contact via Mail</strong>
+                                </td>
+                                <td class="prompt">
+                                #ALLOWMAIL#
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </td>
+                    <td style="width:45px;">&nbsp;</td>
+                    <td style="vertical-align:top;width:50%;">
+                    <table class="fields">
+                        <tbody>
+                            <tr>
+                                <td class="label">
+                                <strong>Allow Contact via Phone</strong>
+                                </td>
+                                <td class="prompt">
+                                #ALLOWPHONE#
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label">
+                                <strong>Allow Contact via Fax</strong>
+                                </td>
+                                <td class="prompt">
+                                #ALLOWFAX#
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label">
+                                <strong>Allow Name Sharing with Partners</strong>
+                                </td>
+                                <td class="prompt">
+                                #ALLOWRENTAL#
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- #EMAILS_START# -->
+        <!-- #HEADER_START# -->
+        <div style="width:100%; margin-top: 20px;">
+        <div style="padding:10px 0; font-size:175%; background-color: #145675; color: #fff;padding: 10px; box-sizing:border-box;">
+        email addresses on file
+        </div>
+        <div class="explanation">
+        this is a list of any email addresses on file for this account
+        </div>
+        </div>
+        <table class="dataTable">
+            <thead>
+                <tr>
+                    <th>
+                    Email Address
+                    </th>
+                    <th>
+                    Email Type
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- #HEADER_END# -->
+                <!-- #ITEM_START# -->
+                <tr>
+                    <td>
+                    #EMAIL#
+                    </td>
+                    <td>
+                    #TYPE#
+                    </td>
+                </tr>
+                <!-- #ITEM_END# -->
+                <!-- #NO_ITEMS_START# -->
+                <tr>
+                    <td colspan="2" style="text-align: left; font-family: arial; font-size: 11px; color: #555; vertical-align: middle; padding: 8px;">
+                    -- No Email Addresses on File --
+                    </td>
+                </tr>
+                <!-- #NO_ITEMS_END# -->
+                <!-- #FOOTER_START# -->
+            </tbody>
+        </table>
+        <!-- #FOOTER_END# -->
+        <!-- #EMAILS_END# -->
+        <!-- #ADDRESSES_START# -->
+        <!-- #HEADER_START# -->
+        <div style="width:100%; margin-top: 20px;">
+        <div style="padding:10px 0; font-size:175%; background-color: #145675; color: #fff;padding: 10px; box-sizing:border-box;">
+        addresses on file
+        </div>
+        <div class="explanation">
+        does this include any employer addresses?
+        </div>
+        </div>
+        <table class="dataTable">
+            <thead>
+                <tr>
+                    <th>
+                    Lines
+                    </th>
+                    <th>
+                    City
+                    </th>
+                    <th>
+                    State/Region
+                    </th>
+                    <th>
+                    Postal Code
+                    </th>
+                    <th>
+                    Country
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- #HEADER_END# -->
+                <!-- #ITEM_START# -->
+                <tr>
+                    <td>
+                    #ADDRESSLINES#
+                    </td>
+                    <td>
+                    #CITY#
+                    </td>
+                    <td>
+                    #STATE#
+                    </td>
+                    <td>
+                    #ZIP#
+                    </td>
+                    <td>
+                    #COUNTRY#
+                    </td>
+                </tr>
+                <!-- #ITEM_END# -->
+                <!-- #NO_ITEMS_START# -->
+                <tr>
+                    <td colspan="5" style="text-align: left; font-family: arial; font-size: 11px; color: #555; vertical-align: middle; padding: 8px;">
+                    -- No Addresses on File --
+                    </td>
+                </tr>
+                <!-- #NO_ITEMS_END# -->
+                <!-- #FOOTER_START# -->
+            </tbody>
+        </table>
+        <!-- #FOOTER_END# -->
+        <!-- #ADDRESSES_END# -->
+        <!-- #SOCIAL_START# -->
+        <!-- #HEADER_START# -->
+        <div style="width:100%; margin-top: 20px;">
+        <div style="padding:10px 0; font-size:175%; background-color: #145675; color: #fff;padding: 10px; box-sizing:border-box;">
+        social media
+        </div>
+        </div>
+        <table class="dataTable">
+            <thead>
+                <tr>
+                    <th>
+                    Description / Network
+                    </th>
+                    <th>
+                    URL
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- #HEADER_END# -->
+                <!-- #ITEM_START# -->
+                <tr>
+                    <td>
+                    #NAME#
+                    </td>
+                    <td>
+                    #URL#
+                    </td>
+                </tr>
+                <!-- #ITEM_END# -->
+                <!-- #NO_ITEMS_START# -->
+                <tr>
+                    <td colspan="2" style="text-align: left; font-family: arial; font-size: 11px; color: #555; vertical-align: middle; padding: 8px;">
+                    -- No Social Media Links --
+                    </td>
+                </tr>
+                <!-- #NO_ITEMS_END# -->
+                <!-- #FOOTER_START# -->
+            </tbody>
+        </table>
+        <!-- #FOOTER_END# -->
+        <!-- #SOCIAL_END# -->
+        <!-- #SOURCES_START# -->
+        <!-- #HEADER_START# -->
+        <div style="width:100%; margin-top: 20px;">
+        <div style="padding:10px 0; font-size:175%; background-color: #145675; color: #fff;padding: 10px; box-sizing:border-box;">
+        sources
+        </div>
+        <div class="explanation">
+        this is a list of methods or means by which this name was added to the database and may include marketing efforts, list rentals, etc.
+        </div>
+        </div>
+        <table class="dataTable">
+            <thead>
+                <tr>
+                    <th>
+                    Description
+                    </th>
+                    <th>
+                    Date
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- #HEADER_END# -->
+                <!-- #ITEM_START# -->
+                <tr>
+                    <td>
+                    #DESCRIPTION#
+                    </td>
+                    <td>
+                    #DATE#
+                    </td>
+                </tr>
+                <!-- #ITEM_END# -->
+                <!-- #NO_ITEMS_START# -->
+                <tr>
+                    <td colspan="2" style="text-align: left; font-family: arial; font-size: 11px; color: #555; vertical-align: middle; padding: 8px;">
+                    -- No Sources on File --
+                    </td>
+                </tr>
+                <!-- #NO_ITEMS_END# -->
+                <!-- #FOOTER_START# -->
+            </tbody>
+        </table>
+        <!-- #FOOTER_END# -->
+        <!-- #SOURCES_END# -->
+        <!-- #COMPSUBS_START# -->
+        <!-- #HEADER_START# -->
+        <div style="width:100%; margin-top: 20px;">
+        <div style="padding:10px 0; font-size:175%; background-color: #145675; color: #fff;padding: 10px; box-sizing:border-box;">
+        active or pending complimentary subscriptions
+        </div>
+        </div>
+        <table class="dataTable">
+            <thead>
+                <tr>
+                    <th>
+                    Product
+                    </th>
+                    <th style="width:100px;">
+                    Start Date
+                    </th>
+                    <th style="width:100px;">
+                    Last Served
+                    </th>
+                    <th style="width:100px;">
+                    Issues Remaining
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- #HEADER_END# -->
+                <!-- #ITEM_START# -->
+                <tr>
+                    <td>
+                    #PRODUCT#
+                    </td>
+                    <td>
+                    #START#
+                    </td>
+                    <td>
+                    #LASTSERVED#
+                    </td>
+                    <td>
+                    #ISSUESREMAINING#
+                    </td>
+                </tr>
+                <!-- #ITEM_END# -->
+                <!-- #NO_ITEMS_START# -->
+                <tr>
+                    <td colspan="4" style="text-align: left; font-family: arial; font-size: 11px; color: #555; vertical-align: middle; padding: 8px;">
+                    -- No Comp. Subscriptions on File --
+                    </td>
+                </tr>
+                <!-- #NO_ITEMS_END# -->
+                <!-- #FOOTER_START# -->
+            </tbody>
+        </table>
+        <!-- #FOOTER_END# -->
+        <!-- #COMPSUBS_END# -->
+        <!-- #MARKETINGLISTS_START# -->
+        <!-- #HEADER_START# -->
+        <div style="width:100%; margin-top: 20px;">
+        <div style="padding:10px 0; font-size:175%; background-color: #145675; color: #fff;padding: 10px; box-sizing:border-box;">
+        active marketing list subscriptions
+        </div>
+        <div class="explanation">
+        marketing lists are subscriptions to print and/or email distrubtion lists
+        </div>
+        </div>
+        <table class="dataTable">
+            <thead>
+                <tr>
+                    <th>
+                    List Description
+                    </th>
+                    <th>
+                    Subscribed Email Address
+                    </th>
+                    <th style="width:100px;">
+                    Subscribed Date
+                    </th>
+                    <th style="width:150px;">
+                    Subscribed By
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- #HEADER_END# -->
+                <!-- #ITEM_START# -->
+                <tr>
+                    <td>
+                    #NAME#
+                    </td>
+                    <td>
+                    #EMAIL#
+                    </td>
+                    <td>
+                    #DATE#
+                    </td>
+                    <td>
+                    #SUBSCRIBEDBY#
+                    </td>
+                </tr>
+                <!-- #ITEM_END# -->
+                <!-- #NO_ITEMS_START# -->
+                <tr>
+                    <td colspan="4" style="text-align: left; font-family: arial; font-size: 11px; color: #555; vertical-align: middle; padding: 8px;">
+                    -- No Marketing List Subscriptions on File --
+                    </td>
+                </tr>
+                <!-- #NO_ITEMS_END# -->
+                <!-- #FOOTER_START# -->
+            </tbody>
+        </table>
+        <!-- #FOOTER_END# -->
+        <!-- #MARKETINGLISTS_END# -->
+        <!-- #CALLLISTS_START# -->
+        <!-- #HEADER_START# -->
+        <div style="width:100%; margin-top: 20px;">
+        <div style="padding:10px 0; font-size:175%; background-color: #145675; color: #fff;padding: 10px; box-sizing:border-box;">
+        active call lists
+        </div>
+        <div class="explanation">
+        call lists typically used as targeted marketing outreach campaigns, where contacts and companies are identified and contacted one-by-one.
+        </div>
+        </div>
+        <table class="dataTable">
+            <thead>
+                <tr>
+                    <th>
+                    List Description
+                    </th>
+                    <th style="width:100px;">
+                    List Date
+                    </th>
+                    <th>
+                    Status
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- #HEADER_END# -->
+                <!-- #ITEM_START# -->
+                <tr>
+                    <td>
+                    #NAME#
+                    </td>
+                    <td>
+                    #DATE#
+                    </td>
+                    <td>
+                    #STATUS#
+                    </td>
+                </tr>
+                <!-- #ITEM_END# -->
+                <!-- #NO_ITEMS_START# -->
+                <tr>
+                    <td colspan="3" style="text-align: left; font-family: arial; font-size: 11px; color: #555; vertical-align: middle; padding: 8px;">
+                    -- No Active Call List on File --
+                    </td>
+                </tr>
+                <!-- #NO_ITEMS_END# -->
+                <!-- #FOOTER_START# -->
+            </tbody>
+        </table>
+        <!-- #FOOTER_END# -->
+        <!-- #CALLLISTS_END# -->
+        </div>
+    </body>
+</html>

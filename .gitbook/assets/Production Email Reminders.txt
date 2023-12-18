@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reminder</title>
+        <style type="text/css">
+            #content { width: 100%; }
+            body, p, td, th, h1, h2, h3 { font-family: Arial; font-size: 1em; }
+            .dataTable { width: 100%; border-collapse: collapse }
+            .dataTable th { padding: 3px 5px; text-align:left; background-color: #555; color: #fff; border:1px solid #999 }
+            .dataTable td { padding: 3px 5px; border-bottom: 1px solid #555; border-left:1px solid #999; border-right:1px solid #999; }
+            .comment { background-color: #f1f1f1; padding: 8px}
+        </style>
+    </head>
+    <body contenteditable="true">
+        <div id="content"><strong><span style="font-size: 18px;">Naviga Media Company</span></strong><br />
+        <p class="comment">#COMMENT#</p>
+        <table class="dataTable" style="width: 699px; height: 49px;">
+            <tbody>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Website/Publication</th>
+                    <th>Description</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                </tr>
+                <!-- ORDER_DETAILS_START //-->
+                <tr>
+                    <td>#ORDERID#</td>
+                    <td>#WEBSITE#</td>
+                    <td>#DESC#</td>
+                    <td>#START#</td>
+                    <td>#END#</td>
+                </tr>
+                <!-- ORDER_DETAILS_END //-->
+            </tbody>
+        </table>
+        <p>This is our reminder to please upload your materials so that your ad may run without delay&nbsp;...</p>
+        <p>Sincerely,</p>
+        <p><span style="font-size: 12pt;">#CONTROLLERNAME#</span></p>
+        <p><span style="font-size: 12pt;">#CONTROLLERPHONE#</span></p>
+        </div>
+    </body>
+</html>

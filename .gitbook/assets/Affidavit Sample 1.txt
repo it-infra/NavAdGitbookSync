@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demo Portal Email</title>
+        <style type="text/css">
+            body, p, td, div, a
+            {
+            font-family: arial;
+            font-size: 9pt;
+            line-height: 150%;
+            }
+            #page
+            {
+            margin: 10px auto;
+            width: 85%;
+            max-width: 1000px;
+            min-width: 800px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="page">
+        <div style="width:100%; text-align:center;">
+        <img alt="" style="height:100px; margin: 0 auto 10px auto;" src="https://dem-pdftest.newscyclecloud.com/pdftest/Naviga_Logo_V_resized.png" />
+        </div>
+        <table style="width: 100%;">
+            <tbody>
+                <tr>
+                    <td style="width: 50%; vertical-align: top; padding-right: 10px;">
+                    <div style="background-color: #145675; color: #fff; box-sizing: border-box; width: 100%; padding: 5px; font-size: 16px; line-height: 16px;">
+                    ATTESTATION  OF PUBLIC LEGAL NOTICE
+                    </div>
+                    <br />
+                    On Behalf of:
+                    <br />
+                    #ADVERTISER_NAME#<br />
+                    #ADVERTISER_ADDRESS#<br />
+                    <br />
+                    STATE OF WISCONSIN COUNTY OF BROWN:
+                    <br />
+                    Before the undersigned authority personally appeared said
+                    legal clerk, who on oath says that he or she is a Legal
+                    Advertising Representative of the FLORIDA TODAY , a daily
+                    newspaper published in Brevard County, Florida that the
+                    attached copy of advertisement, being a Legal Ad in the
+                    matter of
+                    <br />
+                    <br />
+                    <strong>#CATEGORY_NAME#</strong>
+                    <br />
+                    <br />
+                    as published in <span style="font-weight: bold; text-decoration: underline;">#PRODUCT_NAME#</span> in the issue(s) of:
+                    <br />
+                    <br />
+                    <div style="font-weight:bold; text-decoration:underline;">#ISSUE_DATES_COMMAS#</div>
+                    <br />
+                    Affiant further says that the said FLORIDA TODAY is a
+                    newspaper in said Brevard County, Florida and that the
+                    said newspaper has heretofore been continuously
+                    published in said Brevard County, Florida each day and has
+                    been entered as periodicals matter at the post office in
+                    <strong>MELBOURNE</strong> in said Brevard County, Florida, for a period of
+                    one year next preceding the first publication of the attached
+                    copy of advertisement; and affiant further says that he or
+                    she has never paid nor promised any person, firm or
+                    coporation any discount, rebate, commission or refund for
+                    the purpose of securing this advertisement for publication
+                    in the said newspaper.
+                    Sworn to and Subscribed before me this 14th of August
+                    2019, by legal clerk who is personally known to me
+                    <table style="width: 100%; margin-top: 30px;">
+                        <tbody>
+                            <tr>
+                                <td style="border-bottom: 1px solid #333;">
+                                &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding-top:0; padding-bottom:30px;">
+                                Affiant
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border-bottom: 1px solid #333;">
+                                &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding-top:0; padding-bottom:30px;">
+                                Notary State of Wisconsin County of Brown
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border-bottom: 1px solid #333;">
+                                &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding-top:0;">
+                                My commission expires
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br />
+                    Publication Cost: $#AMOUNT#
+                    <br />
+                    Ad No: #LINE_ID#&nbsp; &nbsp;Customer No: #ADVERTISER_ID#
+                    </td>
+                    <td style="vertical-align:top; padding-left: 10px;">
+                    <div style="background-color: #145675; color: #fff; box-sizing: border-box; width: 100%; padding: 5px; font-size: 16px; line-height: 16px; text-align:center;">
+                    COPY OF ADVERTISEMENT
+                    </div>
+                    <table style="width: 100%; padding: 0; border: 0; margin: 0;">
+                        <tbody>
+                            <tr>
+                                <td class="imagePreview" style="background-color: #f1f1f1;vertical-align: top; text-align: center; color: #555;">
+                                <img alt="" src="#AD_IMAGE#" style="max-height: 1800px; max-width: 300px;" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </body>
+</html>

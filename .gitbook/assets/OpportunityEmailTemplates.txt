@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            *
+            {
+            font-family: Aptos, arial;
+            font-size: 12px;
+            }
+            table.fields td:nth-child(odd)
+            {
+            width: 100px;
+            padding: 5px;
+            white-space: nowrap;
+            font-weight: bold;
+            }
+            table.fields td:nth-child(even)
+            {
+            background-color: #f1f1f1;
+            border-bottom: 1px solid #ddd;
+            padding: 5px;
+            white-space: nowrap;
+            font-weight: normal;
+            }
+            table.fields
+            {
+            width: 100%;
+            }
+            div.areaTitle
+            {
+            padding: 10px 5px;
+            font-size: 125%;
+            text-transform: uppercase;
+            width: 100%;
+            background-color: #ddd;
+            box-sizing: border-box;
+            margin: 10px 0 0;
+            }
+            .dataTable
+            {
+            width: 100%;
+            border-collapse: collapse;
+            }
+            .dataTable th
+            {
+            text-align: left;
+            background-color: #333;
+            color: #fff;
+            padding: 4px;
+            }
+            .dataTable td
+            {
+            text-align: left;
+            padding: 4px;
+            border-bottom: 1px solid #ccc;
+            vertical-align: top;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="margin: 10px auto; max-width: 800px;">
+        <table style="width: 100%;">
+            <tbody>
+                <tr>
+                    <td>
+                    <table class="fields">
+                        <tbody>
+                            <tr>
+                                <td>
+                                Opportunity ID
+                                </td>
+                                <td>
+                                #_ID#
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                Stage
+                                </td>
+                                <td>
+                                #STATUSNAME# (#STATUSID#)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                Advertiser
+                                </td>
+                                <td>
+                                #NAME# (Account: #ID#)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                Client Type
+                                </td>
+                                <td>
+                                #CLIENTTYPENAME#
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </td>
+                    <td>
+                    <table class="fields">
+                        <tbody>
+                            <tr>
+                                <td>
+                                Start Date
+                                </td>
+                                <td>
+                                #STARTDATE#
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                End Date
+                                </td>
+                                <td>
+                                #ENDDATE#
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                Forecast Spend
+                                </td>
+                                <td>
+                                #FORECASTAMOUNT#
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                Sales Rep
+                                </td>
+                                <td>
+                                #OWNERNAME# (#OWNERID#)
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="areaTitle">
+        Product Detail
+        </div>
+        <!-- #PRODUCTS_START# -->
+        <!-- #HEADER_START# -->
+        <table class="dataTable">
+            <thead>
+                <tr>
+                    <th>
+                    Product
+                    </th>
+                    <th>
+                    Date(s)
+                    </th>
+                    <th>
+                    Ad Type
+                    </th>
+                    <th>
+                    Description
+                    </th>
+                    <th>
+                    Qty
+                    </th>
+                    <th>
+                    Price
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- #HEADER_END# -->
+                <!-- #ITEM_START# -->
+                <tr>
+                    <td>
+                    #NAME# (#ID#)
+                    </td>
+                    <td>
+                    #STARTDATE# - #ENDDATE#
+                    </td>
+                    <td>
+                    #ADTYPENAME# (#ADTYPEID#)
+                    </td>
+                    <td>
+                    #LINEDESC#
+                    </td>
+                    <td>
+                    #LINEQTY#
+                    </td>
+                    <td>
+                    #PRICE#
+                    </td>
+                </tr>
+                <!-- #ITEM_END# -->
+                <!-- #NO_ITEMS_START# -->
+                <tr>
+                    <td colspan="6">
+                    -- NO PRODUCTS --
+                    </td>
+                </tr>
+                <!-- #NO_ITEMS_END# -->
+                <!-- #FOOTER_START# -->
+            </tbody>
+        </table>
+        <!-- #FOOTER_END# -->
+        <!-- #PRODUCTS_END# -->
+        <div class="areaTitle">
+        Linked Campaigns (Proposals)
+        </div>
+        <!-- #CAMPAIGNS_START# -->
+        <!-- #HEADER_START# -->
+        <table class="dataTable">
+            <thead>
+                <tr>
+                    <th>
+                    ID
+                    </th>
+                    <th>
+                    Description
+                    </th>
+                    <th>
+                    Status
+                    </th>
+                    <th>
+                    Net
+                    </th>
+                    <th>
+                    Gross
+                    </th>
+                    <th>
+                    Commission
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- #HEADER_END# -->
+                <!-- #ITEM_START# -->
+                <tr>
+                    <td>
+                    #ID#
+                    </td>
+                    <td>
+                    #CAMPAIGNDESCRIPTION#
+                    </td>
+                    <td>
+                    #STATUS#
+                    </td>
+                    <td>
+                    #AMOUNT#
+                    </td>
+                    <td>
+                    #GROSSAMOUNT#
+                    </td>
+                    <td>
+                    #COMMISSIONAMOUNT#
+                    </td>
+                </tr>
+                <!-- #ITEM_END# -->
+                <!-- #NO_ITEMS_START# -->
+                <tr>
+                    <td colspan="6">
+                    -- NO PROPOSALS --
+                    </td>
+                </tr>
+                <!-- #NO_ITEMS_END# -->
+                <!-- #FOOTER_START# -->
+            </tbody>
+        </table>
+        <!-- #FOOTER_END# -->
+        <!-- #CAMPAIGNS_END# -->
+        <div class="areaTitle">
+        Associated Groups
+        </div>
+        <!-- #GROUPS_START# -->
+        <!-- #HEADER_START# -->
+        <table class="dataTable">
+            <thead>
+                <tr>
+                    <th>
+                    ID
+                    </th>
+                    <th>
+                    Name
+                    </th>
+                    <th>
+                    Amount
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- #HEADER_END# -->
+                <!-- #ITEM_START# -->
+                <tr>
+                    <td>
+                    #ID#
+                    </td>
+                    <td>
+                    #NAME#
+                    </td>
+                    <td>
+                    #AMOUNT#
+                    </td>
+                </tr>
+                <!-- #ITEM_END# -->
+                <!-- #NO_ITEMS_START# -->
+                <tr>
+                    <td colspan="3">
+                    -- NO GROUPS --
+                    </td>
+                </tr>
+                <!-- #NO_ITEMS_END# -->
+                <!-- #FOOTER_START# -->
+            </tbody>
+        </table>
+        <!-- #FOOTER_END# -->
+        <!-- #GROUPS_END# -->
+        <div class="areaTitle">
+        Associated Forms
+        </div>
+        <!-- #FORMS_START# -->
+        <!-- #HEADER_START# -->
+        <table class="dataTable">
+            <thead>
+                <tr>
+                    <th>
+                    ID
+                    </th>
+                    <th>
+                    Description
+                    </th>
+                    <th>
+                    Amount
+                    </th>
+                    <th>
+                    Status
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- #HEADER_END# -->
+                <!-- #ITEM_START# -->
+                <tr>
+                    <td>
+                    #FORMID#
+                    </td>
+                    <td>
+                    #DESCRIPTION#
+                    </td>
+                    <td>
+                    #AMOUNT#
+                    </td>
+                    <td>
+                    #FORMSTATUS#
+                    </td>
+                </tr>
+                <!-- #ITEM_END# -->
+                <!-- #NO_ITEMS_START# -->
+                <tr>
+                    <td colspan="4">
+                    -- NO FORMS --
+                    </td>
+                </tr>
+                <!-- #NO_ITEMS_END# -->
+                <!-- #FOOTER_START# -->
+            </tbody>
+        </table>
+        <!-- #FOOTER_END# -->
+        <!-- #FORMS_END# -->
+        <div class="areaTitle">
+        Associated Contacts
+        </div>
+        <!-- #CONTACTS_START# -->
+        <!-- #HEADER_START# -->
+        <table class="dataTable">
+            <thead>
+                <tr>
+                    <th>
+                    Type
+                    </th>
+                    <th>
+                    Name
+                    </th>
+                    <th>
+                    Employer
+                    </th>
+                    <th>
+                    Title
+                    </th>
+                    <th>
+                    Phone
+                    </th>
+                    <th>
+                    Email
+                    </th>
+                    <th>
+                    Location
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- #HEADER_END# -->
+                <!-- #ITEM_START# -->
+                <tr>
+                    <td>
+                    #TYPEDESC#
+                    </td>
+                    <td>
+                    #NAME#<br />
+                    (#ID#)
+                    </td>
+                    <td>
+                    #COMPANYNAME#<br />
+                    (#COMPANYID#)
+                    </td>
+                    <td>
+                    #PHONE#
+                    #PHONEEXT#
+                    </td>
+                    <td>
+                    #FORMSTATUS#
+                    </td>
+                    <td>
+                    #EMAIL#
+                    </td>
+                    <td>
+                    #CITY#, #STATE# #ZIP#
+                    </td>
+                </tr>
+                <!-- #ITEM_END# -->
+                <!-- #NO_ITEMS_START# -->
+                <tr>
+                    <td colspan="7">
+                    -- NO CONTACTS --
+                    </td>
+                </tr>
+                <!-- #NO_ITEMS_END# -->
+                <!-- #FOOTER_START# -->
+            </tbody>
+        </table>
+        <!-- #FOOTER_END# -->
+        <!-- #CONTACTS_END# -->
+        <div class="areaTitle">
+        Action Items / To-Do's'
+        </div>
+        <!-- #TODOS_START# -->
+        <!-- #HEADER_START# -->
+        <table class="dataTable">
+            <thead>
+                <tr>
+                    <th>
+                    Type
+                    </th>
+                    <th>
+                    Description
+                    </th>
+                    <th>
+                    Date / Time
+                    </th>
+                    <th>
+                    Contact
+                    </th>
+                    <th>
+                    Priority
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- #HEADER_END# -->
+                <!-- #ITEM_START# -->
+                <tr>
+                    <td>
+                    #ACTIONDESCRIPTION#
+                    </td>
+                    <td>
+                    #REGARDING#
+                    </td>
+                    <td>
+                    #DATE#<br />
+                    #TIME#
+                    </td>
+                    <td>
+                    #CONTACTNAME#<br />
+                    (#CONTACTID#)
+                    </td>
+                    <td>
+                    #PRIORITYID#
+                    </td>
+                </tr>
+                <!-- #ITEM_END# -->
+                <!-- #NO_ITEMS_START# -->
+                <tr>
+                    <td colspan="5">
+                    -- NO ACTIONS --
+                    </td>
+                </tr>
+                <!-- #NO_ITEMS_END# -->
+                <!-- #FOOTER_START# -->
+            </tbody>
+        </table>
+        <!-- #FOOTER_END# -->
+        <!-- #TODOS_END# -->
+        </div>
+    </body>
+</html>

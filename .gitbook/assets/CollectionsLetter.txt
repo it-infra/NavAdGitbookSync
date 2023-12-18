@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        <style>
+            table tr {
+            page-break-inside: avoid;
+            }
+        </style>
+    </head>
+    <body contenteditable="true" style="width: 700px">
+        <div style="margin:10px auto 0 auto; width: 700px;font: 13px arial, sans-serif;line-height:150%">
+        <img alt="" src="https://dem-pdftest.newscyclecloud.com/pdftest/Naviga_Logo_H_resized.png" width="250" height="60" style="margin-top: 10px; margin-bottom: 20px;">
+        <br>
+        Naviga<br>
+        12 Madison Avenue<br>
+        New York, NY 10012<br>
+        <br>
+        #CONTACTFULLNAME#<br>
+        #CONTACTEMPLOYERNAME#<br>
+        #CONTACTADDRESS#<br>
+        <br>
+        #TODAY#<br>
+        RE:  Unpaid invoice(s) <br>
+        <br>
+        Dear #CONTACTFIRSTNAME#,
+        <br>
+        <br>
+        The attached invoice(s) have recently become overdue for payment.
+        As such, we would appreciate you making this payment as soon as possible.
+        <br>
+        <br>
+        If there is an error on our part and payment has been made, please contact me immediately so that the matter can be rectified.
+        <br>
+        <br>
+        Otherwise, if there is a problem paying this amount owing, please contact me so that an alternative arrangement for payment can be made. For your convenience, below is a statement of account indicated all invoices issued to date.<br>
+        <br>
+        Yours sincerely,
+        <br>
+        <br>
+        #USERFULLNAME#<br>
+        <br>
+        <br>
+        Tel: (555) 555.5555<br>
+        Fax: (555) 555.5554<br>
+        #USEREMAIL#<br>
+        <br>
+        <div style="page-break-before: always; page-break-after: always;"> </div>
+        <div style="width:100%; background-color:#f1f1f1;  margin:0">
+        <div style="padding:8px;font-size:16px;font-weight:bold">OPEN INVOICES</div>
+        </div>
+        <table style="width:100%; border-collapse:collapse;">
+            <thead>
+                <tr>
+                    <th style="text-align: left; background-color: #145675; color:#fff; width: 100px; padding: 8px ">
+                    Invoice No.
+                    </th>
+                    <th style="text-align: left; background-color: #145675; color:#fff; padding: 8px ">
+                    Description
+                    </th>
+                    <th style="text-align: center; background-color: #145675; color:#fff; width: 100px; padding: 8px ">
+                    Date
+                    </th>
+                    <th style="text-align: right; background-color: #145675; color:#fff; width: 100px; padding: 8px ">
+                    Amount
+                    </th>
+                    <th style="text-align: right; background-color: #145675; color:#fff; width: 100px; padding: 8px ">
+                    Balance Due
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- #OPEN_INVOICE_TEMPLATE_START# -->
+                <tr>
+                    <td style="vertical-align:middle; padding: 8px; color:#555;border:1px solid #ccc">
+                    #ID#
+                    </td>
+                    <td style="text-align: left;vertical-align:middle; padding: 8px; color:#555;border:1px solid #ccc">
+                    #PRODUCTNAME#
+                    </td>
+                    <td style="text-align: center;vertical-align:middle; padding: 8px; color:#555;border:1px solid #ccc">
+                    #DATE#
+                    </td>
+                    <td style="text-align: right;vertical-align:middle; padding: 8px; color:#555;border:1px solid #ccc">
+                    #S##TOTALWITHTAX#
+                    </td>
+                    <td style="text-align: right; vertical-align:middle; padding: 8px; color:#555;border:1px solid #ccc">
+                    #S##BALANCE#
+                    </td>
+                </tr>
+                <!-- #OPEN_INVOICE_TEMPLATE_END# -->
+            </tbody>
+        </table>
+        <br>
+        <div style="width:100%; background-color:#f1f1f1;  margin:0;">
+        <div style="padding:8px;font-size:16px;font-weight:bold">AGING SUMMARY</div>
+        </div>
+        <table style="width:100%; border-collapse:collapse;">
+            <thead>
+                <tr>
+                    <th style="text-align: center; background-color: #145675; color:#fff; padding: 8px ">
+                    Currency ID
+                    </th>
+                    <th style="text-align: center; background-color: #145675; color:#fff; width: 14.25%; padding: 8px ">
+                    0 - 30
+                    </th>
+                    <th style="text-align: center; background-color: #145675; color:#fff; padding: 8px; width:14.25% ">
+                    31 - 60
+                    </th>
+                    <th style="text-align: center; background-color: #145675; color:#fff; width: 14.25%; padding: 8px ">
+                    61 - 90
+                    </th>
+                    <th style="text-align: center; background-color: #145675; color:#fff; width: 14.25%; padding: 8px ">
+                    91 - 120
+                    </th>
+                    <th style="text-align: center; background-color: #145675; color:#fff; width: 14.25%; padding: 8px ">
+                    121 +
+                    </th>
+                    <th style="text-align: center; background-color: #145675; color:#fff; width: 14.25%;  padding: 8px ">
+                    Total Due
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- #AGING_TEMPLATE_START# -->
+                <tr>
+                    <td style="text-align: center;vertical-align:middle; padding: 8px; color:#555;border:1px solid #ccc">
+                    #CURRENCYID# #S#
+                    </td>
+                    <td style="text-align: center;vertical-align:middle; padding: 8px; color:#555;border:1px solid #ccc">
+                    #0TO30#
+                    </td>
+                    <td style="text-align: center;vertical-align:middle; padding: 8px; color:#555;border:1px solid #ccc">
+                    #31TO60#
+                    </td>
+                    <td style="text-align: center;vertical-align:middle; padding: 8px; color:#555;border:1px solid #ccc">
+                    #61TO90#
+                    </td>
+                    <td style="text-align: center;vertical-align:middle; padding: 8px; color:#555;border:1px solid #ccc">
+                    #91TO120#
+                    </td>
+                    <td style="text-align: center;vertical-align:middle; padding: 8px; color:#555;border:1px solid #ccc">
+                    #121#
+                    </td>
+                    <td style="text-align: center;vertical-align:middle; padding: 8px; color:#555;border:1px solid #ccc">
+                    #TOTAL#
+                    </td>
+                </tr>
+                <!-- #AGING_TEMPLATE_END# -->
+            </tbody>
+        </table>
+        <br>
+        </div>
+    </body>
+</html>

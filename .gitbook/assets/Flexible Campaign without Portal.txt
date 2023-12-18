@@ -1,0 +1,684 @@
+<div style="background-color: #fff; width: 100%; margin: 0 auto; box-sizing: border-box; padding: 10px;">
+<style>
+    p, td, th
+    {
+    font-family: arial;
+    font-size: .7em;
+    text-align: left;
+    color: #555;
+    }
+    h1
+    {
+    font-family: arial;
+    text-align: right;
+    color: #555;
+    }
+    .headerTable td
+    {
+    padding: 5px 5px 10px 0;
+    vertical-align: top;
+    font-size: 12px;
+    }
+    .headerTable th
+    {
+    text-align: left;
+    padding: 5px;
+    font-size: 16px;
+    line-height: 16px;
+    background-color: #f1f1f1;
+    }
+    .subHeader td
+    {
+    padding: 4px 0;
+    font-family: arial;
+    font-size: 12px;
+    text-align: left;
+    color: #555;
+    padding: 4px 0;
+    vertical-align: top;
+    }
+    .manualDataTable
+    {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    }
+    .manualDataTable th
+    {
+    font-weight: normal;
+    background-color: rgb(245, 245, 245);
+    border: 1px solid #ccc;
+    }
+    .manualDataTable th,
+    .manualDataTable td
+    {
+    text-align: left;
+    vertical-align: middle;
+    padding: 8px;
+    font-size: 11px;
+    }
+    .manualDataTable tr &gt; td &gt; a,
+    .manualDataTable tr &gt; td &gt; a:hover,
+    .manualDataTable tr &gt; td &gt; a:visited
+    {
+    color: #000;
+    }
+    .manualDataTable tbody tr:nth-child(even)
+    {
+    background-color: rgb(245, 245, 245);
+    }
+    @media only screen and (max-width: 720px)
+    {
+    .responsiveCell
+    {
+    width: 100% !important;
+    display: block;
+    }
+    .manualDataTable
+    {
+    border-width: 0 !important;
+    font-size: 1em;
+    }
+    .manualDataTable thead,
+    .manualDataTable tfoot
+    {
+    display: none;
+    }
+    .manualDataTable tr
+    {
+    display: block;
+    margin-bottom: 20px;
+    border: 2px solid #cdcdcd;
+    }
+    .manualDataTable tr &gt; td
+    {
+    display: block;
+    border-top: 1px solid #cdcdcd;
+    text-align: right;
+    padding: 10px;
+    font-weight: bold;
+    }
+    .manualDataTable tr &gt; td:before
+    {
+    font-size: 1em;
+    color: #555;
+    font-weight: normal;
+    content: attr(data-title);
+    float: left;
+    }
+    }
+    img {
+    max-width: 100%;
+    height: auto;
+    }
+</style>
+<table style="width: 100%; margin-bottom: 10px;" class="headerTable">
+    <tbody>
+        <tr class="responsiveRow">
+            <td class="responsiveCell" style="padding: 0 5px 0 0; width: 50%; font-family: arial; font-size: 12px; text-align: left; color: #555; vertical-align: top;">
+            <img alt="" src="../../external\form_logo_NAVHR.png" width="250" style="margin-bottom: 20px;" />
+            </td>
+            <td class="responsiveCell" style="width: 50%; padding: 0 0 0 5px; font-family: arial; font-size: 12px; text-align: left; color: #555; vertical-align: top;">
+            <div style="padding: 5px;">
+            <table class="subHeader" style="width: 100%;">
+                <tbody>
+                    <tr>
+                        <td style="width: 125px;font-family: arial;font-size: 12px;text-align: left;color: #555;padding: 4px 0;vertical-align: top;">Campaign No.</td>
+                        <td style="background-color: #fff;border-bottom: 1px solid #ccc;font-family: arial;font-size: 12px;text-align: left;color: #555;padding: 4px 0;vertical-align: top;">
+                        #CAMPAIGN_ID#
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 125px;font-family: arial;font-size: 12px;text-align: left;color: #555;padding: 4px 0;vertical-align: top;">Today's Date</td>
+                        <td style="background-color: #fff;border-bottom: 1px solid #ccc;font-family: arial;font-size: 12px;text-align: left;color: #555;padding: 4px 0;vertical-align: top;">
+                        #TODAY_INTL#
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 125px;font-family: arial;font-size: 12px;text-align: left;color: #555;padding: 4px 0;vertical-align: top;">P.O. Number</td>
+                        <td style="background-color: #fff;border-bottom: 1px solid #ccc;font-family: arial;font-size: 12px;text-align: left;color: #555;padding: 4px 0;vertical-align: top;">
+                        #PO_NUMBER#
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-family: arial;font-size: 12px;text-align: left;color: #555;padding: 4px 0;vertical-align: top;">Sales Rep</td>
+                        <td style="background-color: #fff;border-bottom: 1px solid #ccc;font-family: arial;font-size: 12px;text-align: left;color: #555;padding: 4px 0;vertical-align: top;">
+                        #SALES_REPS#
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+            <br />
+            </td>
+        </tr>
+        <tr class="responsiveRow">
+            <td class="responsiveCell" style="width: 50%; font-family: arial; font-size: 12px; text-align: left; color: #555; padding: 0 5px 0 0; vertical-align: top;">
+            <div style="box-sizing: border-box; width: 100%; padding: 5px; font-size: 16px; line-height: 16px; background-color: #f1f1f1;">
+            bill-to
+            </div>
+            <div style="box-sizing: border-box; width: 100%; padding: 5px; line-height: 20px;margin-bottom:15px;">
+            <strong>
+            #BILLTO_NAME#
+            </strong>
+            <br />
+            #BILLTO_ADDRESS#
+            <br />
+            Account No:
+            #BILLTO_ID#
+            </div>
+            </td>
+            <td class="responsiveCell" style="width: 50%; font-family: arial; font-size: 12px; text-align: left; color: #555; padding: 0 0 0 5px; vertical-align: top;">
+            <div style="box-sizing: border-box; width: 100%; padding: 5px; font-size: 16px; line-height: 16px; background-color: #f1f1f1;">
+            advertiser
+            </div>
+            <div style="box-sizing: border-box; width: 100%; padding: 5px; line-height: 20px;margin-bottom:15px;">
+            <strong>
+            #ADVERTISER_NAME#
+            </strong>
+            <br />
+            #ADVERTISER_ADDRESS#
+            <br />
+            Account No:
+            #ADVERTISER_ID#
+            </div>
+            </td>
+        </tr>
+        <tr class="responsiveRow">
+            <td class="responsiveCell" style="width: 50%; font-family: arial; font-size: 12px; text-align: left; color: #555; padding: 5px; vertical-align: top;">
+            <div style="background-color: #008DA5; color: #fff; box-sizing: border-box; width: 100%; padding: 5px; font-size: 16px; line-height: 16px;">
+            campaign summary
+            </div>
+            <div style="box-sizing: border-box; width: 100%; padding: 5px; line-height: 20px;">
+            <table class="subHeader" style="width: 100%;">
+                <tbody>
+                    <tr>
+                        <td style="width: 125px; font-family: arial; font-size: 12px; text-align: left; color: #555; padding: 4px 0; vertical-align: top;">
+                        Description
+                        </td>
+                        <td style="background-color: #fff;border-bottom: 1px solid #ccc;font-family: arial;font-size: 12px;text-align: left;color: #555;padding: 4px 0;vertical-align: top;">
+                        #DESCRIPTION#
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-family: arial; font-size: 12px; text-align: left; color: #555; padding: 4px 0; vertical-align: top;">
+                        Start Date
+                        </td>
+                        <td style="background-color: #fff;border-bottom: 1px solid #ccc;font-family: arial;font-size: 12px;text-align: left;color: #555;padding: 4px 0;vertical-align: top;">
+                        #START_DATE#
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-family: arial; font-size: 12px; text-align: left; color: #555; padding: 4px 0; vertical-align: top;">
+                        End Date
+                        </td>
+                        <td style="background-color: #fff;border-bottom: 1px solid #ccc;font-family: arial;font-size: 12px;text-align: left;color: #555;padding: 4px 0;vertical-align: top;">
+                        #END_DATE#
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-family: arial; font-size: 12px; text-align: left; color: #555; padding: 4px 0; vertical-align: top;">
+                        Currency
+                        </td>
+                        <td style="background-color: #fff;border-bottom: 1px solid #ccc;font-family: arial;font-size: 12px;text-align: left;color: #555;padding: 4px 0;vertical-align: top;">
+                        #CURRENCY_NAME#
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+            </td>
+            <td class="responsiveCell" style="width: 50%;text-align: left;vertical-align: top;padding: 5px;font-family: arial;font-size: 12px;color: #555;">
+            <div style="background-color: #008DA5; color: #fff; box-sizing: border-box; width: 100%; padding: 5px; font-size: 16px; line-height: 16px;">
+            cost summary
+            </div>
+            <div style="box-sizing: border-box; width: 100%; padding: 5px; line-height: 20px;">
+            <table class="subHeader" style="width: 100%;">
+                <tbody>
+                    <tr>
+                        <td style="font-family: arial; font-size: 12px; text-align: left; color: #555; padding: 4px 0; vertical-align: top;">
+                        Gross Amount
+                        </td>
+                        <td style="background-color: #fff;border-bottom: 1px solid #ccc;font-family: arial;font-size: 12px;text-align: right;color: #555;padding: 4px 0;vertical-align: top;">
+                        #S##CAMPAIGN_TOTAL#
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-family: arial; font-size: 12px; text-align: left; color: #555; padding: 4px 0; vertical-align: top;">
+                        Agency Commission
+                        </td>
+                        <td style="background-color: #fff;border-bottom: 1px solid #ccc;font-family: arial;font-size: 12px;text-align: right;color: #555;padding: 4px 0;vertical-align: top;">
+                        #S##AGENCY_COMMISSION#
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-family: arial; font-size: 12px; text-align: left; color: #555; padding: 4px 0; vertical-align: top;">
+                        Net Amount
+                        </td>
+                        <td style="background-color: #fff;border-bottom: 1px solid #ccc;font-family: arial;font-size: 12px;text-align: right;color: #555;padding: 4px 0;vertical-align: top;">
+                        #S##NET_TOTAL#
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-family: arial; font-size: 12px; text-align: left; color: #555; padding: 4px 0; vertical-align: top;">
+                        Estimated Tax
+                        </td>
+                        <td style="background-color: #fff;border-bottom: 1px solid #ccc;font-family: arial;font-size: 12px;text-align: right;color: #555;padding: 4px 0;vertical-align: top;">
+                        #S##TAX_AMOUNT#
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-family: arial; font-size: 14px; text-align: left; color: #555; padding: 4px 0; vertical-align: top;">
+                        <strong>Total</strong>
+                        </td>
+                        <td style="background-color: #fff;border-bottom: 1px solid #ccc;font-family: arial;font-size: 14px;text-align: right;color: #555;padding: 4px 0;vertical-align: top;">
+                        <strong>#S##TOTAL_WITH_TAX#</strong>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<br />
+<!-- #CONTENT_START# -->
+<div style="text-align: left; font-family: arial; background-color: #008DA5; color: #fff; box-sizing: border-box; width: 100%; padding: 5px; font-size: 16px; line-height: 16px;">
+audience breakdown
+</div>
+<div style="width:100%; padding: 10px; border:1px solid #ccc; border-top-color: #f1f1f1; box-sizing:border-box; overflow-x: hidden;">
+#CONTENT#
+</div>
+<br />
+<!-- #CONTENT_END# -->
+<!-- #BILLING_SCHEDULE_START# -->
+<!-- #HEADER_START# -->
+<div style="text-align: left; font-family: arial; background-color: #008DA5; color: #fff; box-sizing: border-box; width: 100%; padding: 5px; font-size: 16px; line-height: 16px;">
+billing schedule
+</div>
+<table class="manualDataTable" style="width: 100%;border-collapse: collapse;border: 1px solid #ccc;">
+    <thead>
+        <tr>
+            <th style="font-family: arial;width: 75px;font-size: 11px;text-align: left;color: #555;font-weight: normal;background-color: #f5f5f5;border: 1px solid #ccc;vertical-align: middle;padding: 8px;">
+            Billing Date
+            </th>
+            <th style="font-family: arial;font-size: 11px;text-align: left;color: #555;font-weight: normal;background-color: #f5f5f5;border: 1px solid #ccc;vertical-align: middle;padding: 8px;">
+            Description
+            </th>
+            <th style="font-family: arial;width: 75px;font-size: 11px;text-align: left;color: #555;font-weight: normal;background-color: #f5f5f5;border: 1px solid #ccc;vertical-align: middle;padding: 8px;">
+            Invoice ID
+            </th>
+            <th style="text-align: right;width: 100px;font-family: arial;font-size: 11px;color: #555;font-weight: normal;background-color: #f5f5f5;border: 1px solid #ccc;vertical-align: middle;padding: 8px;">
+            Amount
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- #HEADER_END# -->
+        <!-- #ITEM_START# -->
+        <tr>
+            <td data-title="Date" style="font-family: arial;font-size: 11px;text-align: left;color: #555;vertical-align: middle;padding: 8px;">
+            #DATE#
+            </td>
+            <td data-title="Description" style="font-family: arial;font-size: 11px;text-align: left;color: #555;vertical-align: middle;padding: 8px;">
+            #DESCRIPTION#
+            </td>
+            <td data-title="Invoice ID" style="font-family: arial;font-size: 11px;text-align: left;color: #555;vertical-align: middle;padding: 8px;">
+            #INVOICE_ID#
+            </td>
+            <td data-title="Amount" style="text-align: right;font-family: arial;font-size: 11px;color: #555;vertical-align: middle;padding: 8px;">
+            #AMOUNT#
+            </td>
+        </tr>
+        <!-- #ITEM_END# -->
+        <!-- #NO_ITEMS_START# -->
+        <tr class="noItems">
+            <td colspan="4" style="text-align: left;font-family: arial;font-size: 11px;color: #555;vertical-align: middle;padding: 8px;">
+            -- Billing schedule to come --
+            </td>
+        </tr>
+        <!-- #NO_ITEMS_END# -->
+        <!-- #FOOTER_START# -->
+    </tbody>
+</table>
+<br />
+<!-- #FOOTER_END# -->
+<!-- #BILLING_SCHEDULE_END# -->
+<!-- #LINES_PRINT_START# -->
+<!-- #HEADER_START# -->
+<div style="text-align: left; font-family: arial; background-color: #008DA5; color: #fff; box-sizing: border-box; width: 100%; padding: 5px; font-size: 16px; line-height: 16px;">
+print lines
+</div>
+<table class="manualDataTable" style="width: 100%;border-collapse: collapse;border: 1px solid #ccc;">
+    <thead>
+        <tr>
+            <th style="font-family: arial;font-size: 11px;color: #555;font-weight: normal;background-color: #f5f5f5;border: 1px solid #ccc;vertical-align: middle;padding: 8px;">
+            Line No.
+            </th>
+            <th style="font-family: arial;font-size: 11px;color: #555;font-weight: normal;background-color: #f5f5f5;border: 1px solid #ccc;vertical-align: middle;padding: 8px;">
+            Product
+            </th>
+            <th style="font-family: arial;font-size: 11px;color: #555;font-weight: normal;background-color: #f5f5f5;border: 1px solid #ccc;vertical-align: middle;padding: 8px;">
+            Description
+            </th>
+            <th style="font-family: arial;font-size: 11px;color: #555;font-weight: normal;background-color: #f5f5f5;border: 1px solid #ccc;vertical-align: middle;padding: 8px;">
+            Issue / Run Date
+            </th>
+            <th style="font-family: arial;font-size: 11px;color: #555;font-weight: normal;background-color: #f5f5f5;border: 1px solid #ccc;vertical-align: middle;padding: 8px;">
+            # of Insertions
+            </th>
+            <th style="text-align: right;width: 75px;font-family: arial;font-size: 11px;color: #555;font-weight: normal;background-color: #f5f5f5;border: 1px solid #ccc;vertical-align: middle;padding: 8px;">Size&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</th>
+            <th style="text-align: right;width: 100px;font-family: arial;font-size: 11px;color: #555;font-weight: normal;background-color: #f5f5f5;border: 1px solid #ccc;vertical-align: middle;padding: 8px;">Initial Rate
+            </th>
+            <th style="text-align: right;width: 100px;font-family: arial;font-size: 11px;color: #555;font-weight: normal;background-color: #f5f5f5;border: 1px solid #ccc;vertical-align: middle;padding: 8px;">
+            Adjusted Rate
+            </th>
+            <th style="text-align: right;width: 100px;font-family: arial;font-size: 11px;color: #555;font-weight: normal;background-color: #f5f5f5;border: 1px solid #ccc;vertical-align: middle;padding: 8px;">
+            Amount
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- #HEADER_END# -->
+        <!-- #ITEM_START# -->
+        <tr>
+            <td data-title="Line No." style="font-family: arial;font-size: 11px;color: #555;vertical-align: middle;padding: 8px;">
+            #LINE_ID#
+            </td>
+            <td data-title="Product" style="font-family: arial;font-size: 11px;color: #555;vertical-align: middle;padding: 8px;">#WEBSITE_NAME# &nbsp;            </td>
+            <td data-title="Description" style="font-family: arial;font-size: 11px;color: #555;vertical-align: middle;padding: 8px;">
+            #LINE_DESC#
+            </td>
+            <td data-title="Start" style="font-family: arial;font-size: 11px;color: #555;vertical-align: middle;padding: 8px;">
+            #START_DATE# - #END_DATE#</td>
+            <td data-title="Start" style="font-family: arial; font-size: 11px; color: #555555; padding: 8px; text-align: center;">
+            #INS_QTY#</td>
+            <td data-title="Quantity" style="text-align: center; font-family: arial; font-size: 11px; color: #555555; padding: 8px;">
+            #SIZE_ID#&nbsp;            </td>
+            <td data-title="Rate" style="text-align: right;font-family: arial;font-size: 11px;color: #555;vertical-align: middle;padding: 8px;">
+            #RATE_2#
+            </td>
+            <td data-title="Rate" style="text-align: right;font-family: arial;font-size: 11px;color: #555;vertical-align: middle;padding: 8px;">
+            #BASE_RATE_2#&nbsp;            </td>
+            <td data-title="Amount" style="text-align: right;font-family: arial;font-size: 11px;color: #555;vertical-align: middle;padding: 8px;">
+            #EST_AMOUNT#
+            </td>
+        </tr>
+        <!-- #ADJUSTMENTS_START# -->
+        <!-- #ITEM_START# -->
+        <tr style="background-color: #ddd; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc;">
+            <td style="font-family: arial;font-size: 9px;color: #555;vertical-align: middle;padding: 4px;">
+            </td>
+            <td style="font-family: arial;font-size: 9px;color: #777;vertical-align: middle;padding: 4px;">
+            --- TOTAL ADJUSTMENT ---
+            </td>
+            <td data-title="Adj Description" colspan="4" style="font-family: arial;font-size: 9px;text-align: right;color: #555;vertical-align: middle;padding: 4px;">
+            <span style="text-decoration: underline;">#NAME#</span>
+            </td>
+            <td data-title="Adj Amount" style="font-family: arial;font-size: 9px;text-align: right;color: #555;vertical-align: middle;padding: 4px;">
+            <span style="text-decoration: underline;">#TOTAL#</span>
+            </td>
+            <td colspan="2" style="font-family: arial;font-size: 9px;color: #555;vertical-align: middle;padding: 4px;">
+            </td>
+        </tr>
+        <!-- #ITEM_END# -->
+        <!-- #ADJUSTMENTS_END# -->
+        <!-- #MATERIAL_START# -->
+        <!-- #IMAGE_START# -->
+        <tr>
+            <td colspan="9" style="text-align: center;">
+            <img alt="" src="#IMAGE_URL#" style="max-height: 300px; max-width: 300px; padding: 10px;" />
+            </td>
+        </tr>
+        <!-- #IMAGE_END# -->
+        <!-- #NO_IMAGE_START# -->
+        <!-- #NO_IMAGE_END# -->
+        <!-- #MATERIAL_END# -->
+        <!-- #ITEM_END# -->
+        <!-- #NO_ITEMS_START# -->
+        <tr class="noItems">
+            <td colspan="9" style="text-align: left;font-family: arial;font-size: 11px;color: #555;vertical-align: middle;padding: 8px;">
+            -- No Line Items --
+            </td>
+        </tr>
+        <!-- #NO_ITEMS_END# -->
+        <!-- #FOOTER_START# -->
+    </tbody>
+</table>
+<br />
+<!-- #FOOTER_END# -->
+<!-- #LINES_PRINT_END# -->
+<!-- #LINES_DIGITAL_START# -->
+<!-- #HEADER_START# -->
+<div style="text-align: left; font-family: arial; background-color: #008DA5; color: #fff; box-sizing: border-box; width: 100%; padding: 5px; font-size: 16px; line-height: 16px;">
+digital lines
+</div>
+<table class="manualDataTable" style="width: 100%;border-collapse: collapse;border: 1px solid #ccc;">
+    <thead>
+        <tr>
+            <th style="font-family: arial;font-size: 11px;color: #555;font-weight: normal;background-color: #f5f5f5;border: 1px solid #ccc;vertical-align: middle;padding: 8px;">
+            Line No.
+            </th>
+            <th style="font-family: arial;font-size: 11px;color: #555;font-weight: normal;background-color: #f5f5f5;border: 1px solid #ccc;vertical-align: middle;padding: 8px;">
+            Product
+            </th>
+            <th style="font-family: arial;font-size: 11px;color: #555;font-weight: normal;background-color: #f5f5f5;border: 1px solid #ccc;vertical-align: middle;padding: 8px;">
+            Description
+            </th>
+            <th style="font-family: arial;font-size: 11px;color: #555;font-weight: normal;background-color: #f5f5f5;border: 1px solid #ccc;vertical-align: middle;padding: 8px;">
+            Start
+            </th>
+            <th style="font-family: arial;font-size: 11px;color: #555;font-weight: normal;background-color: #f5f5f5;border: 1px solid #ccc;vertical-align: middle;padding: 8px;">
+            End
+            </th>
+            <th style="text-align: right;width: 75px;font-family: arial;font-size: 11px;color: #555;font-weight: normal;background-color: #f5f5f5;border: 1px solid #ccc;vertical-align: middle;padding: 8px;">
+            Quantity
+            </th>
+            <th style="text-align: right;width: 100px;font-family: arial;font-size: 11px;color: #555;font-weight: normal;background-color: #f5f5f5;border: 1px solid #ccc;vertical-align: middle;padding: 8px;">
+            Rate
+            </th>
+            <th style="text-align: right;width: 100px;font-family: arial;font-size: 11px;color: #555;font-weight: normal;background-color: #f5f5f5;border: 1px solid #ccc;vertical-align: middle;padding: 8px;">
+            Amount
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- #HEADER_END# -->
+        <!-- #ITEM_START# -->
+        <tr>
+            <td data-title="Line No." style="font-family: arial;font-size: 11px;color: #555;vertical-align: middle;padding: 8px;">
+            #LINE_ID#
+            </td>
+            <td data-title="Product" style="font-family: arial;font-size: 11px;color: #555;vertical-align: middle;padding: 8px;">#WEBSITE_NAME# <a href="#PROD_URL#" target="_blank">(production specs)</a>
+            </td>
+            <td data-title="Description" style="font-family: arial;font-size: 11px;color: #555;vertical-align: middle;padding: 8px;">
+            #LINE_DESC#
+            </td>
+            <td data-title="Start" style="font-family: arial;font-size: 11px;color: #555;vertical-align: middle;padding: 8px;">
+            #START_DATE#
+            </td>
+            <td data-title="End" style="font-family: arial;font-size: 11px;color: #555;vertical-align: middle;padding: 8px;">
+            #END_DATE#
+            </td>
+            <td data-title="Quantity" style="text-align: right;font-family: arial;font-size: 11px;color: #555;vertical-align: middle;padding: 8px;">
+            #EST_QTY#
+            </td>
+            <td data-title="Rate" style="text-align: right;font-family: arial;font-size: 11px;color: #555;vertical-align: middle;padding: 8px;">
+            #RATE_2#
+            </td>
+            <td data-title="Amount" style="text-align: right;font-family: arial;font-size: 11px;color: #555;vertical-align: middle;padding: 8px;">
+            #EST_AMOUNT#
+            </td>
+        </tr>
+        <!-- #ADJUSTMENTS_START# -->
+        <!-- #ITEM_START# -->
+        <tr style="background-color: #ddd; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc;">
+            <td colspan="5" style="font-family: arial;font-size: 9px;text-align: right;color: #555;vertical-align: middle;padding: 4px;">
+            <span style="text-decoration: underline;">#NAME#</span>
+            </td>
+            <td data-title="TOTAL" style="font-family: arial;font-size: 9px;text-align: right;color: #555;vertical-align: middle;padding: 4px;">
+            <span style="text-decoration: underline;">#TOTAL#</span>
+            </td>
+            <td colspan="2" style="font-family: arial;font-size: 9px;color: #555;vertical-align: middle;padding: 4px;">
+            </td>
+        </tr>
+        <!-- #ITEM_END# -->
+        <!-- #ADJUSTMENTS_END# -->
+        <!-- #ITEM_END# -->
+        <!-- #NO_ITEMS_START# -->
+        <tr class="noItems">
+            <td colspan="8" style=";font-family: arial;font-size: 11px;color: #555;vertical-align: middle;padding: 8px;">
+            -- No Line Items --
+            </td>
+        </tr>
+        <!-- #NO_ITEMS_END# -->
+        <!-- #FOOTER_START# -->
+    </tbody>
+</table>
+<br />
+<!-- #FOOTER_END# -->
+<!-- #LINES_DIGITAL_END# -->
+<!-- #LINES_START# -->
+<!-- #HEADER_START# -->
+<div style="text-align: left; font-family: arial; background-color: #008DA5; color: #fff; box-sizing: border-box; width: 100%; padding: 5px; font-size: 16px; line-height: 16px;">
+other lines
+</div>
+<table class="manualDataTable" style="width: 100%;border-collapse: collapse;border: 1px solid #ccc;">
+    <thead>
+        <tr>
+            <th style="font-family: arial;font-size: 11px;color: #555;font-weight: normal;background-color: #f5f5f5;border: 1px solid #ccc;vertical-align: middle;padding: 8px;">
+            Line No.
+            </th>
+            <th style="font-family: arial;font-size: 11px;color: #555;font-weight: normal;background-color: #f5f5f5;border: 1px solid #ccc;vertical-align: middle;padding: 8px;">
+            Product
+            </th>
+            <th style="font-family: arial;font-size: 11px;color: #555;font-weight: normal;background-color: #f5f5f5;border: 1px solid #ccc;vertical-align: middle;padding: 8px;">
+            Description
+            </th>
+            <th style="font-family: arial;font-size: 11px;color: #555;font-weight: normal;background-color: #f5f5f5;border: 1px solid #ccc;vertical-align: middle;padding: 8px;">
+            Start
+            </th>
+            <th style="font-family: arial;font-size: 11px;color: #555;font-weight: normal;background-color: #f5f5f5;border: 1px solid #ccc;vertical-align: middle;padding: 8px;">
+            End
+            </th>
+            <th style="text-align: right;width: 75px;font-family: arial;font-size: 11px;color: #555;font-weight: normal;background-color: #f5f5f5;border: 1px solid #ccc;vertical-align: middle;padding: 8px;">
+            Quantity
+            </th>
+            <th style="text-align: right;width: 100px;font-family: arial;font-size: 11px;color: #555;font-weight: normal;background-color: #f5f5f5;border: 1px solid #ccc;vertical-align: middle;padding: 8px;">
+            Rate
+            </th>
+            <th style="text-align: right;width: 100px;font-family: arial;font-size: 11px;color: #555;font-weight: normal;background-color: #f5f5f5;border: 1px solid #ccc;vertical-align: middle;padding: 8px;">
+            Amount
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- #HEADER_END# -->
+        <!-- #ITEM_START# -->
+        <tr>
+            <td data-title="Line No." style="font-family: arial;font-size: 11px;color: #555;vertical-align: middle;padding: 8px;">
+            #LINE_ID#
+            </td>
+            <td data-title="Product" style="font-family: arial;font-size: 11px;color: #555;vertical-align: middle;padding: 8px;">#WEBSITE_NAME# &nbsp;            </td>
+            <td data-title="Description" style="font-family: arial;font-size: 11px;color: #555;vertical-align: middle;padding: 8px;">
+            #LINE_DESC#
+            </td>
+            <td data-title="Start" style="font-family: arial;font-size: 11px;color: #555;vertical-align: middle;padding: 8px;">
+            #START_DATE#
+            </td>
+            <td data-title="End" style="font-family: arial;font-size: 11px;color: #555;vertical-align: middle;padding: 8px;">
+            #END_DATE#
+            </td>
+            <td data-title="Quantity" style="text-align: right;font-family: arial;font-size: 11px;color: #555;vertical-align: middle;padding: 8px;">
+            #EST_QTY#
+            </td>
+            <td data-title="Rate" style="text-align: right;font-family: arial;font-size: 11px;color: #555;vertical-align: middle;padding: 8px;">
+            #RATE_2#
+            </td>
+            <td data-title="Amount" style="text-align: right;font-family: arial;font-size: 11px;color: #555;vertical-align: middle;padding: 8px;">
+            #EST_AMOUNT#
+            </td>
+        </tr>
+        <!-- #ADJUSTMENTS_START# -->
+        <!-- #ITEM_START# -->
+        <tr style="background-color: #ddd; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc;">
+            <td colspan="5" style="font-family: arial;font-size: 9px;text-align: right;color: #555;vertical-align: middle;padding: 4px;">
+            <span style="text-decoration: underline;">#NAME#</span>
+            </td>
+            <td data-title="TOTAL" style="font-family: arial;font-size: 9px;text-align: right;color: #555;vertical-align: middle;padding: 4px;">
+            <span style="text-decoration: underline;">#TOTAL#</span>
+            </td>
+            <td colspan="2" style="font-family: arial;font-size: 9px;color: #555;vertical-align: middle;padding: 4px;">
+            </td>
+        </tr>
+        <!-- #ITEM_END# -->
+        <!-- #ADJUSTMENTS_END# -->
+        <!-- #ITEM_END# -->
+        <!-- #NO_ITEMS_START# -->
+        <tr class="noItems">
+            <td colspan="8" style="font-family: arial;font-size: 11px;color: #555;vertical-align: middle;padding: 8px;">
+            -- No Line Items --
+            </td>
+        </tr>
+        <!-- #NO_ITEMS_END# -->
+        <!-- #FOOTER_START# -->
+    </tbody>
+</table>
+<br />
+<!-- #FOOTER_END# -->
+<!-- #LINES_END# -->
+<!-- #EXHIBITION_DETAIL_TEMPLATE_START# -->
+<div style="text-align: left; font-family: arial; background-color: #008DA5; color: #fff; box-sizing: border-box; width: 100%; padding: 5px; font-size: 16px; line-height: 16px;">
+exhibition space
+</div>
+<table class="manualDataTable" style="width: 100%;border-collapse: collapse;border: 1px solid #ccc;">
+    <thead>
+        <tr>
+            <th style="font-family: arial;font-size: 11px;color: #000;background-color: #f5f5f5;font-weight: normal;padding: 2px 3px;vertical-align: bottom;line-height: 18px;">
+            Show
+            </th>
+            <th style="font-family: arial;font-size: 11px;color: #000;background-color: #f5f5f5;font-weight: normal;padding: 2px 3px;vertical-align: bottom;line-height: 18px;">
+            Hall
+            </th>
+            <th style="font-family: arial;font-size: 11px;color: #000;background-color: #f5f5f5;font-weight: normal;padding: 2px 3px;vertical-align: bottom;line-height: 18px;">
+            Date
+            </th>
+            <th style="font-family: arial;font-size: 11px;color: #000;background-color: #f5f5f5;font-weight: normal;padding: 2px 3px;vertical-align: bottom;line-height: 18px;">
+            Booth No.
+            </th>
+            <th style="font-family: arial;font-size: 11px;color: #000;background-color: #f5f5f5;font-weight: normal;padding: 2px 3px;vertical-align: bottom;line-height: 18px;">
+            Description
+            </th>
+            <th style="text-align: right;font-family: arial;font-size: 11px;color: #000;background-color: #f5f5f5;font-weight: normal;padding: 2px 3px;vertical-align: bottom;line-height: 18px;">
+            Total
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- #EXHIBITION_DETAIL_LINE_START# -->
+        <tr>
+            <td style="font-family: arial;font-size: 11px;color: #555;padding: 8px;vertical-align: middle;">#SHOW_NAME#</td>
+            <td style="font-family: arial;font-size: 11px;color: #555;padding: 8px;vertical-align: middle;">#HALL#</td>
+            <td style="font-family: arial;font-size: 11px;color: #555;padding: 8px;vertical-align: middle;">#SHOW_DATE#</td>
+            <td style="font-family: arial;font-size: 11px;color: #555;padding: 8px;vertical-align: middle;">#BOOTH_NO#</td>
+            <td style="font-family: arial;font-size: 11px;color: #555;padding: 8px;vertical-align: middle;">#DESCRIPTION#</td>
+            <td style="text-align: right;font-family: arial;font-size: 11px;color: #555;padding: 8px;vertical-align: middle;">#NET_TOTAL#</td>
+        </tr>
+        <!-- #EXHIBITION_DETAIL_LINE_END# -->
+    </tbody>
+</table>
+<!-- #EXHIBITION_DETAIL_TEMPLATE_END# -->
+<p style="font-family: arial;font-size: .7em;text-align: left;color: #555;line-height: 16px;">
+Advertiser agrees to honor its advertising commitment as set forth in this contract and any applicable insertion order.
+In the event advertiser does not honor its full advertising commitment as contained in this contract and any applicable insertion order, Naviga reserves the right to (i) shortrate or charge the advertiser the undiscounted rate for those advertisements and (ii) renege on any commitments or incentives made in reliance on the Advertiser's full advertising commitment as set forth in this contract and any applicable insertion order.
+Naviga Global further reserves its right to enforce its rights under this contract and any applicable insertion order.
+</p>
+<p style="font-family: arial;font-size: .7em;text-align: left;color: #555;line-height: 16px;">
+This insertion order is subject to and governed by Naviga's standard Advertising Terms &amp; Conditions, which are available at<br />
+<a href="https://dem-pdftest.newscyclecloud.com/pdftest/Advertising_Terms_and_Conditions_Naviga.html" target="_blank">http://navigaglobal.com/adv_terms/</a>
+</p>
+<p style="font-size: 14px;font-family: arial;text-align: left;color: #555;line-height: 18px;">
+<strong>I have read and understood this Agreement. By clicking "I accept" below I represent that I have the authority to bind the entity named above and accept the terms of the agreement.</strong>
+</p>
+</div>

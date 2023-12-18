@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demo Portal Email</title>
+        <style type="text/css">
+            body, p, td
+            {
+            font-family: arial;
+            font-size: 9pt;
+            line-height: 150%;
+            }
+            #page
+            {
+            margin: 10px auto;
+            width: 85%;
+            max-width: 800px;
+            min-width: 600px;
+            }
+            .formTitle
+            {
+            font-size: 150%;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            }
+            .headerArea
+            {
+            background-color: bisque;
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border-top: 2px solid #333;
+            border-bottom: 2px solid #333;
+            }
+            .sectionBreak
+            {
+            margin-top: 10px;
+            margin-bottom: 0;
+            border-bottom: 3px solid #333;
+            text-transform: uppercase;
+            width: 100%;
+            padding: 2px 0;
+            box-sizing: border-box;
+            font-weight: bold
+            }
+            .entryTable td
+            {
+            padding: 5px 0 0 0;
+            vertical-align: bottom
+            }
+            .entryTable td:first-child
+            {
+            text-align: right;
+            padding-right: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="page">
+        <div class="formTitle">Facebook Ads</div>
+        <div class="headerArea">
+        <table style="width: 100%;">
+            <tbody>
+                <tr>
+                    <td style="width: 50%; vertical-align: top; padding-right:0;">
+                    <table style="width:100%;" class="entryTable">
+                        <tbody>
+                            <tr>
+                                <td style="width: 50%;">
+                                Today's Date
+                                </td>
+                                <td style="border-bottom: 1px solid #666;">
+                                #_TODAY#
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                Marketing Consultant
+                                </td>
+                                <td style="border-bottom: 1px solid #666;">
+                                #CONSULTANT#
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                Publisher's Market
+                                </td>
+                                <td style="border-bottom: 1px solid #666;">
+                                #MARKET#
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                Campaign ID / Line ID
+                                </td>
+                                <td style="border-bottom: 1px solid #666;">
+                                #_CAMPAIGN_ID# / #_LINE_ID#
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                Tru Measure XVID
+                                </td>
+                                <td style="border-bottom: 1px solid #666;">
+                                #TRU_MEASURE#
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </td>
+                    <td style="vertical-align: top; padding-left: 0;">
+                    <table style="width:100%;" class="entryTable">
+                        <tbody>
+                            <tr>
+                                <td style="width: 50%;">
+                                Advertiser Name
+                                </td>
+                                <td style="border-bottom: 1px solid #666;">
+                                #_ADVERTISER_NAME#
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                CSS Name
+                                </td>
+                                <td style="border-bottom: 1px solid #666;">
+                                #CSS#
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <div class="sectionBreak">Ad Copy</div>
+        <table style="width:100%;" class="entryTable">
+            <tbody>
+                <tr>
+                    <td style="width: 25%;">
+                    Headline
+                    </td>
+                    <td style="border-bottom: 1px solid #666;">
+                    #HEADLINE#
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    Body Text
+                    </td>
+                    <td style="border-bottom: 1px solid #666;">
+                    #BODY#
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    Link Description
+                    </td>
+                    <td style="border-bottom: 1px solid #666;">
+                    #LINK_DESC#
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    Call To Action
+                    </td>
+                    <td style="border-bottom: 1px solid #666;">
+                    #CALL_TO_ACTION#
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    Click Thru URL
+                    </td>
+                    <td style="border-bottom: 1px solid #666;">
+                    #URL#
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    Link to Image
+                    <div style="font-size: 80%;">(ideal image size is 1200x628)</div>
+                    </td>
+                    <td style="border-bottom: 1px solid #666;">
+                    #IMAGE_URL#
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    Creative Format
+                    </td>
+                    <td style="border-bottom: 1px solid #666;">
+                    #CREATIVE_FORMAT#
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="sectionBreak">Contract Summary</div>
+        <table style="width:100%;" class="entryTable">
+            <tbody>
+                <tr>
+                    <td style="width: 25%;">
+                    Line Start Date
+                    </td>
+                    <td style="border-bottom: 1px solid #666;">
+                    #_LINE_START#
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    Line End Date
+                    </td>
+                    <td style="border-bottom: 1px solid #666;">
+                    #_LINE_END#
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    Impression Target
+                    <div style="font-size: 80%;">(optional)</div>
+                    </td>
+                    <td style="border-bottom: 1px solid #666;">
+                    #_LINE_QTY#
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    Media Spend
+                    <div style="font-size: 80%;">(DCS Use)</div>
+                    </td>
+                    <td style="border-bottom: 1px solid #666;">
+                    #_LINE_AMOUNT#
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    Media CPM
+                    <div style="font-size: 80%;">(DCS Use)</div>
+                    </td>
+                    <td style="border-bottom: 1px solid #666;">
+                    #_LINE_RATE_5#
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    Optimization for Ad Delivery
+                    </td>
+                    <td style="border-bottom: 1px solid #666;">
+                    #OPTIMIZATION#
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    Advertiser's Facebook Page URL
+                    </td>
+                    <td style="border-bottom: 1px solid #666;">
+                    #ADVERTISERS_FACEBOOK_URL#
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    Notes
+                    </td>
+                    <td style="border-bottom: 1px solid #666;">
+                    #NOTES#
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="sectionBreak">Campaign-Wide Targeting</div>
+        <table style="width:100%;" class="entryTable">
+            <tbody>
+                <tr>
+                    <td style="width: 25%;">
+                    General Target Audience
+                    </td>
+                    <td style="border-bottom: 1px solid #666;">
+                    #TARGET_AUDIENCE#
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    Geo Target
+                    </td>
+                    <td style="border-bottom: 1px solid #666;">
+                    #GEO_TARGET#
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    Required Placement
+                    </td>
+                    <td style="border-bottom: 1px solid #666;">
+                    #REQUIRED_PLACEMENT#
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    Additional Placement
+                    <div style="font-size: 80%;">(DCS Use)</div>
+                    </td>
+                    <td style="border-bottom: 1px solid #666;">
+                    #ADDITIONAL_PLACEMENT#
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    Notes
+                    </td>
+                    <td style="border-bottom: 1px solid #666;">
+                    #TARGET_NOTES#
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="sectionBreak">additional Notes</div>
+        <table style="width:100%;" class="entryTable">
+            <tbody>
+                <tr>
+                    <td style="width: 25%;">
+                    </td>
+                    <td style="border-bottom: 1px solid #666;">
+                    #OTHER_NOTES#
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </body>
+</html>

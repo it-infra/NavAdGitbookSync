@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demo Portal Email</title>
+        <style type="text/css">
+            body, p, td, div, a
+            {
+            font-family: arial;
+            font-size: 9pt;
+            line-height: 150%;
+            }
+            #page#;
+            {
+            margin: 5px auto;
+            width: 85%;
+            max-width: 780px;
+            min-width: 760px;
+            }
+            @media print {
+            td.print_ad {
+            page-break-before: always !important;
+            }
+            .relative {
+            width: 400px;
+            }
+            img {
+            width: 100%;
+            height: auto;
+            }
+            .footer {
+            position: relative;
+            bottom: 0;
+            }
+            @media print {
+            }
+            .nextpage {
+            page-break-before: always;
+            } /* page-break-after works, as well */
+        </style>
+    </head>
+    <body>
+        <div id="page">
+        <div style="width:100%; text-align:left;">
+        &nbsp;        </div>
+        <table style="width: 100%;">
+            <tbody>
+                <tr>
+                    <td style="width: 100%; padding: 10pt; text-align: center; margin: auto;">
+                    <h1><span style="font-size: 20pt; font-family: 'Times New Roman';">The Navigator Times</span></h1>
+                    <p><span style="font-size: 22px; font-family: 'Times New Roman';">&nbsp;</span></p>
+                    <h2><span style="font-family: 'Times New Roman';">STATE OF LOUISIANA PARISH OF ST. TAMMANY</span></h2>
+                    <p><span style="font-family: 'Times New Roman';"><br />
+                    </span></p>
+                    <h2><span style="font-family: 'Times New Roman';">PROOF OF PUBLICATION</span></h2>
+                    <p><span style="font-family: 'Times New Roman';"><br />
+                    </span></p>
+                    <h3 style="font-size: 12pt; text-align: center; width: 50%; margin: auto; line-height: 1.5;"><span style="font-family: 'Times New Roman';">The hereto attached notice was published in The Navigator Times, a weekly newspaper of general circulation within the Parish of St. Tammany, in the following issues:</span><span style="font-family: 'Times New Roman';"></span></h3>
+                    <p><span style="font-size: 20px; font-weight: 700; text-decoration-line: underline; font-family: 'Times New Roman';">&nbsp;#ISSUE_DATES_COMMAS#</span></p>
+                    <table style="width: 50%; margin: auto;">
+                        <tbody>
+                            <tr>
+                                <td style="width: 50%; margin: auto; border-bottom: 1px solid #333; text-align:center;">
+                                &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding-top: 0px; padding-bottom: 30px; text-align: center;">
+                                <p><span style="font-size: 20px; font-family: 'Times New Roman';">Kelly Smith, Public Notices Representative</span></p>
+                                <p><span style="font-size: 20px; font-family: 'Times New Roman';">Sworn and subscribed before me, by the person whose signature appears above</span></p>
+                                <p><span style="white-space: nowrap; font-size: 20px; font-family: 'Times New Roman'; color: #000000;">#AFFIDAVIT_DATE_INTL#</span></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border-bottom: 1px solid #333;">
+                                &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding-top: 0px; padding-bottom: 30px; text-align: center;">
+                                <p><span style="font-size: 20px; font-family: 'Times New Roman';">Wayne Burrows,</span></p>
+                                <p><span style="font-size: 20px; font-family: 'Times New Roman';">Notary Public ID#123456</span></p>
+                                <p><span style="font-size: 20px; font-family: 'Times New Roman';">State of Louisiana</span></p>
+                                <p><span style="font-size: 20px; font-family: 'Times New Roman';">My Commission Expires: Indefinite&nbsp;</span></p>
+                                <p><span style="font-size: 20px; font-family: 'Times New Roman';">&nbsp;</span></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>&nbsp;</p>
+                    <table class="footer">
+                        <tbody>
+                            <tr>
+                                <td>
+                                <div class="relative">
+                                <p style="padding: 10px;">
+                                <span style="white-space: nowrap; float: right;">Ad No: #CAMPAIGN_ID#&nbsp; #SIZE_DESC#&nbsp;</span><br />
+                                <span style="white-space: nowrap; float: left;">#ADVERTISER_NAME#</span><br />
+                                <span style="color: #000000;"><span style="white-space: nowrap; float: left; color: #000000;">#CONTACT_ADDRESS#</span>&nbsp; <br />
+                                &nbsp;</span><span style="white-space: nowrap; float: left; color: #000000;">Customer No: #ADVERTISER_ID#
+                                </span>
+                                </p>
+                                </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div style="page-break-before: always; width: 100%; margin: 5px; text-align: left;">
+                    <img alt="" style="page-break-inside:avoid; vertical-align: top; max-height:#IMAGE_TRUE_HEIGHT#; max-width: #IMAGE_TRUE_WIDTH#; margin:0; display:block;" src="#AD_IMAGE#" />
+                    </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </body>
+</html>
