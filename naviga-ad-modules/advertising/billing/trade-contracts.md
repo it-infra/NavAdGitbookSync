@@ -10,7 +10,7 @@ Users can create trade contracts that are 100% barter offering advertising for a
 
 ## Trade Types Setup <a href="#_toc31186429" id="_toc31186429"></a>
 
-These values must be setup in the system as a prerequisite to the contract. Navigate to the menu Billing -> Trade -> Trade Type Setup.
+These values must be setup in the system as a prerequisite to the contract. Navigate to the menu **Billing -> Trade -> Trade Type Setup.**
 
 Click the New button and enter the ID and description of the trade. This is the payment you’ll receive in return to your advertising service you provide your client.
 
@@ -22,7 +22,7 @@ Choose the one you want to attach to the trade type you created for the company 
 
 ## Trade Contract Setup <a href="#_toc31186430" id="_toc31186430"></a>
 
-Create the contract with the advertiser by navigating to the menu Billing -> Trade -> Trade Contract Setup.
+Create the contract with the advertiser by navigating to the menu **Billing -> Trade -> Trade Contract Setup**.
 
 ![](<../../../.gitbook/assets/2 (51).png>)
 
@@ -62,7 +62,7 @@ If you choose both Client and Trade Type to search, the screen displays both the
 
 ## Available Trade Usage Report <a href="#_toc31186432" id="_toc31186432"></a>
 
-This report provides a list of contracts by client or trade type with usage amounts details. Navigate to the menu Billing -> Trade -> Available Trade Report.
+This report provides a list of contracts by client or trade type with usage amounts details. Navigate to the menu **Billing -> Trade -> Available Trade Report**.
 
 ![](<../../../.gitbook/assets/7 (7).png>)
 
@@ -90,7 +90,7 @@ If you navigate to the menu Billing -> Trade -> List of Trade Contracts and sear
 
 ![](<../../../.gitbook/assets/11 (12).png>)
 
-Navigate to search on the contract under the menu Billing -> Trade -> Trade Contract Setup and note the applied values are reflected in the totals in the header.
+Navigate to search on the contract under the menu **Billing -> Trade -> Trade Contract Setup** and note the applied values are reflected in the totals in the header.
 
 ![](<../../../.gitbook/assets/12 (21).png>)
 
@@ -103,6 +103,8 @@ At any time, you can increase the usage amounts in a contract for the lifetime o
 ![](<../../../.gitbook/assets/13 (5).png>)
 
 Add the trade usage G/L account associated with the added usage by typing a partial ID or text description of the account and choose the accurate one from the list. Choose the financial period to apply the usage, enter the amount of usage and choose the transaction type from the drop-down. This could be a usage or an adjustment of any value to the line. The usage will be subtracted from the line amount. Enter the date used from the calendar pop-up. Then enter an alphanumeric value for the used by field, used for field describing the purpose and then enter the person or persons entertained by this added usage. When finished click Add Line.
+
+Once the trade contract has expired, no additional usage can be added.
 
 ![](<../../../.gitbook/assets/14 (9).png>)
 
