@@ -54,6 +54,10 @@ Navigate to login to the Portal using this individual’s email address and pass
 
 Click the Invoices tab.
 
+{% hint style="warning" %}
+IMPORTANT - if you are using the "Individuals with Portal Access" functionality (set up via Setup -> Portal Setup -> Individuals with Portal Access) - we have temporarily turned off the ability to pay in the portal. This functionality will be brought back in 2024, but it needed to be re-worked to support all the new payment features and wasn't working as expected in 2023 software so it is disabled for the time being to avoid customer confusion. They will still be able to see their invoices and download copies, but they will not be able to pay in the portal.
+{% endhint %}
+
 ![](<../../.gitbook/assets/5 (32).png>)
 
 This individual can now manage the invoices for all the various clients.
