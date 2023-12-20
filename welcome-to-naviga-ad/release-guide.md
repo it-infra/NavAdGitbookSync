@@ -12,7 +12,7 @@ description: >-
 **These are the most important takeaways / impactful changes that you **_**need**_** to pay attention to:**
 
 * There is a new workflow option for Inserts / Preprints.  The older workflow will still be supported, to ease the transition, but we think many of you will want to take advantage of this new workflow. [See below for details](release-guide.md#new-workflow-option-for-inserts-preprints)
-* item 2
+* There are a couple new Group Security Changes in both [Advertising ](release-guide.md#group-security-change)and CRM modules
 
 ## Advertising Module
 
@@ -348,6 +348,14 @@ Fields added to Orders by Product Report: Material Description, Campaign Entry D
 
 <figure><img src="../.gitbook/assets/image (221).png" alt=""><figcaption></figcaption></figure>
 
+## CRM Module
+
+### Group Security Change
+
+New Flag in Opportunities which will allow for a single opportunity to cross multiple product groups, and when the proposal is auto-generated, there will be multiple proposals/campaigns created - split by the primary product group on product setup.
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 ## Accounts Receivable Module
 
 ### List of Imported Payments
@@ -399,9 +407,9 @@ Two new functions are now available in the Advertiser Portal setup.  For any pro
 ***
 
 {% hint style="info" %}
-<img src="../.gitbook/assets/image.png" alt="" data-size="line"> In 2022 we introduced the idea of a Customer Enhancement Portal, where you all get to add feature requests, look at feature requests submitted by others, add comments, and vote on things you would like to see us implement in the system. Items that were voted up in the Enhancement Portal will have this check mark next to the feature in the release guide.
+<img src="../.gitbook/assets/image (7).png" alt="" data-size="line"> In 2022 we introduced the idea of a Customer Enhancement Portal, where you all get to add feature requests, look at feature requests submitted by others, add comments, and vote on things you would like to see us implement in the system. Items that were voted up in the Enhancement Portal will have this check mark next to the feature in the release guide.
 
-<img src="../.gitbook/assets/image (7).png" alt="" data-size="line">  Click on the Video Icon in the heading to be directed to the release video page.  Topics that were included in the release video will display this icon.
+<img src="../.gitbook/assets/image (7) (2).png" alt="" data-size="line">  Click on the Video Icon in the heading to be directed to the release video page.  Topics that were included in the release video will display this icon.
 
 <img src="../.gitbook/assets/image (97).png" alt="" data-size="line"> In 2023 we introduced a new learning subscription program called NavigaYou. Part of that program are some custom development hours. Any new features that were part of someone's NavigaYou will be highlighted as such with this icon. See [WEBINAR ](../videos/naviga-ad-video-library/conferences-and-webinars.md#navigayou)for more info on NavigaYou
 {% endhint %}
