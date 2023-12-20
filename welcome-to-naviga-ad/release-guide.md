@@ -356,6 +356,8 @@ New Flag in Opportunities which will allow for a single opportunity to cross mul
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
+<mark style="background-color:green;">**Need some more details around this one once AD2-6218 is resolved**</mark>
+
 ## Accounts Receivable Module
 
 ### List of Imported Payments
