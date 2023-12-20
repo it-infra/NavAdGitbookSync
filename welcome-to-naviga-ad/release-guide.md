@@ -298,6 +298,88 @@ Client Type is only necessary if you choose to use this feature.
 
 Cost G/L and Cost A/P G/L Code are only required if you choose to put cost information on the campaign lines and have them affect G/L mapping. (This was a new feature in [2023.1](https://docs.navigaglobal.com/navigaad/v/advertising/welcome-to-naviga-ad/release-guide#\_toc124253160))
 
+### Group Security Change
+
+New flag added to disallow campaign status change from R back to Q.  If you set this option to Yes, it will prevent users in this security group from reverting campaigns in any Reserved status to Quote status manually or through the Bulk Update Process.  You might want to consider setting this to yes if you have integrations with downstream systems that send the ad somewhere else when the order becomes reserved.
+
+<figure><img src="../.gitbook/assets/image (226).png" alt=""><figcaption></figcaption></figure>
+
+
+
+### Fields added to several screens
+
+Advertising Client Type and Prepay Required added to the Client overview screen:
+
+<figure><img src="../.gitbook/assets/image (161).png" alt=""><figcaption></figcaption></figure>
+
+Client Type added to the Invoices & Payments node on a campaign:
+
+<figure><img src="../.gitbook/assets/image (175).png" alt=""><figcaption></figcaption></figure>
+
+Client Type added to popup when changing the advertiser on a campaign (on a campaign, select edit -> change Advertiser to see this popup):
+
+<figure><img src="../.gitbook/assets/image (178).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+If you don't see the option to change the advertiser, remember in 2023.4 this was added to group security so a user must have permission to be able to change the advertiser on a campaign.
+{% endhint %}
+
+Client type (ID and Description) added to the Report **Customers -> Advertiser Listing**
+
+<figure><img src="../.gitbook/assets/image (186).png" alt=""><figcaption></figcaption></figure>
+
+Prepayment Required Flag added to the Account Approval Screen:
+
+<figure><img src="../.gitbook/assets/image (170).png" alt=""><figcaption></figcaption></figure>
+
+Two new columns has been added to the Payments tab on the Accounting screen of the Customer account overview. This will display the Cash on Account reason and any comment entered when applying payments.
+
+<figure><img src="../.gitbook/assets/image (171).png" alt=""><figcaption></figcaption></figure>
+
+Advertising Home screen - Campaign Tab - added Campaign Description to the grid here:
+
+<figure><img src="../.gitbook/assets/image (218).png" alt=""><figcaption></figcaption></figure>
+
+Client Type added to the Agency field dropdown on Brand Detail screen (**Customers -> Brand -> Brand Maintenance**):
+
+<figure><img src="../.gitbook/assets/image (220).png" alt=""><figcaption></figcaption></figure>
+
+Fields added to Orders by Product Report: Material Description, Campaign Entry Date (click on Configure output tab to choose which columns to display):
+
+<figure><img src="../.gitbook/assets/image (221).png" alt=""><figcaption></figcaption></figure>
+
+## Accounts Receivable Module
+
+### List of Imported Payments
+
+Minor makeover on the List of Imported Payments.  Navigate to Payments -> List of Payments -> List of Imported Payments. Note that the Company ID has been added as a new column and there is now a row of filters at the top of the columns.
+
+<figure><img src="../.gitbook/assets/image (173).png" alt=""><figcaption></figcaption></figure>
+
+### Logo for Receipt
+
+Receipt templates can now be setup to include the logo from the bank. &#x20;
+
+To Setup:
+
+1. Add the bank's logo to the Advertising invoice logos
+   * Navigate to **Setup -> System Tables Setup -> Invoice Form Logos**
+   * Enter ID, Description, and upload file
+   * Click + to add to logos and click save.
+2. Link the new logo to the bank setup
+   * Navigate to Setup -> System Tables Setup -> Bank Setup
+   * Select the desired bank
+   * Select the new logo from the logo dropdown\
+     ![](<../.gitbook/assets/image (191).png>)
+3. Add tag #BANK\_LOGO\_URL# (image) and/or #BANK\_NAME# (Name of the Bank) to the receipt template in desired location.\
+   In my sample, I have placed them here:\
+   ![](<../.gitbook/assets/image (210).png>)
+
+Logo will be displayed on the Receipt:\
+
+
+<figure><img src="../.gitbook/assets/image (217).png" alt=""><figcaption></figcaption></figure>
+
 ## Advertiser Portal
 
 ### Mark Inactive/Delete Profiles

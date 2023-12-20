@@ -169,35 +169,35 @@ To show the different user experiences to be expected in the Portal, I will show
 
 1. Fees are not enabled, and the bank is NOT set up for ACH (this method is the behavior that was available in prior releases)
 2. Fees are not enabled, and the bank IS set up for ACH
-3. Fees are enabled, and the bank IS set up for ACH&#x20;
+3. Fees are enabled, and the bank IS set up for ACH
 
 {% hint style="info" %}
-IMPORTANT - IF you are using the Advertiser Portal, AND you are charging credit card fees, you MUST have ACH enabled on your bank.  You cannot charge credit card fees without giving the client the option to pay with their bank account (ACH) without fees.
+IMPORTANT - IF you are using the Advertiser Portal, AND you are charging credit card fees, you MUST have ACH enabled on your bank. You cannot charge credit card fees without giving the client the option to pay with their bank account (ACH) without fees.
 {% endhint %}
 
 ### Pay invoices as a logged in user
 
+{% hint style="warning" %}
+IMPORTANT - if you are using the "Individuals with Portal Access" functionality (set up via Setup -> Portal Setup -> Individuals with Portal Access) - we have temporarily turned off the ability to pay in the portal. This functionality will be brought back in 2024, but it needed to be re-worked to support all the new payment features and wasn't working as expected in 2023 software so it is disabled for the time being to avoid customer confusion. They will still be able to see their invoices and download copies, but they will not be able to pay in the portal.
+{% endhint %}
+
 #### Scenario #1 - No Fees, No ACH
 
-This scenario will be familiar if you are already using the portal since it is the same as how the system behaved in prior releases.  When looking at the Invoices tab, user sees the Aging at the top of the screen and when they click on Show invoice options, the screen will change and user can select which invoices, and how much, they would like to pay.  Demo below walks you through the process (For best results view in full screen by clicking the <img src="../../.gitbook/assets/image (43).png" alt="" data-size="line"> in the top right corner):
+This scenario will be familiar if you are already using the portal since it is the same as how the system behaved in prior releases. When looking at the Invoices tab, user sees the Aging at the top of the screen and when they click on Show invoice options, the screen will change and user can select which invoices, and how much, they would like to pay. Demo below walks you through the process (For best results view in full screen by clicking the <img src="../../.gitbook/assets/image (43).png" alt="" data-size="line"> in the top right corner):
 
 {% embed url="https://app.supademo.com/demo/WeM_knijvrNKNnuGDSt3V" %}
 
 #### Scenario #2- No Fees, with ACH
 
-Same screen as above, but this system has enabled ACH in their Bank processor. (They also added the option to display COA and Pre-payments in the aging, but that is related to portal setup and not relevant to the Fees/ACH discussion).  When User clicks on the Show Invoice payment options button they will first be presented with an option to pay with cash (ACH) or pay with credit (credit/debit card). Demo below walks you through the process for paying with each method.  For best results view in full screen by clicking the <img src="../../.gitbook/assets/image (44).png" alt="" data-size="line"> in the top right corner
+Same screen as above, but this system has enabled ACH in their Bank processor. (They also added the option to display COA and Pre-payments in the aging, but that is related to portal setup and not relevant to the Fees/ACH discussion). When User clicks on the Show Invoice payment options button they will first be presented with an option to pay with cash (ACH) or pay with credit (credit/debit card). Demo below walks you through the process for paying with each method. For best results view in full screen by clicking the <img src="../../.gitbook/assets/image (44).png" alt="" data-size="line"> in the top right corner
 
 {% embed url="https://app.supademo.com/demo/uLhvrwZJDGy6QGSUy5b31" %}
 
 #### Scenario #3 - With Fees, with ACH
 
-Same workflow as above, but this system has enabled Fees in A/R system settings, and has ACH in their Bank processor.  In this workflow, there is no aging totals at the top, because the amounts will differ based on payment method, which might confuse the user.  When User clicks on the Show Invoice payment options button they will first be presented with an option to pay with cash (ACH) or pay with credit (credit/debit card). Demo below walks you through the process for paying with each method.  For best results view in full screen by clicking the <img src="../../.gitbook/assets/image (45).png" alt="" data-size="line"> in the top right corner.
+Same workflow as above, but this system has enabled Fees in A/R system settings, and has ACH in their Bank processor. In this workflow, there is no aging totals at the top, because the amounts will differ based on payment method, which might confuse the user. When User clicks on the Show Invoice payment options button they will first be presented with an option to pay with cash (ACH) or pay with credit (credit/debit card). Demo below walks you through the process for paying with each method. For best results view in full screen by clicking the <img src="../../.gitbook/assets/image (45).png" alt="" data-size="line"> in the top right corner.
 
 {% embed url="https://app.supademo.com/demo/IailGrPprYd4dWK_Xuax-" %}
-
-{% hint style="info" %}
-IMPORTANT - if you are using the "Individuals with Portal Access" functionality (set up via Setup -> Portal Setup -> Individuals with Portal Access) - we have temporarily turned off the ability to pay in the portal.  This functionality will be brought back in 2024, but it needed to be re-worked to support all the new payment features and wasn't working as expected in 2023 software so it is disabled for the time being to avoid customer confusion.  They will still be able to see their invoices and download copies, but they will not be able to pay in the portal.
-{% endhint %}
 
 ### Pay invoices without logging in via a pay link from Naviga Ad User
 
@@ -211,13 +211,13 @@ IMPORTANT - if you are using the "Individuals with Portal Access" functionality 
 
 #### Scenario #3 - With Fees, with ACH
 
-If a customer wishes to pay an invoice without logging in, a system user can send them a pay link from Naviga ad. Demo below walks you through the process for paying invoices with a pay link.  For best results view in full screen by clicking the <img src="../../.gitbook/assets/image (46).png" alt="" data-size="line"> in the top right corner.
+If a customer wishes to pay an invoice without logging in, a system user can send them a pay link from Naviga ad. Demo below walks you through the process for paying invoices with a pay link. For best results view in full screen by clicking the <img src="../../.gitbook/assets/image (46).png" alt="" data-size="line"> in the top right corner.
 
 {% embed url="https://app.supademo.com/demo/4aJw-0XZITznyhXJeyHjq" %}
 
 ### Prepay Campaign via a pay link from Naviga Ad User
 
-As long as the campaign has not started billing, and is no longer a quote, a pay link can be sent from the payments and invoices node on a campaign.  If the campaign is a quote, the user can send the client a proposal with a link to approve the proposal.  Once the proposal has been signed, the user will be offered the option to pay, if the Portal settings allow for prepayment. The three demos below walk you through the process in each of our three scenarios. For best results view in full screen by clicking the <img src="../../.gitbook/assets/image (47).png" alt="" data-size="line"> in the top right corner.
+As long as the campaign has not started billing, and is no longer a quote, a pay link can be sent from the payments and invoices node on a campaign. If the campaign is a quote, the user can send the client a proposal with a link to approve the proposal. Once the proposal has been signed, the user will be offered the option to pay, if the Portal settings allow for prepayment. The three demos below walk you through the process in each of our three scenarios. For best results view in full screen by clicking the <img src="../../.gitbook/assets/image (47).png" alt="" data-size="line"> in the top right corner.
 
 #### Scenario #1 - No Fees, No ACH
 
