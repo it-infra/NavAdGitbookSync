@@ -456,8 +456,6 @@ Two new functions are now available in the Advertiser Portal setup.  For any pro
 
 <figure><img src="../.gitbook/assets/image (154).png" alt=""><figcaption></figcaption></figure>
 
-<mark style="background-color:green;">NEED TO ADD SOME MORE INFO AROUND THE BEHAVIOR OF WHAT THESE DO - AD2-6138</mark>
-
 
 
 ***
