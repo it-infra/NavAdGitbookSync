@@ -64,7 +64,7 @@ When you create a line item for this product you will see this form default in o
 
 <figure><img src="../../../.gitbook/assets/image (1369).png" alt=""><figcaption></figcaption></figure>
 
-## Viewing and Editing From Data <a href="#_toc115263576" id="_toc115263576"></a>
+## Viewing and Editing Form Data <a href="#_toc115263576" id="_toc115263576"></a>
 
 In Order Entry there is a new node in the tree at left called “Campaign Custom Data Forms”. This node is where you can view all lines with an attached form.
 
