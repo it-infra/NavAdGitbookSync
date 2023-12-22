@@ -416,6 +416,10 @@ Note - based on CRM System Settings (**CRM Module -> Setup -> CRM System Setting
 Based on Address Settings on Country Setup (**Ad and A/R Modules -> Setup -> Shared Tables Setup -> Address Setup**), an address may or may not require State and/or Post Codes
 {% endhint %}
 
+If the address and/or phone number is missing, on the Approve Pending Accounts screen the approving user will be stopped from approving accounts if the address is missing:
+
+<figure><img src="../.gitbook/assets/image (232).png" alt=""><figcaption></figcaption></figure>
+
 ### Logo for Receipt
 
 Receipt templates can now be setup to include the logo from the bank. &#x20;
