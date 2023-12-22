@@ -300,11 +300,17 @@ Cost G/L and Cost A/P G/L Code are only required if you choose to put cost infor
 
 ### Group Security Change
 
+#### Disallow campaign status change from R back to Q
+
 New flag added to disallow campaign status change from R back to Q.  If you set this option to Yes, it will prevent users in this security group from reverting campaigns in any Reserved status to Quote status manually or through the Bulk Update Process.  You might want to consider setting this to yes if you have integrations with downstream systems that send the ad somewhere else when the order becomes reserved.
 
 <figure><img src="../.gitbook/assets/image (226).png" alt=""><figcaption></figcaption></figure>
 
+#### Restrict G/L Type in line override to codes on product
 
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+In product setup, G/L Overrides can be assigned to the product which then get used in ratecards and ultimately on line items so that the system knows what G/L to assign during billing.  Group Security dictates if this G/L Type can be overwritten at the line item level.  This new group security controls if ALL G/L Types or only G/L Types used on the product are available to be selected (assuming the user is allowed to override the G/L type assigned by the ratecard line).  If this is set to 'no' AND users are allowed to override the G/L Type on a line, then all G/L Types will be displayed in the dropdown.
 
 ### Fields added to several screens
 
@@ -344,9 +350,25 @@ Client Type added to the Agency field dropdown on Brand Detail screen (**Custome
 
 <figure><img src="../.gitbook/assets/image (220).png" alt=""><figcaption></figcaption></figure>
 
-Fields added to Orders by Product Report: Material Description, Campaign Entry Date (click on Configure output tab to choose which columns to display):
+<img src="../.gitbook/assets/image (7) (2).png" alt="" data-size="line"> Fields added to Orders by Product Report: Material Description, Campaign Entry Date (click on Configure output tab to choose which columns to display):
 
 <figure><img src="../.gitbook/assets/image (221).png" alt=""><figcaption></figcaption></figure>
+
+### Sort order for Classified Categories
+
+In previous releases, user could drag and drop category metadata questions in setup to set the sort order, but parent level questions were always displayed at the top (in whatever sort order was set for the parent), and child questions would be displayed after the parent, in whatever sort was set for the children, and they could not be intermingled at all, and the child questions could not be asked before the parent questions.  That has now been modified and setup users can enter sort codes at the parent (for the parent metadata) and at the child (for child metadata) and when in use these codes will allow the metadata to flow in a logical order to the end user, and parents and children may be intermingled together.  The sort is an alpha-numeric sort, so if you are using numbers, if you have more than 9 questions, be sure to pad the numbers with zeros in front. For example, if you have 15 questions, you would list them 01, 02, 03...10, 11, 12, etc.
+
+In this example, Employment is the parent, and Full Time Help is the child.  Only a single question is asked at the child level, but the desire was to present it to the user, right after the headline and main body text:
+
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+When presented to the end user, this then looks like this:
+
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+Note: only internal users currently will see this new sort.  Not currently in use for Classified Self-Service Portal.
+{% endhint %}
 
 ## CRM Module
 
@@ -354,9 +376,25 @@ Fields added to Orders by Product Report: Material Description, Campaign Entry D
 
 New Flag in Opportunities which will allow for a single opportunity to cross multiple product groups, and when the proposal is auto-generated, there will be multiple proposals/campaigns created - split by the primary product group on product setup.
 
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+
+To use this feature, set the above to "yes" and then create an opportunity and link products from different product groups:
+
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-<mark style="background-color:green;">**Need some more details around this one once AD2-6218 is resolved**</mark>
+From there, click the button to auto-create a new proposal
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+Quick entry screen will open and allow for any modifications to dates, prices, etc before checking inventory and booking:
+
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+Two proposals will be auto-generated for this campaign, one for each product group:
+
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+With the new group security flag set to "no", the opportunity would behave like it did in older versions and all products would need to be in the same product group and they would be booked onto a single campaign.  The default behavior upon upgrade will be for this flag to NOT be set and the system will continue to behave as it did in prior releases.
 
 ## Accounts Receivable Module
 
@@ -365,6 +403,18 @@ New Flag in Opportunities which will allow for a single opportunity to cross mul
 Minor makeover on the List of Imported Payments.  Navigate to Payments -> List of Payments -> List of Imported Payments. Note that the Company ID has been added as a new column and there is now a row of filters at the top of the columns.
 
 <figure><img src="../.gitbook/assets/image (173).png" alt=""><figcaption></figcaption></figure>
+
+### Option to require an address to approve accounts
+
+There is a new setting on the A/R header (**A/R Module -> Setup -> Admin -> A/R System Setup**, then navigate to Client Defaults Section. If the following is set to yes, the account will not be allowed to be approved if the address or phone number missing on the account.
+
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+Note - based on CRM System Settings (**CRM Module -> Setup -> CRM System Settings**) it may or may not be required for the CRM user to enter in the address at the time of account creation.
+
+Based on Address Settings on Country Setup (**Ad and A/R Modules -> Setup -> Shared Tables Setup -> Address Setup**), an address may or may not require State and/or Post Codes
+{% endhint %}
 
 ### Logo for Receipt
 
@@ -409,9 +459,9 @@ Two new functions are now available in the Advertiser Portal setup.  For any pro
 ***
 
 {% hint style="info" %}
-<img src="../.gitbook/assets/image (7).png" alt="" data-size="line"> In 2022 we introduced the idea of a Customer Enhancement Portal, where you all get to add feature requests, look at feature requests submitted by others, add comments, and vote on things you would like to see us implement in the system. Items that were voted up in the Enhancement Portal will have this check mark next to the feature in the release guide.
+<img src="../.gitbook/assets/image (7) (2).png" alt="" data-size="line"> In 2022 we introduced the idea of a Customer Enhancement Portal, where you all get to add feature requests, look at feature requests submitted by others, add comments, and vote on things you would like to see us implement in the system. Items that were voted up in the Enhancement Portal will have this check mark next to the feature in the release guide.
 
-<img src="../.gitbook/assets/image (7) (2).png" alt="" data-size="line">  Click on the Video Icon in the heading to be directed to the release video page.  Topics that were included in the release video will display this icon.
+<img src="../.gitbook/assets/image (7) (2) (1).png" alt="" data-size="line">  Click on the Video Icon in the heading to be directed to the release video page.  Topics that were included in the release video will display this icon.
 
 <img src="../.gitbook/assets/image (97).png" alt="" data-size="line"> In 2023 we introduced a new learning subscription program called NavigaYou. Part of that program are some custom development hours. Any new features that were part of someone's NavigaYou will be highlighted as such with this icon. See [WEBINAR ](../videos/naviga-ad-video-library/conferences-and-webinars.md#navigayou)for more info on NavigaYou
 {% endhint %}

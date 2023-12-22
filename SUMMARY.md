@@ -3,8 +3,8 @@
 ## Welcome to Naviga Ad
 
 * [Introduction](README.md)
-* [2023.5 New Features](https://docs.navigaglobal.com/temp-space-for-2023.5/IAKlhMixZO4v3wZM7alq/)
-* [📺 2023.5 Release Video](welcome-to-naviga-ad/2023.4-release-video.md)
+* [Release Guide](welcome-to-naviga-ad/release-guide.md)
+* [📺 2023.6 Release Video](welcome-to-naviga-ad/2023.4-release-video.md)
 
 ## Videos
 
