@@ -11,8 +11,8 @@ description: >-
 
 **These are the most important takeaways / impactful changes that you **_**need**_** to pay attention to:**
 
-* There is a new workflow option for Inserts / Preprints.  The older workflow will still be supported, to ease the transition, but we think many of you will want to take advantage of this new workflow. [See below for details](release-guide.md#new-workflow-option-for-inserts-preprints)
-* There are a couple new Group Security Changes in both [Advertising ](release-guide.md#group-security-change)and [CRM ](release-guide.md#group-security-change-1)modules
+* There is a new workflow option for Inserts / Preprints.  The older workflow will still be supported, to ease the transition, but we think many of you will want to take advantage of this new workflow. [**See below for details**](release-guide.md#new-workflow-option-for-inserts-preprints)
+* There are a couple new Group Security Changes in both [**Advertising** ](release-guide.md#group-security-change)and [**CRM** ](release-guide.md#group-security-change-1)modules
 
 ## Advertising Module
 
@@ -296,7 +296,7 @@ G/L Type, Revenue G/L Code and Agency Commission G/L code are all required field
 
 Client Type is only necessary if you choose to use this feature.
 
-Cost G/L and Cost A/P G/L Code are only required if you choose to put cost information on the campaign lines and have them affect G/L mapping. (This was a new feature in [2023.1](https://docs.navigaglobal.com/navigaad/v/advertising/welcome-to-naviga-ad/release-guide#\_toc124253160))
+Cost G/L and Cost A/P G/L Code are only required if you choose to put cost information on the campaign lines and have them affect G/L mapping. (This was a new feature in [**2023.1**](https://docs.navigaglobal.com/navigaad/v/advertising/welcome-to-naviga-ad/release-guide#\_toc124253160))
 
 ### Group Security Change
 
@@ -327,7 +327,7 @@ Client Type added to popup when changing the advertiser on a campaign (on a camp
 <figure><img src="../.gitbook/assets/image (178).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-If you don't see the option to change the advertiser, remember in 2023.4 this was added to group security so a user must have permission to be able to change the advertiser on a campaign.
+If you don't see the option to change the advertiser, remember in [**2023.4**](https://docs.navigaglobal.com/navigaad/v/2023.4/welcome-to-naviga-ad/2023.4-release-guide#a-dvertising-security-greater-than-campaign-header-security) this was added to group security so a user must have permission to be able to change the advertiser on a campaign.
 {% endhint %}
 
 Client type (ID and Description) added to the Report **Customers -> Advertiser Listing**
