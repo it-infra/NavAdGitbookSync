@@ -10,7 +10,7 @@ Users can create trade contracts that are 100% barter offering advertising for a
 
 ## Trade Types Setup <a href="#_toc31186429" id="_toc31186429"></a>
 
-These values must be setup in the system as a prerequisite to the contract. Navigate to the menu **Billing -> Trade -> Trade Type Setup**.
+These values must be setup in the system as a prerequisite to the contract. Navigate to the menu **Billing -> Trade -> Trade Type Setup.**
 
 Click the New button and enter the ID and description of the trade. This is the payment you’ll receive in return to your advertising service you provide your client.
 
@@ -46,7 +46,7 @@ Also note that trade contracts are only supported in the system's local currency
 
 ## List of Trade Contracts <a href="#_toc31186431" id="_toc31186431"></a>
 
-If you want a view of all trade contracts in the system, navigate to the menu **Billing -> Trade -> List of Trade Contracts**.
+If you want a view of all trade contracts in the system, navigate to the menu Billing -> Trade -> List of Trade Contracts.
 
 ![](<../../../.gitbook/assets/4 (76).png>)
 
@@ -86,11 +86,11 @@ In the Pre-Payment Type drop-down, choose the option “Trade”. Then enter the
 
 Note that you can click the red x to un-attach the trade payment from this order.
 
-If you navigate to the menu **Billing -> Trade -> List of Trade Contracts** and search on this advertiser, the system displays the applied amount of this trade and applied balance remaining.
+If you navigate to the menu Billing -> Trade -> List of Trade Contracts and search on this advertiser, the system displays the applied amount of this trade and applied balance remaining.
 
 ![](<../../../.gitbook/assets/11 (12).png>)
 
-Navigate to search on the contract under the menu Billing -> Trade -> Trade Contract Setup and note the applied values are reflected in the totals in the header.
+Navigate to search on the contract under the menu **Billing -> Trade -> Trade Contract Setup** and note the applied values are reflected in the totals in the header.
 
 ![](<../../../.gitbook/assets/12 (21).png>)
 
@@ -98,7 +98,7 @@ Also, the order created and used for the trade is listed in the Orders shutter i
 
 ### Usage <a href="#_toc31186434" id="_toc31186434"></a>
 
-You can increase the usage amounts in a contract for the lifetime of the contract. Navigate to the contract setup screen and click the “Add Usage” button corresponding to a trade type.
+At any time, you can increase the usage amounts in a contract for the lifetime of the contract. Navigate to the contract setup screen and click the “Add Usage” button corresponding to a trade type.
 
 ![](<../../../.gitbook/assets/13 (5).png>)
 
