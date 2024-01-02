@@ -308,7 +308,7 @@ New flag added to disallow campaign status change from R back to Q.  If you set 
 
 #### Restrict G/L Type in line override to codes on product
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 In product setup, G/L Overrides can be assigned to the product which then get used in ratecards and ultimately on line items so that the system knows what G/L to assign during billing.  Group Security dictates if this G/L Type can be overwritten at the line item level.  This new group security controls if ALL G/L Types or only G/L Types used on the product are available to be selected (assuming the user is allowed to override the G/L type assigned by the ratecard line).  If this is set to 'no' AND users are allowed to override the G/L Type on a line, then all G/L Types will be displayed in the dropdown.
 
@@ -360,7 +360,7 @@ In previous releases, user could drag and drop category metadata questions in se
 
 In this example, Employment is the parent, and Full Time Help is the child.  Only a single question is asked at the child level, but the desire was to present it to the user, right after the headline and main body text:
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 When presented to the end user, this then looks like this:
 
@@ -369,6 +369,20 @@ When presented to the end user, this then looks like this:
 {% hint style="info" %}
 Note: only internal users currently will see this new sort.  Not currently in use for Classified Self-Service Portal.
 {% endhint %}
+
+### New Interval option for Classified Packages
+
+When setting up a classified package, there has always an option to restrict to certain days of the week and to put a quantity on the number of issues, but the quantity would always select consecutive issues, unless issue days were restricted, so it was difficult to do a weekly package that would run once a week on any day, but always the same day from week to week.  Now, there is an interval option on package setup.  The default upon upgrading will set this to "days" on existing packages, since that will be the behavior it has always been, but the setup user can select Week(s) or Month(s) instead:
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+In the above example, if weeks was selected, without any issue day restriction set, the behavior will be to run the ad for 6 consecutive weeks (one issue per week) starting from the start date of the package. The default will be the start date of the campaign, but prior to selecting the package, the user can select a different start date in the booking wizard.  The result will be to schedule 6 insertions on the same day of week as the start date.
+
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+If 6 months was selected in the package setup, the behavior would be to run one issue per month on the same day of month as the start date, so in the below example it is the 14th day of the month, each month, for 6 months.
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ## CRM Module
 
@@ -380,19 +394,19 @@ New Flag in Opportunities which will allow for a single opportunity to cross mul
 
 To use this feature, set the above to "yes" and then create an opportunity and link products from different product groups:
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 From there, click the button to auto-create a new proposal
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Quick entry screen will open and allow for any modifications to dates, prices, etc before checking inventory and booking:
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 Two proposals will be auto-generated for this campaign, one for each product group:
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 With the new group security flag set to "no", the opportunity would behave like it did in older versions and all products would need to be in the same product group and they would be booked onto a single campaign.  The default behavior upon upgrade will be for this flag to NOT be set and the system will continue to behave as it did in prior releases.
 
