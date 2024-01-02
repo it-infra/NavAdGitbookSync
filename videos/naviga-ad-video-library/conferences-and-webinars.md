@@ -27,7 +27,7 @@ Below are the links to our 3-part series on CRM...
 
 {% tabs %}
 {% tab title="Best Practices w/ Naviga CRM" %}
-#### Successful Strategies and Best Practices with Naviga CRM
+### Successful Strategies and Best Practices with Naviga CRM
 
 As founder and CEO of Indigo Trigger, Christopher has worked closely with Naviga to help their customers plan for and implement new Lead-to-Cash platforms. Recent projects of note include Hearst Newspapers, Postmedia Network, Tribune Publishing, Farm Journal, WATT Global Media, PMMI Media, Lexipol Media, Black Press Media, MediaNews Group and a host of other publishers looking to modernize their Lead-to-Cash ecosystem with the Naviga Ad platform. In this session, hosted live on Oct 10, 2023, we learned how Indigo Trigger has helped Naviga customers implement the Naviga CRM
 
@@ -39,7 +39,7 @@ As founder and CEO of Indigo Trigger, Christopher has worked closely with Naviga
 {% endtab %}
 
 {% tab title="Unlock the Power of Data" %}
-**Unlock the Power of Data - Making Smarter Sales Decisions with CRM**
+#### Unlock the Power of Data - Making Smarter Sales Decisions with CRM
 
 This is the second installment in our three part series on the CRM platform in Naviga Ad. This session was hosted by Wayne Burrows on Oct 3, 2023 and focuses on the Sales Manager and the tools built into Naviga Ad's CRM to effectively monitor pipeline, revenue, and customer engagements.
 

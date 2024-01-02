@@ -6,7 +6,7 @@ description: This will only display if Client Access Codes are enabled by Naviga
 
 Also See [Name Maintenance](../../accounts-receivable-credit-control/customers-a-r/#a-r-setup) for additional information on Client Access Codes
 
-<figure><img src="../../../.gitbook/assets/image (156).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 Navigate to **System Settings module -> Setup -> Client Access Code Setup**.  Note this will only be displayed as an option if Naviga support/implementation personnel have enabled the system to use access codes.  Please contact support if you need this to be enabled.
 
@@ -30,3 +30,4 @@ Access codes can be assigned to clients via Spreadsheet from this screen. &#x20;
 7. If any errors were found in the file, click the x to remove the spreadsheet from the File to Import field and open the spreadsheet and correct the errors
 8. resave the file and repeat steps 4-7 until no errors are found.
 9. Click Import File to import the file and update customer records.
+
