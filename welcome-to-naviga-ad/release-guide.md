@@ -5,7 +5,7 @@ description: >-
   system before Production.
 ---
 
-# Release Guide
+# 🎯 Release Guide
 
 <figure><img src="../.gitbook/assets/image (98).png" alt=""><figcaption></figcaption></figure>
 
@@ -380,11 +380,11 @@ New Flag in Opportunities which will allow for a single opportunity to cross mul
 
 To use this feature, set the above to "yes" and then create an opportunity and link products from different product groups:
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 From there, click the button to auto-create a new proposal
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Quick entry screen will open and allow for any modifications to dates, prices, etc before checking inventory and booking:
 
