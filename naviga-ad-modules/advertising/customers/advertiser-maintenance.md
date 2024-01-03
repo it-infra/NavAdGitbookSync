@@ -108,7 +108,7 @@ Note - if using the feature to create Ad hoc billing address in order entry, the
 <summary><mark style="color:purple;"><strong>Some nuances to understand regarding who gets the advertising invoice</strong></mark></summary>
 
 In **Name Maintenance, on the A/R Setup Node**, there is a field for the Default Billing Contact. This will be used as the Billing Contact on the Campaign header if there isn't an override set on the Advertising Setup node or on the Brand. This can be typed in as a manual billing contact, or it can be selected from a dropdown list as a contact person\
-![](<../../../.gitbook/assets/image (2) (1) (1).png>)
+![](<../../../.gitbook/assets/image (2) (1) (1) (1).png>)
 
 In **Name Maintenance, on the Advertising Setup**, there are two sections related to billing contacts. In the first highlighted box below, this field will override any billing contact set on the default above.\
 ![](<../../../.gitbook/assets/image (3) (1) (1).png>)
