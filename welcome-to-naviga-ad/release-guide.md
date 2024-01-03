@@ -477,6 +477,14 @@ Logo will be displayed on the Receipt:\
 
 <figure><img src="../.gitbook/assets/image (217).png" alt=""><figcaption></figcaption></figure>
 
+### <img src="../.gitbook/assets/image (240).png" alt="" data-size="line">Credit Stop Report - Credit Rating added
+
+The screen for Adding/Removing Clients from Credit Stop will now also display the customer's credit rating:
+
+<figure><img src="../.gitbook/assets/image (256).png" alt=""><figcaption></figcaption></figure>
+
+Navigate to **Credit Control or Accounts Receivable Module -> Credit Control -> Add/Remove customers from Credit Stop** or a user who is an A/R Manager can also access this report by clicking the Add/Remove Clients from Credit Stop button from the navigation bar in the credit control module
+
 ## Advertiser Portal
 
 ### Mark Inactive/Delete Profiles
