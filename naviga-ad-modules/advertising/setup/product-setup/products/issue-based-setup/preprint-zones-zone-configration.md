@@ -46,15 +46,17 @@ Note the Inactive flag available for each zone. Use this flag to indicate that a
 
 Any FUTURE orders that were already booked using that zone will need to manually be edited to have the zone removed if the delivery will not be done to the zone anymore.
 
-## Zone Import
+## Zone Imports
 
 Zone import and Zone Import by Date Range allow you to enter the zones and circulations for an issue and mass import them into the Ad system instead of manually entering them. The difference between them is that the Zone Import will be expecting a count for each issue date. The Zone import by date range will have a start and stop date and day of week. So you could them import a count for say Wednesdays between Jan 1 and March 31 of a given year, and a different number for Sundays in that same date range.
 
 The Zone import is also imported per product. The Zone import by date range can be done for multiple products simultaneously.
 
+### Zone Import
+
 Navigate to the menu Setup -> Product Setup -> Zone Import. Choose the product from the drop-down menu. Only issue based products display in the list.
 
-Click the field “Create Missing Zones” to change its value to “Yes” if you would like the import to create the zones. If the zones are new, and do not exist in the system, this must be a “Yes”. If left as “No”, the template must have Zone IDs that match ones in the system for the issues.
+Click the field “Create Missing Zones” to change its value to “Yes” if you would like the import to create the zones. If the zones are new, and do not exist in the system, this must be a “Yes”. If left as “No”, the template must have Zone IDs that match ones already in the system for the issues.
 
 Click the button “Download Template”. This opens a spreadsheet template with the following fields which you can fill out and save to your desktop.
 
@@ -72,7 +74,7 @@ Click the button “Import File”. The system provides a success message.
 
 If you navigate to the Issue Configuration node on the tree on the left side of the screen and click on “Zones” hyperlink per issue as per the import, the system displays the zones and circulation, which you imported, attached to the issues.
 
-## Zone Import by Date Range
+### Zone Import by Date Range
 
 You can import zones also by start and end date range for a product. Once the end date passes, these zones are no longer valid for the product and will no longer be visible in the line item entry screen.
 
