@@ -302,7 +302,7 @@ Cost G/L and Cost A/P G/L Code are only required if you choose to put cost infor
 
 Navigate to **Setup -> Product Setup** and select the new "**Price Adjustments Import**" option to import Adjustment codes for products.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 1. Click the button to Download Template to get the excel file needed to import adjustment codes.  Fill in adjustment codes according to the following template:
 
@@ -313,7 +313,7 @@ Navigate to **Setup -> Product Setup** and select the new "**Price Adjustments I
 4. Click test import file.  The system will do a test import and will notify the user if there are any errors in importing.  If there are no errors, skip to step 8
 5. Open saved spreadsheet and correct any errors, and resave
 6. Remove the original uploaded file by clicking the X remove\
-   ![](<../.gitbook/assets/image (1).png>)
+   ![](<../.gitbook/assets/image (1) (1).png>)
 7. repeat steps 3 - 6 until all errors are resolved
 8. Click Import File to run the actual import process.
 
@@ -373,6 +373,21 @@ Client Type added to the Agency field dropdown on Brand Detail screen (**Custome
 
 <figure><img src="../.gitbook/assets/image (221).png" alt=""><figcaption></figcaption></figure>
 
+### Orders by Entry Date Report Changes
+
+Several great changes on the Orders by Entry Date Report:\
+
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+1. Users (multi-select) added to the search criteria at the top of the report
+2. Product list uses intuitive typing to filter the dropdown, making selection easier
+3. Grouping added to the report so that user can drag and drop column headers to the light blue bar to group data by various fields
+4. Several additional columns added to the configure output tab
+   * Campaign Entry Date
+   * Existing field "Entry Date" relabeled ad "Line Entry Date"
+   * Campaign Description
+
 ### Sort order for Classified Categories
 
 In previous releases, user could drag and drop category metadata questions in setup to set the sort order, but parent level questions were always displayed at the top (in whatever sort order was set for the parent), and child questions would be displayed after the parent, in whatever sort was set for the children, and they could not be intermingled at all, and the child questions could not be asked before the parent questions.  That has now been modified and setup users can enter sort codes at the parent (for the parent metadata) and at the child (for child metadata) and when in use these codes will allow the metadata to flow in a logical order to the end user, and parents and children may be intermingled together.  The sort is an alpha-numeric sort, so if you are using numbers, if you have more than 9 questions, be sure to pad the numbers with zeros in front. For example, if you have 15 questions, you would list them 01, 02, 03...10, 11, 12, etc.
@@ -393,15 +408,15 @@ Note: only internal users currently will see this new sort.  Not currently in us
 
 When setting up a classified package, there has always an option to restrict to certain days of the week and to put a quantity on the number of issues, but the quantity would always select consecutive issues, unless issue days were restricted, so it was difficult to do a weekly package that would run once a week on any day, but always the same day from week to week.  Now, there is an interval option on package setup.  The default upon upgrading will set this to "days" on existing packages, since that will be the behavior it has always been, but the setup user can select Week(s) or Month(s) instead:
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 In the above example, if weeks was selected, without any issue day restriction set, the behavior will be to run the ad for 6 consecutive weeks (one issue per week) starting from the start date of the package. The default will be the start date of the campaign, but prior to selecting the package, the user can select a different start date in the booking wizard.  The result will be to schedule 6 insertions on the same day of week as the start date.
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 If 6 months was selected in the package setup, the behavior would be to run one issue per month on the same day of month as the start date, so in the below example it is the 14th day of the month, each month, for 6 months.
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## CRM Module
 
@@ -413,15 +428,15 @@ New Flag in Opportunities which will allow for a single opportunity to cross mul
 
 To use this feature, set the above to "yes" and then create an opportunity and link products from different product groups:
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 From there, click the button to auto-create a new proposal
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Quick entry screen will open and allow for any modifications to dates, prices, etc before checking inventory and booking:
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Two proposals will be auto-generated for this campaign, one for each product group:
 

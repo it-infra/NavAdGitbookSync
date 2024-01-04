@@ -4,7 +4,7 @@
 
 Navigate to **Setup -> Product Setup** and select the new "**Price Adjustments Import**" option to import Adjustment codes for products.
 
-<figure><img src="../../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 1. Click the button to Download Template to get the excel file needed to import adjustment codes.  Fill in adjustment codes according to the following template fields:
 
@@ -15,6 +15,6 @@ Navigate to **Setup -> Product Setup** and select the new "**Price Adjustments I
 4. Click test import file.  The system will do a test import and will notify the user if there are any errors in importing.  If there are no errors, skip to step 8
 5. Open saved spreadsheet and correct any errors, and resave
 6. Remove the original uploaded file by clicking the X remove\
-   ![](<../../../../../../.gitbook/assets/image (1).png>)
+   ![](<../../../../../../.gitbook/assets/image (1) (1).png>)
 7. repeat steps 3 - 6 until all errors are resolved
 8. Click Import File to run the actual import process.
