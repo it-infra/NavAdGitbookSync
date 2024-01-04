@@ -4,7 +4,7 @@
 
 This section must be setup first to allow for the choices in the “Classified Categories” in the Product Setup screen.
 
-In the menu Setup -> Classified Order Setup -> Classified Category Tree Setup you can create a high-level tree design which you can use across different products.
+In the menu **Setup -> Classified Order Setup -> Classified Category Tree Setup** you can create a high-level tree design which you can use across different products.
 
 <figure><img src="../../../../.gitbook/assets/image (1059).png" alt=""><figcaption></figcaption></figure>
 
@@ -43,7 +43,7 @@ You can define the fields by adding their labels and determine if they are requi
 
 Continue to add sub-categories as needed and they inherit the metadata design of the parent category.
 
-The parent metadata are not editable for the child category, but the child specific fields as you scroll down in the child metadata node are editable and customizable.
+The parent metadata are not editable for the child category, but the child specific fields as you scroll down in the child metadata node are editable and customizable.  User can enter sort code at the parent (for the parent metadata) and at the child (for child metadata) and when in use these codes will allow the metadata to flow in a logical order to the end user, and parents and children may be intermingled together.  The sort is an alpha-numeric sort, so if you are using numbers, if you have more than 9 questions, be sure to pad the numbers with zeros in front. For example, if you have 15 questions, you would list them 01, 02, 03...10, 11, 12, etc.
 
 The metadata can be any of the following:
 
@@ -81,4 +81,4 @@ The Merge Tag is used by Templates that automatically create the classified ads.
 
 Note that when you click the Classified Categories screen, you can at any time click the “Delete” button which deletes the category and all its properties. This can only be done if there are no orders against the category.
 
-Click the node for Category Tree node and choose one from the drop-down menu. Click the “Delete” button and the system gives you a warning message that this cannot be undone. Click OK. If there are orders using this category, the system alerts you that the operation cannot be completed. The category is not removed.
+Click the node for Category Tree and choose one from the drop-down menu. Click the “Delete” button and the system gives you a warning message that this cannot be undone. Click OK. If there are orders using this category, the system alerts you that the operation cannot be completed. The category is not removed.

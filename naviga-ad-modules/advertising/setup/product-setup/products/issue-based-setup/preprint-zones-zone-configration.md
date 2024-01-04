@@ -56,7 +56,7 @@ The Zone import is also imported per product. The Zone import by date range can 
 
 Navigate to the menu Setup -> Product Setup -> Zone Import. Choose the product from the drop-down menu. Only issue based products display in the list.
 
-Click the field “Create Missing Zones” to change its value to “Yes” if you would like the import to create the zones. If the zones are new, and do not exist in the system, this must be a “Yes”. If left as “No”, the template must have Zone IDs that match ones already in the system for the issues.
+Click the field “Create Missing Zones” to change its value to “Yes” if you would like the import to create the zones. If the zones are new, and do not exist in the system, this must be a “Yes”. If left as “No”, the template must have Zone IDs that match ones in the system for the issues.
 
 Click the button “Download Template”. This opens a spreadsheet template with the following fields which you can fill out and save to your desktop.
 
