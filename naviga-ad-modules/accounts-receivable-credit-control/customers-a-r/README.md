@@ -6,7 +6,7 @@ description: >-
 
 # Customers (A/R)
 
-## Customer Account Overview <a href="#_toc124065030" id="_toc124065030"></a>
+## Customer Account Overview <a href="#toc124065030" id="toc124065030"></a>
 
 In the A/R and Credit Control modules, navigate to Customers -> Customer Account Overview
 
@@ -31,7 +31,7 @@ The light blue bar at the bottom of the above screenshot will take you to severa
 
 If you do not see the light blue bar, that is because you do not have access to those functions. Sales users typically will not be able to see the light blue bar or access those functions.
 
-### Access to different modules <a href="#_toc124065031" id="_toc124065031"></a>
+### Access to different modules <a href="#toc124065031" id="toc124065031"></a>
 
 User can click the different CRM, Production or Exhibition links to view and act regarding the account displayed on the screen. See Also [Advertising > Customers](../../advertising/customers/)
 
@@ -88,6 +88,10 @@ Prerequisite: One or multiple external accounts can be configured in Advertising
 This will store the account ID's for the customer in the pre-configured external systems.
 
 <figure><img src="../../../.gitbook/assets/image (1617).png" alt=""><figcaption></figcaption></figure>
+
+#### Account Overview
+
+Click on account overview to be taken to the Account overview view of this customer.  If you are looking at the name maintenance of an individual rather than a customer account, the Account overview will take you to the Account overview of the contact's employer.
 
 ### A/R setup
 
@@ -225,4 +229,4 @@ This screen allows you to add alerts which the user entering orders for this adv
 
 This screen tracks any changes made to the advertiser information including who made the changes and when they’re made as well as any reason for the change. This will also include any changes to the brands related to this account.
 
-### &#x20;<a href="#_bookmark29" id="_bookmark29"></a>
+### &#x20;<a href="#bookmark29" id="bookmark29"></a>
