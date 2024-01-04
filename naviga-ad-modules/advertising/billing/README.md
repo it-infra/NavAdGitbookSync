@@ -1,6 +1,6 @@
 # Billing
 
-## Prerequisites <a href="#toc110515823" id="toc110515823"></a>
+## Prerequisites <a href="#_toc110515823" id="_toc110515823"></a>
 
 #### Reconcile Actuals
 
@@ -16,7 +16,7 @@ To confirm that this process has been completed, navigate to Billing -> Campaign
 
 Only Confirmed campaigns will be invoiced. Whether flexible or performance types, the campaign must be in the CO Confirmed status. In most cases only Confirmed orders will run as well, though in some cases, sites to allow certain Reserved statuses to go to Plan and/or to GAM, so if you are one of those sites, ensure that all running orders are updated to CO status prior to billing so that the bills will go out. Can use the [Bulk update campaign status](../campaigns/managing-campaigns/bulk-update-campaign-status.md) for this function or can update status on the campaign as well.
 
-#### Billing Schedule for Flexible Campaigns <a href="#toc110515830" id="toc110515830"></a>
+#### Billing Schedule for Flexible Campaigns <a href="#_toc110515830" id="_toc110515830"></a>
 
 On your campaign, various billing schedule options are available to accommodate user’s needs in the generation, and optionally, the automatic update of the Billing Schedule:
 
@@ -41,11 +41,11 @@ If you add another issue, then the go to the billing schedule. Choose another op
 
 User must also have all [invoice html forms](../setup/advertising-setup/advertising-invoice-forms-templates-line-groups.md) setup.
 
-## Prepare Billing Invoice <a href="#toc110515824" id="toc110515824"></a>
+## Prepare Billing Invoice <a href="#_toc110515824" id="_toc110515824"></a>
 
 Navigate to the menu Billing -> Campaign Billing -> Campaign Billing. This will direct you to the node “Prepare Performance Billing”. If the campaign you are billing is a performance campaign, then this is the correct node. If the campaign to be billed is a flexible campaign, then click on the node below this one titled “Prepare Flexible Billing”. Both screens have the same function but slightly different search options and details in the results grid.
 
-Click on the Configure Output tab. Similar to other reports in the system with configurable columns, each user with access to the billing screen can choose their own preferred columns for both onscreen viewing and for export. After changes are made, click Save Configuration and click back to the selected campaigns tab to see onscreen changes.
+Click on the Configure Output tab.  Similar to other reports in the system with configurable columns, each user with access to the billing screen can choose their own preferred columns for both onscreen viewing and for export. After changes are made, click Save Configuration and click back to the selected campaigns tab to see onscreen changes.
 
 <figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
@@ -76,7 +76,7 @@ Once the campaigns display, check the box or boxes for the invoices and then cli
 
 Do the above steps for both Performance Billing and Flexible Billing
 
-### Edit Billing Parameters <a href="#toc44011796" id="toc44011796"></a>
+### Edit Billing Parameters <a href="#_toc44011796" id="_toc44011796"></a>
 
 User can edit the billing parameters in the prepare billing screen to change to any of the three available types: Print, Email or Print & Email. User can also enter the details of the invoice recipients. The changes override the settings for this advertiser only for this campaign and affect all lines billed at that time. Other lines are not affected and revert to the advertiser setup.
 
@@ -88,7 +88,7 @@ Choose a different option and the system prompts you to enter the corresponding 
 
 Note the change takes effect on all the lines pertaining to this campaign. This change overrides the settings for the billed lines. This is intended for a temporary change for a specific campaign. To permanantly change the Delivery information, change it in Advertiser Maintenance.
 
-## Generate Invoice <a href="#toc110515825" id="toc110515825"></a>
+## Generate Invoice <a href="#_toc110515825" id="_toc110515825"></a>
 
 Click on the node “Generate Invoice(s)”. Click on the magnifying glass and the prepared campaign(s) displays.
 
@@ -120,7 +120,7 @@ Include Pre-paid Campaigns with Zero Balance: Once you check the above flag, thi
 
 Click on “Generate Invoices”. Click on View/ Print All Invoices field. A PDF invoice displays with the data in the respective fields as designed in the Invoice Forms menu. If this is a trial invoice, the system will not save it. Generate the same invoice but choose live invoice type to view the invoice, post it, and email it.
 
-## Print Invoices and Post to AR <a href="#toc110515826" id="toc110515826"></a>
+## Print Invoices and Post to AR <a href="#_toc110515826" id="_toc110515826"></a>
 
 When the live invoice is generated, click on the node “Print Invoices” on the tree or click on the pop up screen button “Go to List of Invoice Batches”.
 
@@ -136,7 +136,7 @@ To see individual invoices instead of the batch, click the Batch number hyperlin
 
 <figure><img src="../../../.gitbook/assets/image (448).png" alt=""><figcaption></figcaption></figure>
 
-### Reprocess Batches <a href="#toc45176471" id="toc45176471"></a>
+### Reprocess Batches <a href="#_toc45176471" id="_toc45176471"></a>
 
 New option on “Print Invoices” screen to reprocess batch allows user to regenerate the PDFs for the invoices and re-email any that are set to email delivery option. The option will not reset the batch or affect the invoice in anyway. It can be used if there is some interruption in the sending of the emails during the billing run.
 
@@ -172,7 +172,7 @@ Occasionally, the invoices are not created in Naviga ad at all, but instead we g
 Typically a site will see Generate Invoices and Print Invoices OR they would see Generate Order Data File and Download Order data file, but not both as i have in my screen. See Naviga Support if you are not seeing what you expect to see. Only Naviga personnel can switch the setting for you.
 {% endhint %}
 
-## Regenerate Invoice <a href="#toc110515827" id="toc110515827"></a>
+## Regenerate Invoice <a href="#_toc110515827" id="_toc110515827"></a>
 
 The system allows you to regenerate the invoice if there is a need to do so, due to a change in the order or the advertiser’s settings.
 
@@ -184,10 +184,7 @@ Also note that there is some data that is not directly stored in the "Invoice pr
 
 Before you regenerate the invoice, you can change the invoice template used on the Product Group. The newly regenerated invoice uses this latest template. You can change multiple fields on the order to be reflected on the regenerated invoice.
 
-*   Comments to Print on the Invoice - the following field is what we are referring to here:\
-
-
-    <figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+* Comments to Print on the Invoice
 * Page number for print products
 * PO Number
 * Tearsheet if applicable
@@ -204,11 +201,11 @@ Choose the address to print on the invoice, to be the original or the current ad
 
 Enter a comment which will display on the invoice. Click the “Regenerate Invoices” button. The invoice is available to be viewed and printed if you search again on the invoice ID and click the PDF link.
 
-## Reverse Campaign Billing <a href="#toc110515828" id="toc110515828"></a>
+## Reverse Campaign Billing <a href="#_toc110515828" id="_toc110515828"></a>
 
 This process allows you to reverse all invoicing that has been done against a partially or fully billed campaign, producing a reversing credit. This will not cancel the campaign, nor will it affect any Ad Server integration. The most likely use of this function is when the wrong party was billed and now needs to be credited. After the campaign invoicing has been reversed, you can change the bill-to on the campaign entry screen and then re-bill the campaign.
 
-## Tax Calculation Hierarchy <a href="#toc110515829" id="toc110515829"></a>
+## Tax Calculation Hierarchy <a href="#_toc110515829" id="_toc110515829"></a>
 
 The system calculates taxes based on the following order. If there is no value in a step, the system proceeds to search for tax setup in the following step.
 
@@ -222,7 +219,7 @@ The system calculates taxes based on the following order. If there is no value i
 
 The flexible campaign Billing Schedule itself has an effect on how taxes are calculated. It only sets the Stage percentages based on pre-tax amounts.
 
-## Campaigns with Problems <a href="#toc110515830" id="toc110515830"></a>
+## Campaigns with Problems <a href="#_toc110515830" id="_toc110515830"></a>
 
 ### Billing Schedule Issues
 

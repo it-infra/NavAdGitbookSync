@@ -3,8 +3,8 @@
 ## Welcome to Naviga Ad
 
 * [Introduction](README.md)
-* [🎯 Release Guide](welcome-to-naviga-ad/release-guide.md)
-* [📺 2023.6 Release Video](welcome-to-naviga-ad/2023.4-release-video.md)
+* [Release Guide](https://docs.navigaglobal.com/temp-space-for-2023.5/IAKlhMixZO4v3wZM7alq/)
+* [📺 Release Video](welcome-to-naviga-ad/2023.4-release-video.md)
 
 ## Videos
 
@@ -126,7 +126,6 @@
         * [Pricing Rules](naviga-ad-modules/advertising/setup/product-setup/products/pricing-rules/README.md)
           * [Ratecards](naviga-ad-modules/advertising/setup/product-setup/products/pricing-rules/ratecards.md)
           * [Price Adjustments](naviga-ad-modules/advertising/setup/product-setup/products/pricing-rules/price-adjustments.md)
-          * [Price Adjustment Import](naviga-ad-modules/advertising/setup/product-setup/products/pricing-rules/price-adjustment-import.md)
           * [Auto Adjustments](naviga-ad-modules/advertising/setup/product-setup/products/pricing-rules/auto-adjustments.md)
         * [Sections & Positions](naviga-ad-modules/advertising/setup/product-setup/products/sections-and-positions/README.md)
           * [Importing Sections and Positions](naviga-ad-modules/advertising/setup/product-setup/products/sections-and-positions/importing-sections-and-positions.md)
