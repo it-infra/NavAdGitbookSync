@@ -20,11 +20,13 @@ If using Naviga Plan in addition to Naviga Ad, the page numbers will be updated 
 
 ## Update Page Numbers in an Issue
 
-This is where you can view and edit page numbers and tearsheet URL in an issue. In the Product dropdown you will see a list of Print Products. Select desired product and issue date
+This is where you can view and edit page numbers, ad headline, and tearsheet URL in an issue. In the Product dropdown you will see a list of Print Products. Select desired product and issue date
 
-<figure><img src="../../../.gitbook/assets/image (574).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
-If a tearsheet URL is added into the tearsheet field, then on the client's invoice or on the Advertiser Portal, you can view the tearsheet image. On the invoice it will be a link to the tearsheet. One the portal, it will be an icon on the order list of Past Print Orders that the user can click on and see the tearsheet.
+If a tearsheet URL is added into the tearsheet field, then on the client's invoice or on the Advertiser Portal, you can view the tearsheet image. On the invoice, it can be added as a link to the tearsheet. One the portal, it will be an icon on the order list of Past Print Orders that the user can click on and see the tearsheet.
+
+For the Ad Headline column to be editable, the order must have a material ID assigned to the issue.  (This ID can be auto-created when the line is first saved if configured to do so in the product setup.)
 
 ## Tearsheet Contacts Report
 
@@ -64,7 +66,7 @@ For some Naviga clients, e-newsletters are managed in their content or audience 
 
 {% embed url="https://dev.navigahub.com/mothership/resources/videos/NewsletterBestPracticesSchedulingAds.mp4" %}
 
-### Editorial Stages and Controllers <a href="#_toc531451671" id="_toc531451671"></a>
+### Editorial Stages and Controllers <a href="#toc531451671" id="toc531451671"></a>
 
 Issue-based and date-based digital products can have assigned to them editorial controllers and editorial stages. The stages are pre-set in the Setup menu and serve to manage Editorial Workflow associated with Date-Based and Issue-Based products, like e-newsletters. Editorial Workflow stages are displayed in the Production Calendar for Date-Based Products.
 

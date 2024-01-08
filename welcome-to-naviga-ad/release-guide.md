@@ -302,18 +302,18 @@ Cost G/L and Cost A/P G/L Code are only required if you choose to put cost infor
 
 Navigate to **Setup -> Product Setup** and select the new "**Price Adjustments Import**" option to import Adjustment codes for products.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Click the button to Download Template to get the excel file needed to import adjustment codes.  Fill in adjustment codes according to the following template:
 
-<table><thead><tr><th>Field</th><th>Example</th><th width="311">Description</th><th>Required?</th></tr></thead><tbody><tr><td>Product ID</td><td>DEMO123</td><td>Alpha-Numeric field representing the ID for the Product</td><td>Yes</td></tr><tr><td>Description</td><td>Premium Surcharge</td><td>Alpha-Numeric field used to describe the adjustment. This is what the user will see when selecting an adjustment in order entry and what the customer may see on the invoice/order confirmation</td><td>Yes</td></tr><tr><td>External ID</td><td>ABC123</td><td>Alpha-numeric field which may be used in interfaces to external systems</td><td>Optional</td></tr><tr><td>Allow Description Override</td><td>Y</td><td>This is a Y/N field to indicate if the Description can be overwritten by a user in order entry screen.</td><td>Optional.  If left blank and answer of No (unchecked) will be applied.</td></tr><tr><td>Plus/Minus</td><td>-</td><td>+/- field which indicates if the adjustment should be positive (surcharge) or negative (discount).  If left blank, the user will be able to select a positive or a negative adjustment in order entry</td><td>Optional</td></tr><tr><td>Type</td><td>GROSS</td><td>These are hard coded options in the system.  Use the following to indicate the correct option:<br>GROSS = Percent of Gross<br>NET = Percent of Net<br>AMOUNT = AMOUNT</td><td>Yes</td></tr><tr><td>Prompt for Value</td><td>Y</td><td>If set to Yes (Y) the user will be allowed to enter in a value for the discount during order entry.  If set to No (blank or N), the value will need to be set in the "Value" field</td><td>Optional</td></tr><tr><td>Prompt for Qty</td><td>Y</td><td>Only valid if the Type is set to AMOUNT.<br>If type is AMOUNT, this can be set to Y for Yes or it can be blank or N for No.<br>If Type is GROSS or NET, this should be left blank.</td><td>Optional</td></tr><tr><td>Value</td><td>-50</td><td>If the plus/minus field is negative, this must also be negative. If Prompt for Value field is Y, this should be left blank.</td><td>Optional, but if Prompt for Value is No, this should be filled in with a value</td></tr><tr><td>Hide on Forms</td><td>Y</td><td>Y for Yes, N or blank for No</td><td>Optional</td></tr><tr><td>Currency</td><td>POUND</td><td>Only use this for <strong>foreign</strong> currencies.  For amounts in the system's default currency, this should be left blank.  </td><td>Optional, but if used the currency ID from currency setup is what is expected here.</td></tr><tr><td>Ad Type(s)</td><td>CPCI,DCI</td><td>This will allow the adjustment to only be available for certain ad types.  Leave blank to allow for all ad types. Multiple ad types can be entered and comma separated</td><td>Optional, but if used, the values entered here must match the Ad Type ID's in Ad Type setup</td></tr><tr><td>Plan Position Code</td><td>FIRST</td><td>Used for Sorting in Naviga Plan. See <a href="../naviga-ad-modules/advertising/setup/product-setup/products/pricing-rules/price-adjustments.md#plan-position-code">Price adjustment Setup</a> for details</td><td>Optional. Leave blank if not using Naviga Plan</td></tr><tr><td>Section(s)</td><td>NEWS,LOCAL</td><td>This will allow the adjustment to only be available for certain sections.  Leave blank to allow for all sections. Multiples can be entered and comma separated</td><td>Optional, but if used, the values entered here must match the section ID in Product Setup</td></tr><tr><td>Position(s)</td><td>BP</td><td>This will allow the adjustment to only be available for certain sections.  Leave blank to allow for all sections. Multiples can be entered and comma separated.  If Positions are defined within a section according to product setup, then the section must also be entered on the template for position to be accepted.</td><td>Optional, but if used, the values entered here must match the Position ID in Product Setup.</td></tr><tr><td>Override G/L Account</td><td>01*002*123*1234</td><td>This will allow the Adjustment to be applied to a different G/L than the revenue for the order line.  See <a href="../naviga-ad-modules/advertising/setup/product-setup/products/pricing-rules/price-adjustments.md#override-g-l">Price Adjustment setup</a> for details on using this optional field.</td><td>Optional, but if used it must match a G/L code defined in the G/L setup</td></tr><tr><td>Application Rule</td><td>LAST</td><td>This is only used in Booking Wizard order Entry and allows for the adjustment to be applied only to the First insertion, Last Insertion, or All insertions.  Valid options here are FIRST, LAST, and ALL.  A Blank will assume all insertions.</td><td>Optional</td></tr><tr><td>Inactive</td><td>Y</td><td>Leave blank for No.  This sets the Adjustment code to Inactive if set to Yes.</td><td>Optional</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Example</th><th width="311">Description</th><th>Required?</th></tr></thead><tbody><tr><td>Product ID</td><td>DEMO123</td><td>Alpha-Numeric field representing the ID for the Product</td><td>Yes</td></tr><tr><td>Description</td><td>Premium Surcharge</td><td>Alpha-Numeric field used to describe the adjustment. This is what the user will see when selecting an adjustment in order entry and what the customer may see on the invoice/order confirmation</td><td>Yes</td></tr><tr><td>External ID</td><td>ABC123</td><td>Alpha-numeric field which may be used in interfaces to external systems</td><td>Optional</td></tr><tr><td>Allow Description Override</td><td>Y</td><td>This is a Y/N field to indicate if the Description can be overwritten by a user in order entry screen.</td><td>Optional.  If left blank an answer of No (unchecked) will be applied.</td></tr><tr><td>Plus/Minus</td><td>-</td><td>+/- field which indicates if the adjustment should be positive (surcharge) or negative (discount).  If left blank, the user will be able to select a positive or a negative adjustment in order entry</td><td>Optional</td></tr><tr><td>Type</td><td>GROSS</td><td>These are hard coded options in the system.  Use the following to indicate the correct option:<br>GROSS = Percent of Gross<br>NET = Percent of Net<br>AMOUNT = AMOUNT</td><td>Yes</td></tr><tr><td>Prompt for Value</td><td>Y</td><td>If set to Yes (Y) the user will be allowed to enter in a value for the discount during order entry.  If set to No (blank or N), the value will need to be set in the "Value" field</td><td>Optional</td></tr><tr><td>Prompt for Qty</td><td>Y</td><td>Only valid if the Type is set to AMOUNT.<br>If type is AMOUNT, this can be set to Y for Yes or it can be blank or N for No.<br>If Type is GROSS or NET, this should be left blank.</td><td>Optional</td></tr><tr><td>Value</td><td>-50</td><td>If the plus/minus field is negative, this must also be negative. If Prompt for Value field is Y, this should be left blank.</td><td>Optional, but if Prompt for Value is No, this should be filled in with a value</td></tr><tr><td>Hide on Forms</td><td>Y</td><td>Y for Yes, N or blank for No</td><td>Optional</td></tr><tr><td>Currency</td><td>POUND</td><td>Only use this for <strong>foreign</strong> currencies.  For amounts in the system's default currency, this should be left blank.  </td><td>Optional, but if used the currency ID from currency setup is what is expected here.</td></tr><tr><td>Ad Type(s)</td><td>CPCI,DCI</td><td>This will allow the adjustment to only be available for certain ad types.  Leave blank to allow for all ad types. Multiple ad types can be entered and comma separated</td><td>Optional, but if used, the values entered here must match the Ad Type ID's in Ad Type setup</td></tr><tr><td>Plan Position Code</td><td>FIRST</td><td>Used for Sorting in Naviga Plan. See <a href="../naviga-ad-modules/advertising/setup/product-setup/products/pricing-rules/price-adjustments.md#plan-position-code">Price adjustment Setup</a> for details</td><td>Optional. Leave blank if not using Naviga Plan</td></tr><tr><td>Section(s)</td><td>NEWS,LOCAL</td><td>This will allow the adjustment to only be available for certain sections.  Leave blank to allow for all sections. Multiples can be entered and comma separated</td><td>Optional, but if used, the values entered here must match the section ID in Product Setup</td></tr><tr><td>Position(s)</td><td>BP</td><td>This will allow the adjustment to only be available for certain sections.  Leave blank to allow for all sections. Multiples can be entered and comma separated.  If Positions are defined within a section according to product setup, then the section must also be entered on the template for position to be accepted.</td><td>Optional, but if used, the values entered here must match the Position ID in Product Setup.</td></tr><tr><td>Override G/L Account</td><td>01*002*123*1234</td><td>This will allow the Adjustment to be applied to a different G/L than the revenue for the order line.  See <a href="../naviga-ad-modules/advertising/setup/product-setup/products/pricing-rules/price-adjustments.md#override-g-l">Price Adjustment setup</a> for details on using this optional field.</td><td>Optional, but if used it must match a G/L code defined in the G/L setup</td></tr><tr><td>Application Rule</td><td>LAST</td><td>This is only used in Booking Wizard order Entry and allows for the adjustment to be applied only to the First insertion, Last Insertion, or All insertions.  Valid options here are FIRST, LAST, and ALL.  A Blank will assume all insertions.</td><td>Optional</td></tr><tr><td>Inactive</td><td>Y</td><td>Leave blank for No.  This sets the Adjustment code to Inactive if set to Yes.</td><td>Optional</td></tr></tbody></table>
 
 2. Once the spreadsheet is filled in with your data, save the file to your computer or desired network location.
 3. Click the Select button and navigate to the file location&#x20;
 4. Click test import file.  The system will do a test import and will notify the user if there are any errors in importing.  If there are no errors, skip to step 8
 5. Open saved spreadsheet and correct any errors, and resave
 6. Remove the original uploaded file by clicking the X remove\
-   ![](<../.gitbook/assets/image (1) (1).png>)
+   ![](<../.gitbook/assets/image (1) (1) (1).png>)
 7. repeat steps 3 - 6 until all errors are resolved
 8. Click Import File to run the actual import process.
 
@@ -327,7 +327,7 @@ New flag added to disallow campaign status change from R back to Q.  If you set 
 
 #### Restrict G/L Type in line override to codes on product
 
-<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In product setup, G/L Overrides can be assigned to the product which then get used in ratecards and ultimately on line items so that the system knows what G/L to assign during billing.  Group Security dictates if this G/L Type can be overwritten at the line item level.  This new group security controls if ALL G/L Types or only G/L Types used on the product are available to be selected (assuming the user is allowed to override the G/L type assigned by the ratecard line).  If this is set to 'no' AND users are allowed to override the G/L Type on a line, then all G/L Types will be displayed in the dropdown.
 
@@ -378,7 +378,7 @@ Client Type added to the Agency field dropdown on Brand Detail screen (**Custome
 Several great changes on the Orders by Entry Date Report:\
 
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Users (multi-select) added to the search criteria at the top of the report
 2. Product list uses intuitive typing to filter the dropdown, making selection easier
@@ -394,11 +394,11 @@ In previous releases, user could drag and drop category metadata questions in se
 
 In this example, Employment is the parent, and Full Time Help is the child.  Only a single question is asked at the child level, but the desire was to present it to the user, right after the headline and main body text:
 
-<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 When presented to the end user, this then looks like this:
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Note: only internal users currently will see this new sort.  Not currently in use for Classified Self-Service Portal.
@@ -418,19 +418,27 @@ The following fields are available in this template:
 
 <table><thead><tr><th>Field</th><th width="123">Example</th><th>Description</th><th>Required?</th></tr></thead><tbody><tr><td>Product ID</td><td>DEMO10</td><td>The ID must match that of a product in the advertising system</td><td>Yes</td></tr><tr><td>Zone ID</td><td>19456</td><td>The Zone ID must match the zone ID in the advertising system</td><td>Yes</td></tr><tr><td>Zone Description</td><td>Anycity</td><td>Text describing the zone</td><td>Yes - This is what the user selects in the UI - so while the import won't fail if it is empty, it won't be very useful if it's blank.</td></tr><tr><td>Parent ID</td><td>NE</td><td>The zone parent ID of the zone for the zone to be imported and must match the value in the advertising system</td><td>Optional, but it's a good idea for ease of use for the end users to have at least one Zone Group.</td></tr><tr><td>Sort Code</td><td>1</td><td>Value by which the zone is sorted in the list as displayed on menus for users.</td><td>Optional</td></tr><tr><td>Country Code</td><td>US</td><td>This is the 2-digit ISO Country Code.</td><td>Optional for the Import - will be required for Geocoding if intent is to allow users to select zones from a map in order entry</td></tr><tr><td>Postal Code</td><td>19456</td><td>5-digit zip code for the zone.</td><td>Optional for the Import - will be required for Geocoding if intent is to allow users to select zones from a map in order entry</td></tr><tr><td>External Reference</td><td>ABC123</td><td>Alpha-numeric Field used in integration with 3rd party</td><td>Optional</td></tr><tr><td>External Group</td><td>ABC</td><td>Alpha-numeric Field used in integration with 3rd party</td><td>Optional</td></tr><tr><td>Is Inactive</td><td>TRUE</td><td>TRUE/FALSE field for whether or not the Zone is Inactive.</td><td>Optional</td></tr></tbody></table>
 
-### New Interval option for Classified Packages
+### Edit Material Ad Headline
+
+Navigate to **Production -> Update Page Numbers in an Issue** in the Advertising Module.
+
+The Update Page Numbers in an issue report will now display, and allow for editing, the Ad Headline for the material. (Note that the order line must already have a material ID to be able to add a headline to it.  This CAN be auto-created when the line is first saved if configured to do so on the product setup)
+
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+
+### Intervals for Classified Packages
 
 When setting up a classified package, there has always an option to restrict to certain days of the week and to put a quantity on the number of issues, but the quantity would always select consecutive issues, unless issue days were restricted, so it was difficult to do a weekly package that would run once a week on any day, but always the same day from week to week.  Now, there is an interval option on package setup.  The default upon upgrading will set this to "days" on existing packages, since that will be the behavior it has always been, but the setup user can select Week(s) or Month(s) instead:
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In the above example, if weeks was selected, without any issue day restriction set, the behavior will be to run the ad for 6 consecutive weeks (one issue per week) starting from the start date of the package. The default will be the start date of the campaign, but prior to selecting the package, the user can select a different start date in the booking wizard.  The result will be to schedule 6 insertions on the same day of week as the start date.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 If 6 months was selected in the package setup, the behavior would be to run one issue per month on the same day of month as the start date, so in the below example it is the 14th day of the month, each month, for 6 months.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## CRM Module
 
@@ -438,23 +446,23 @@ If 6 months was selected in the package setup, the behavior would be to run one 
 
 New Flag in Opportunities which will allow for a single opportunity to cross multiple product groups, and when the proposal is auto-generated, there will be multiple proposals/campaigns created - split by the primary product group on product setup.
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 To use this feature, set the above to "yes" and then create an opportunity and link products from different product groups:
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 From there, click the button to auto-create a new proposal
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Quick entry screen will open and allow for any modifications to dates, prices, etc before checking inventory and booking:
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Two proposals will be auto-generated for this campaign, one for each product group:
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 With the new group security flag set to "no", the opportunity would behave like it did in older versions and all products would need to be in the same product group and they would be booked onto a single campaign.  The default behavior upon upgrade will be for this flag to NOT be set and the system will continue to behave as it did in prior releases.
 
@@ -470,7 +478,7 @@ Minor makeover on the List of Imported Payments.  Navigate to Payments -> List o
 
 There is a new setting on the A/R header (**A/R Module -> Setup -> Admin -> A/R System Setup**, then navigate to Client Defaults Section. If the following is set to yes, the account will not be allowed to be approved if the address or phone number missing on the account.
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Note - based on CRM System Settings (**CRM Module -> Setup -> CRM System Settings**) it may or may not be required for the CRM user to enter in the address at the time of account creation.

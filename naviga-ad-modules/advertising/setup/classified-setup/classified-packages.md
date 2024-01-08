@@ -30,13 +30,13 @@ If months was selected in the package setup, the behavior would be to run one is
 
 You can now save.
 
-<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 Creating a package as shown above, with dynamic pricing, the price of the ad will be picked up from the template selected.
 
 If you instead create a flat fee package, the product grid will change, and you will enter the rate card / rate line combination here, along with the fee for each line. The fee entered here should match the flat fee price on the ratecard line chosen and it should total up to the Flat Fee amount for the package.
 
-<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 If you check the box for flat fee, then you will not have the option to remove lines in the campaign entry.
 

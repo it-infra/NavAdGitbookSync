@@ -59,7 +59,7 @@ How the system determines the size of an ad:
 
 This report can be run by product or by product group for a date range of when user entered campaigns into the system. The data displayed will show the entry date for the order, the product name, the campaign ID, the line item ID and all the campaign details such as the ad type and size and various amounts.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 Click on the Configure Output tab to select the fields you would like to see displayed on the display grid and/or in the Excel Output when downloading the results
 

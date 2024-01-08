@@ -169,7 +169,7 @@
             <tbody>
                 <tr class="responsiveRow">
                     <td class="responsiveCell" style="padding: 0 5px 0 0; width: 50%; font-family: arial; font-size: 12px; text-align: left; color: #555; vertical-align: top;">
-                    <img alt="" src="../../external\form_logo_NAVH.png" width="250" style="margin-bottom: 20px;" />
+                    <img alt="" src="../../external\form_logo_ABCCO.png" width="250" style="margin-bottom: 20px;" />
                     </td>
                     <td class="responsiveCell" style="width: 50%; padding: 0 0 0 5px; font-family: arial; font-size: 12px; text-align: left; color: #555; vertical-align: top;">
                     <div style="padding: 5px;">
@@ -361,20 +361,19 @@
         </table>
         <br />
         <!-- #CONTENT_START# -->
-        <div style="text-align: left; font-family: arial; background-color: #008DA5; color: #fff; box-sizing: border-box; width: 100%; padding: 5px; font-size: 16px; line-height: 16px;">
-        audience breakdown
+        <div style="text-align: left; font-family: arial; background-color: #008DA5; color: #fff; box-sizing: border-box; width: 100%; padding: 5px; font-size: 16px; line-height: 16px;">Audience Breakdown
         </div>
         <div style="width:100%; padding: 10px; border:1px solid #ccc; border-top-color: #f1f1f1; box-sizing:border-box; overflow-x: hidden;">
         #CONTENT#
         </div>
         <br />
         <!-- #CONTENT_END# -->
-        <!-- #LINES_BY_PACKAGE_START# -->
-        <!-- #HEADER_START# -->
         <div style="width: 100%; margin: 5px auto;">
         <div style="text-align: left; font-family: arial; background-color: #008DA5; color: #fff; box-sizing: border-box; width: 100%; padding: 5px; font-size: 16px; line-height: 16px;">
         Package Details
         </div>
+        <!-- #LINES_BY_PACKAGE_START# -->
+        <!-- #HEADER_START# -->
         <table class="packageTable" style="width: 100%;border-collapse: collapse;border: 1px solid #ccc;">
             <thead>
                 <tr>
@@ -431,7 +430,8 @@
                             <!-- #HEADER_END# -->
                             <!-- #ITEM_START# -->
                             <tr>
-                                <td>#PRODUCT_NAME# - #LINE_DESC#
+                                <td>
+                                #LINE_DESC#
                                 </td>
                                 <td>
                                 #EST_QTY#
@@ -463,8 +463,7 @@
         <!-- #FOOTER_END# -->
         <!-- #LINES_BY_PACKAGE_END# -->
         <!-- #EXHIBITION_DETAIL_TEMPLATE_START# -->
-        <div style="text-align: left; font-family: arial; background-color: #008DA5; color: #fff; box-sizing: border-box; width: 100%; padding: 5px; font-size: 16px; line-height: 16px;">
-        exhibition space
+        <div style="text-align: left; font-family: arial; background-color: #008DA5; color: #fff; box-sizing: border-box; width: 100%; padding: 5px; font-size: 16px; line-height: 16px;">Exhibition Space
         </div>
         <table class="manualDataTable" style="width: 100%;border-collapse: collapse;border: 1px solid #ccc;">
             <thead>

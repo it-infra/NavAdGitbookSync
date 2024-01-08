@@ -113,7 +113,7 @@ They include the company name and write off and refund G/L accounts ID and descr
 
 This section defines the pre-populated values for new clients, which users create in the system.
 
-<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 For example, the default payment terms, tax, credit limit, control status, automatically approve new clients or require a manager to approve them and if prepayment is mandatory on all orders by new clients. If this is mandatory, then orders will remain in the reserved or quote status until a prepayment is attached to them. If there is an [Advertising Client Type](../../advertising/setup/client-types.md#client-type-defaults-setup) set on the client, then those defaults will override those that are set here.
 

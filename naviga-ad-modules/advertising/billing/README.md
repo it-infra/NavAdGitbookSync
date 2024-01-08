@@ -187,7 +187,7 @@ Before you regenerate the invoice, you can change the invoice template used on t
 *   Comments to Print on the Invoice - the following field is what we are referring to here:\
 
 
-    <figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 * Page number for print products
 * PO Number
 * Tearsheet if applicable
