@@ -1,6 +1,6 @@
 # Credit Stop
 
-## Credit Limits and Credit Stop <a href="#bookmark29" id="bookmark29"></a>
+## Credit Limits and Credit Stop <a href="#_bookmark29" id="_bookmark29"></a>
 
 **Credit Hold:** Users can effectively place an advertiser on credit hold with a credit limit. This will not prevent new quotes from being entered for this advertiser, but user will not be able to confirm the order without approval.
 
@@ -17,17 +17,17 @@ As a summary, there are a few options that will impact order entry as it relates
 
 ## Add / Remove Customers from Credit Stop
 
-To place the advertiser on credit stop, navigate to the menu **Credit Control -> Add/Remove Customers from Credit Stop,** or if your role is Credit Manager in A/R User Security, then you also have a tile at the top of the screen to jump directly to this page.
+To place the advertiser on credit stop, navigate to the menu **Credit Control -> Add/Remove Customers from Credit Stop,** or if your role is Credit Manager in A/R User Security, then you also have a tile at the top of the screen to jump directly to this page.&#x20;
 
-Search for customers using the available search criteria at the top and mark the box of customer(s) and save to change the credit stop for each customer. Client type was added to make it easier to find accounts that need to be put on credit stop. For example, a local advertiser might be subject to credit stop sooner than someone who is a national advertiser. It is also available in the search results grid.
+Search for customers using the available search criteria at the top and mark the box of customer(s) and save to change the credit stop for each customer.  Client type was added to make it easier to find accounts that need to be put on credit stop.  For example, a local advertiser might be subject to credit stop sooner than someone who is a national advertiser.  It is also available in the search results grid.
 
 Grid Filters are also in place on this screen, so if you use any of the filters at the top of columns to reduce the list and then click the select all checkbox in the last column (credit stop), only the filtered accounts will be selected.
 
-<figure><img src="../../../.gitbook/assets/image (252).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
 To remove a client from credit stop, use this same screen, but use the Client Selection criteria "Only Clients on Credit Stop"
 
-<figure><img src="../../../.gitbook/assets/image (253).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
 De-select any clients who should be removed from credit stop and save the changes.
 

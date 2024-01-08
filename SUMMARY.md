@@ -3,7 +3,7 @@
 ## Welcome to Naviga Ad
 
 * [Introduction](README.md)
-* [🎯 Release Guide](welcome-to-naviga-ad/release-guide.md)
+* [Release Guide](https://docs.navigaglobal.com/temp-space-for-2023.5/IAKlhMixZO4v3wZM7alq/)
 * [📺 Release Video](welcome-to-naviga-ad/2023.4-release-video.md)
 
 ## Videos
@@ -88,12 +88,10 @@
     * [Advertising Setup](naviga-ad-modules/advertising/setup/advertising-setup/README.md)
       * [Advertising Invoice Forms / Templates / Line Groups](naviga-ad-modules/advertising/setup/advertising-setup/advertising-invoice-forms-templates-line-groups.md)
       * [G/L Types](naviga-ad-modules/advertising/setup/advertising-setup/g-l-types.md)
-      * [Ad Types / Ad Types Import](naviga-ad-modules/advertising/setup/advertising-setup/ad-types.md)
+      * [Ad Types](naviga-ad-modules/advertising/setup/advertising-setup/ad-types.md)
       * [Artwork Types](naviga-ad-modules/advertising/setup/advertising-setup/artwork-types.md)
-      * [Insert Rating Schedule](naviga-ad-modules/advertising/setup/advertising-setup/insert-rating-schedule.md)
-      * [Page Types](naviga-ad-modules/advertising/setup/advertising-setup/page-types.md)
       * [Status Setup (Campaign Status)](naviga-ad-modules/advertising/setup/advertising-setup/status-setup-campaign-status.md)
-      * [Size Setup](naviga-ad-modules/advertising/setup/advertising-setup/ad-sizes.md)
+      * [Ad Sizes](naviga-ad-modules/advertising/setup/advertising-setup/ad-sizes.md)
       * [User Defined Fields](naviga-ad-modules/advertising/setup/advertising-setup/user-defined-fields.md)
       * [Production Links](naviga-ad-modules/advertising/setup/advertising-setup/production-links.md)
       * [Sensitivity Codes](naviga-ad-modules/advertising/setup/advertising-setup/sensitivity-codes.md)
@@ -128,7 +126,6 @@
         * [Pricing Rules](naviga-ad-modules/advertising/setup/product-setup/products/pricing-rules/README.md)
           * [Ratecards](naviga-ad-modules/advertising/setup/product-setup/products/pricing-rules/ratecards.md)
           * [Price Adjustments](naviga-ad-modules/advertising/setup/product-setup/products/pricing-rules/price-adjustments.md)
-          * [Price Adjustment Import](naviga-ad-modules/advertising/setup/product-setup/products/pricing-rules/price-adjustment-import.md)
           * [Auto Adjustments](naviga-ad-modules/advertising/setup/product-setup/products/pricing-rules/auto-adjustments.md)
         * [Sections & Positions](naviga-ad-modules/advertising/setup/product-setup/products/sections-and-positions/README.md)
           * [Importing Sections and Positions](naviga-ad-modules/advertising/setup/product-setup/products/sections-and-positions/importing-sections-and-positions.md)
