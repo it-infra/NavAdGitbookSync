@@ -1,10 +1,12 @@
-# Ad Types
+# Ad Types / Ad Types Import
 
 ## Line Types Defined
 
-When entering a line on a Digital Campaign you must enter an Ad Type for the line. The Ad Type controls certain behavior of the line.
+When entering a line on a Campaign you must enter an Ad Type for the line. The Ad Type controls certain behavior of the line.  When setting up ad types, you can call your ad types whatever you like, but each Ad Type will be assigned a line type, selected from a dropdown in Ad Type Setup.  The following Line Types are available:
 
 **Cost Per Column Inch/Cm/Mm** – Most commonly used for print display advertising. It provides more flexibility for charging than flat fee/ modular sizing. User populates two fields in campaign entry: The number of columns and the size in inches, centimeters or millimeters.
+
+**Cost Per Square Inch/cm/mm** - Also used for print display advertising, this line type will allow the ad to be booked and priced based on the physical size of the ad rather than by columns as the width. User populates two fields in campaign entry: The width in inches, centimeters or millimeters and the depth in inches, centimeters or millimeters.
 
 **Cost per Column Agate Line** – Most commonly used for print liner/classified advertising. In campaign entry, user will select number of columns and agate lines will be calculated based on the depth of the ad for pricing. The calculation is 14 agate lines per inch.
 
@@ -30,13 +32,13 @@ Note that in Ad Type Setup, there is a flag to control whether this is a continu
 
 **Cost Per Unit** – May be used for any pricing that requires a multiplier such as a cost per attendee for webinars or a cost per response on a digital ad. On a digital performance line this pricing type requires actuals to be entered for billing.
 
-## AD Type Setup <a href="#_toc111556102" id="_toc111556102"></a>
+## AD Type Setup <a href="#toc111556102" id="toc111556102"></a>
 
 Navigate to the Setup -> Advertising Setup -> Ad Type Setup.
 
 Click Add New or edit an existing type. The screen provides multiple options to link to various fields.
 
-![](<../../../../.gitbook/assets/1 (99).png>)
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 When creating a new Ad Type, click on + Ad New button at the top of the list of existing Ad Types.
 
@@ -57,7 +59,7 @@ Select the appropriate **Line Type** for this Ad Type. This will be important fo
 
 **Google Ad Manager Cost Type / Google Ad Manager Line Type** - See [Ad Server Integration](../admin/ad-server-integration.md#\_toc105408221-1) setup for description
 
-**Send to Naviga Plan** - This flag will be used in conjunction with the flag on the Product to determine if an order is eligible to be sent to plan. Typically all your print ad types will be flagged to go to plan with the exception of PrePrints.
+**Send to Naviga Plan** - This flag will be used in conjunction with the flag on the Product to determine if an order is eligible to be sent to plan. Typically all your print ad types will be flagged to go to plan with the exception of Preprints.
 
 **Discounts not Allowed** - set to yes if this ad type does not allow discounting
 
@@ -71,11 +73,19 @@ Select the appropriate **Line Type** for this Ad Type. This will be important fo
 
 **No Rep Commission** - Set to true if this ad type is not eligible for Sales Rep Commission.
 
-There are two places where you can link an ad type to a product. - In Ad Type Setup and also in Product Setup. If your ad types are already created, and you are making a new product, it is convenient to select the applicable ad types during product setup. If your products are already created, and you have decided you need a new ad type to be added to many products, it might be more convenient to link to the products all together on the ad type setup. Both ways will accomplish the same result.
+**Is for Preprints** -  Will indicate that this is a Preprint Ad Type using the workflow introduced with 2023.6.  Ad Types with this set to yes will be the trigger to book this order in the Preprints wizard workflow and NOT in Full Line Entry, so do not check it unless you have set up [Size Codes](ad-sizes.md), [Page Types ](page-types.md)and [Insert Rating Schedules](insert-rating-schedule.md) to be used in conjunction with this ad type.
+
+**Linked Products -** There are two places where you can link an ad type to a product. - In Ad Type Setup and also in Product Setup. If your ad types are already created, and you are making a new product, it is convenient to select the applicable ad types during product setup. If your products are already created, and you have decided you need a new ad type to be added to many products, it might be more convenient to link to the products all together on the ad type setup. Both ways will accomplish the same result.
+
+<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+**Page Types** - This is used only for the Preprint Wizard workflow.  If you limit page types to only be allowed on certain ad types, then select which Page Types are valid for the selected ad type from the left column and click the arrows to move them to the right column
+
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 You can click save and next to move onto the next record or save and close to close this window.
 
-## Ad Types Import <a href="#_toc62052314" id="_toc62052314"></a>
+## Ad Types Import <a href="#toc62052314" id="toc62052314"></a>
 
 Navigate to the menu Setup -> Advertising Setup -> AD Types Import. The import screen displays. Click the “Download Template” button.
 
@@ -91,8 +101,8 @@ Click the “Import File” button to import the section to the product. Click O
 
 Navigate to the menu Setup -> Advertising Setup -> Ad Types. The imported type(s) display with ID and description in alphabetical order. These types are ready to be used in the advertising system.
 
-### Ad Type Import Template <a href="#_toc62052315" id="_toc62052315"></a>
+### Ad Type Import Template <a href="#toc62052315" id="toc62052315"></a>
 
 These are the fields in the excel template with a sample of data entry and conditions on their data.
 
-<table data-full-width="true"><thead><tr><th width="244.5827160493827">Field</th><th width="119">Example</th><th width="423">Conditions</th><th>Mandatory/ Optional</th></tr></thead><tbody><tr><td><strong>Ad Type ID</strong></td><td>IMP</td><td>Alphanumeric value for the ID</td><td>Mandatory</td></tr><tr><td><strong>Description</strong></td><td>Import</td><td>Alphanumeric description for the Ad Type</td><td>Mandatory</td></tr><tr><td><strong>G/L Type</strong></td><td>IMP</td><td>G/L Type ID which must match what already is in the Advertising system</td><td>Mandatory</td></tr><tr><td><strong>Line Type</strong></td><td>FF</td><td><p>Line Type ID which must match the value already in the Advertising system. The values are:</p><p>CPM for Cost Per Thousand</p><p>CPD for Cost Per Day</p><p>CPC for Cost Per Click</p><p>CPU for Cost Per Unit</p><p>CPCI for Cost Per Column Inch</p><p>CPCC for Cost Per Column Centimeter</p><p>CPMM for Cost Per Column Millimeter</p><p>CPCA for Cost Per Column Agate Line</p><p>CPVL for Cost Per Visible Line</p><p>CPAL for Cost Per Agate Line</p><p>CPW for Cost Per Word</p><p>FF for Flat Fee</p><p>PROD for Production</p></td><td>Mandatory</td></tr><tr><td>Listing Entry</td><td>Y</td><td>Y for yes this is a listing advertisement or N for no this is not a listing ad.</td><td>Optional</td></tr><tr><td>Enforce Contiguous Days</td><td>Y</td><td>Y for yes to enforce that the days when the ad runs are contiguous and N for no the days can be separate</td><td>Optional</td></tr><tr><td>No Agency Comm</td><td>Y</td><td>Y for this will not allow agency commission and N for no this will allow agency commission</td><td>Optional</td></tr><tr><td>No Rep Comm</td><td>Y</td><td>Y for this will not allow rep commission and N for no this will allow rep commission</td><td>Optional</td></tr><tr><td>Google Cost Type</td><td>CPM</td><td><p>Alphanumeric value of the Google Cost Type which must match the following valid codes representing the Google Cost Types that we currently support:</p><p>CPC</p><p>CPD</p><p>CPM<br>VCPM</p></td><td>Optional</td></tr><tr><td>Google Line Type</td><td>FF</td><td><p>Alphanumeric value of the Google Cost Type which must match the following valid codes representing the Google Cost Types that we currently support:</p><p>SPONSORSHIP</p><p>STANDARD</p><p>NETWORK</p><p>BULK</p><p>PRICE_PRIORITY</p><p>HOUSE</p><p>LEGACY_DFP</p><p>CLICK_TRACKING</p><p>ADSENSE</p><p>AD_EXCHANGE</p><p>BUMPER</p><p>UNKNOWN</p></td><td>Optional</td></tr><tr><td>Send to Naviga Plan</td><td>Y</td><td>Y for yes to send to Naviga plan and N for no don’t send to Naviga Plan</td><td>Optional</td></tr><tr><td>Discounts Not Allowed</td><td>Y</td><td>Y for yes Do Not Allow Discounts and N for No to Allow discounts</td><td>Optional</td></tr><tr><td>Default Material Approval Status</td><td>1</td><td>This value must match the value in the menu Setup -> Material Approval Setup</td><td>Optional</td></tr><tr><td>Ad Serving Platform</td><td>YT</td><td>These values are the ID codes for the Ad Serving Platforms in the menu Setup -> Advertising Setup -> Ad Serving Platform.</td><td>Optional</td></tr><tr><td>Is For Preprints</td><td>Y</td><td>Y or N value for the flag "Is For Preprints"</td><td>Optional</td></tr><tr><td>Require Category Selection in Full Line Entry</td><td>Y</td><td>Y or N value for the flag to require Category Selection in Full Line Entry. (Categories are for Classified Ads - Class Display ad types you may wish to require that a category is selected)</td><td>Optional</td></tr><tr><td>Ignore Required Metadata Field Rules in Full Line Entry</td><td>Y</td><td>Y or N value for the flag to ignore metadata required flags. (This is sometimes used for Classified Display ad types where metadata might be required for a liner ad, but not for a display ad in the same category)</td><td>Optional</td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th width="216">Field</th><th width="119">Example</th><th width="466.96172839506175">Conditions</th><th>Mandatory/ Optional</th></tr></thead><tbody><tr><td><strong>Ad Type ID</strong></td><td>IMP</td><td>Alphanumeric value for the ID</td><td>Mandatory</td></tr><tr><td><strong>Description</strong></td><td>Import</td><td>Alphanumeric description for the Ad Type</td><td>Mandatory</td></tr><tr><td><strong>G/L Type</strong></td><td>IMP</td><td>G/L Type ID which must match what already is in the Advertising system</td><td>Mandatory</td></tr><tr><td><strong>Line Type</strong></td><td>FF</td><td><p>Line Type ID which must match the value already in the Advertising system. The values are:</p><p>CPM for Cost Per Thousand</p><p>CPD for Cost Per Day</p><p>CPC for Cost Per Click</p><p>CPU for Cost Per Unit</p><p>CPCI for Cost Per Column Inch</p><p>CPCC for Cost Per Column Centimeter</p><p>CPMM for Cost Per Column Millimeter</p><p>CPCA for Cost Per Column Agate Line</p><p>CPVL for Cost Per Visible Line</p><p>CPAL for Cost Per Agate Line</p><p>CPW for Cost Per Word</p><p>FF for Flat Fee</p><p>PROD for Production</p></td><td>Mandatory</td></tr><tr><td>Listing Entry</td><td>Y</td><td>Y for yes this is a listing advertisement or N for no this is not a listing ad.</td><td>Optional</td></tr><tr><td>Enforce Contiguous Days</td><td>Y</td><td>Y for yes to enforce that the days when the ad runs are contiguous and N for no the days can be separate</td><td>Optional</td></tr><tr><td>No Agency Comm</td><td>Y</td><td>Y for this will not allow agency commission and N for no this will allow agency commission</td><td>Optional</td></tr><tr><td>No Rep Comm</td><td>Y</td><td>Y for this will not allow rep commission and N for no this will allow rep commission</td><td>Optional</td></tr><tr><td>Google Cost Type</td><td>CPM</td><td><p>Alphanumeric value of the Google Cost Type which must match the following valid codes representing the Google Cost Types that we currently support:</p><p>CPC</p><p>CPD</p><p>CPM<br>VCPM</p></td><td>Optional</td></tr><tr><td>Google Line Type</td><td>FF</td><td><p>Alphanumeric value of the Google Cost Type which must match the following valid codes representing the Google Cost Types that we currently support:</p><p>SPONSORSHIP</p><p>STANDARD</p><p>NETWORK</p><p>BULK</p><p>PRICE_PRIORITY</p><p>HOUSE</p><p>LEGACY_DFP</p><p>CLICK_TRACKING</p><p>ADSENSE</p><p>AD_EXCHANGE</p><p>BUMPER</p><p>UNKNOWN</p></td><td>Optional</td></tr><tr><td>Send to Naviga Plan</td><td>Y</td><td>Y for yes to send to Naviga plan and N for no don’t send to Naviga Plan</td><td>Optional</td></tr><tr><td>Discounts Not Allowed</td><td>Y</td><td>Y for yes Do Not Allow Discounts and N for No to Allow discounts</td><td>Optional</td></tr><tr><td>Default Material Approval Status</td><td>1</td><td>This value must match the value in the menu Setup -> Material Approval Setup</td><td>Optional</td></tr><tr><td>Ad Serving Platform</td><td>YT</td><td>These values are the ID codes for the Ad Serving Platforms in the menu Setup -> Advertising Setup -> Ad Serving Platform.</td><td>Optional</td></tr><tr><td>Is For Preprints</td><td>Y</td><td>Y or N value for the flag "Is For Preprints"</td><td>Optional</td></tr><tr><td>Require Category Selection in Full Line Entry</td><td>Y</td><td>Y or N value for the flag to require Category Selection in Full Line Entry. (Categories are for Classified Ads - Class Display ad types you may wish to require that a category is selected)</td><td>Optional</td></tr><tr><td>Ignore Required Metadata Field Rules in Full Line Entry</td><td>Y</td><td>Y or N value for the flag to ignore metadata required flags. (This is sometimes used for Classified Display ad types where metadata might be required for a liner ad, but not for a display ad in the same category)</td><td>Optional</td></tr></tbody></table>

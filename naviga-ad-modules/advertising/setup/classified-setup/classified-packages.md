@@ -20,17 +20,23 @@ The field “Minimum Product Selection Allowed” can be blank and this will for
 
 Check the box “Prompt for Package Multiplier” to “Yes” and this will prompt the entry user to multiply the lines on the entry screen. This option offers the user the option for how many times the ad will run. For example, you might have a package that is specifically for a 2 week run. In the Number of days in the product section at the bottom might then be displayed for 14 issues (of a daily) or 2 issues (of a weekly)...and then the multiplier wouldn't be needed. But suppose for example, you wanted to leave it up to the customer how long they wanted to run the ad. Instead of creating a bunch of packages for different durations, you could select the package multiplier option and set the products to just be for a single issue. If the customer wants a 14-day run, the user enters 14. if they only want one day, then the user selects 1.
 
-You can then choose the products from the drop-down menu, enter the number of days or number of issues to run the ad, and you can also check the boxes for any dates to which to restrict the ad to running.
+You can then choose the products from the drop-down menu, enter the number of days or number of issues to run the ad, the interval (days weeks or months), and you can also check the boxes for any dates to which to restrict the ad to running.
+
+{% hint style="info" %}
+In the below example, if weeks was selected instead of days, without any issue day restriction set, the behavior will be to run the ad for 3 consecutive weeks (one issue per week) starting from the start date of the package. The default will be the start date of the campaign, but prior to selecting the package, the user can select a different start date in the booking wizard.  The result will be to schedule 3 insertions on the same day of week as the start date.\
+\
+If months was selected in the package setup, the behavior would be to run one issue per month on the same day of month as the start date, so if the start date was the 14th day of the month, the result would be to run for 3 months, on the 14th of each month.
+{% endhint %}
 
 You can now save.
 
-<figure><img src="../../../../.gitbook/assets/image (1237).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 Creating a package as shown above, with dynamic pricing, the price of the ad will be picked up from the template selected.
 
 If you instead create a flat fee package, the product grid will change, and you will enter the rate card / rate line combination here, along with the fee for each line. The fee entered here should match the flat fee price on the ratecard line chosen and it should total up to the Flat Fee amount for the package.
 
-<figure><img src="../../../../.gitbook/assets/image (1150).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 If you check the box for flat fee, then you will not have the option to remove lines in the campaign entry.
 
@@ -65,7 +71,7 @@ These are the differences from above when you are creating the package for Self 
     \- If you aren't finding the rates you expect in the dropdown, check in your rate setup. The Ad Type on the rate must be set up as a Flat Fee type, with the listing flag set to yes, and the Send to plan flag set to yes if it is a print line and if you use Naviga Plan)\\
 
     <figure><img src="../../../../.gitbook/assets/image (336).png" alt=""><figcaption></figcaption></figure>
-*   Click on the "online Options" tab and fill in text to describe the package for the online user. Here is a sample of the text entered on this tab:&#x20;
+*   Click on the "online Options" tab and fill in text to describe the package for the online user. Here is a sample of the text entered on this tab:
 
     <figure><img src="../../../../.gitbook/assets/image (1588).png" alt=""><figcaption></figcaption></figure>
 

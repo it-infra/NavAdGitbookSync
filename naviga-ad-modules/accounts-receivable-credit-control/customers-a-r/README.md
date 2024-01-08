@@ -115,7 +115,7 @@ You can also “Approve Account” if it’s a new account awaiting approval.
 
 The standard design of the Naviga Ad system assumes that any system user can search for, and find, any client. Once the client is accessed the data is filtered depending on user/group security. Order information can be filtered by what was purchased and/or by who sold the ads, CRM information can be filtered and A/R information can be hidden. This allows for minimizing duplicates while segregating order and CRM data. The lack of duplicates streamlines reporting and allows for unique customer records for interfaces.
 
-While not a standard, or recommended, setting; it is possible to hide customer records entirely. If this setting is selected, duplicate clients will be created, this will have an impact on reporting and integration to external systems. Setting this will limit duplicate checking and allow for creation of duplicate clients without warning.
+While not a standard, or necessarily recommended, setting; it is possible to hide certain customer records entirely. If this setting is selected, duplicate clients will be created, this will have an impact on reporting and integration to external systems. Setting this will limit duplicate checking and allow for creation of duplicate clients without warning.
 
 If your business requires this strong segregation of name information, notify Naviga to activate the system wide default. [Set up the client access codes](../../system-settings-admin/setup/client-access-code-setup.md). These may be loaded from your product codes or your company codes, or may be set up as a unique table. Ensure that an access code is included for each client in your client import. Set the appropriate client codes that each group of users should see in name security for each user security group.
 
@@ -187,7 +187,9 @@ If the Delivery Method in the Misc Billing Details section of this page is set t
 
 #### Statement Details
 
-This is the section for defining the recipient and delivery method for A/R Statements.
+This is the section for defining the recipient and delivery method for A/R Statements. Available options are Print & Email, Print, Email, and Do NOT Send.  If you select Do not send, the statement will still be generated (assuming flag in Credit Info section is set to YES to generate statements), but the statements will be separated into it's own batch which will not be printed, but the statement itself will still be available on the client account for manual sending as needed.
+
+<figure><img src="../../../.gitbook/assets/image (265).png" alt=""><figcaption></figcaption></figure>
 
 #### Also Pays For
 

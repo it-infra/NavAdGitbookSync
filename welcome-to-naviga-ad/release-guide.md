@@ -500,6 +500,8 @@ If the address and/or phone number is missing, on the Approve Pending Accounts s
 
 <figure><img src="../.gitbook/assets/image (232).png" alt=""><figcaption></figcaption></figure>
 
+This same setting will also apply to manual approval of the account in Name Maintenance and also if user's group security permits the user to approve accounts during campaign entry.
+
 ### Logo for Receipt
 
 Receipt templates can now be setup to include the logo from the bank. &#x20;

@@ -16,7 +16,7 @@ This also affects Advertising Module and periods that invoices can be posted to 
 
 Enforce date within open financial period when checked as yes, will force user to post the dates to be within the financial period. For example, an invoice or check date has to be the same month as the financial period to which the invoice or check Is posted.
 
-## A/R parameters <a href="#_toc458780180" id="_toc458780180"></a>
+## A/R parameters <a href="#toc458780180" id="toc458780180"></a>
 
 1. Service Charge % - enter the % fee to charge for service fees
 2. Select the Class code to use for service charges\
@@ -33,13 +33,13 @@ Enforce date within open financial period when checked as yes, will force user t
 
 7. **Custom Program to run when posting to A/R:** this is a read only field and only relevant if there is a custom process that Naviga programmers set up for your account.
 
-## Service Charge Class Per Company <a href="#_toc458780181" id="_toc458780181"></a>
+## Service Charge Class Per Company <a href="#toc458780181" id="toc458780181"></a>
 
 In the previous section the default Service Charge % and Class Code was defined. If this setting differs per company, overrides can be set in this section, per company.
 
 <figure><img src="../../../.gitbook/assets/image (241).png" alt=""><figcaption></figcaption></figure>
 
-## Automatic Inter Company G/L Allocations <a href="#_toc458780181" id="_toc458780181"></a>
+## Automatic Inter Company G/L Allocations <a href="#toc458780181" id="toc458780181"></a>
 
 These are the A/R From and To Accounts which user can change, delete or add.
 
@@ -47,7 +47,7 @@ These are the A/R From and To Accounts which user can change, delete or add.
 
 See Section on [Multi-Company Balancing](../../general-ledger/setup/admin/g-l-system-setup/multi-company-balancing-and-intercompany-control-accounts.md) in the G/L section of documentation for information on Intercompany G/L Allocations.
 
-## Email Notifications <a href="#_toc458780182" id="_toc458780182"></a>
+## Email Notifications <a href="#toc458780182" id="toc458780182"></a>
 
 This section specifies the email recepient of emails when A/R financial conditions are met. For example, if an invoice is of a certain age, credit stop clients, G/L cash is entered, checks greater than a certain amount are received, currency is revalued, client is deleted, invoice is flagged as contended, and invoice is transferred to a collection agency. If there is no email address listed, then no email with be sent for the given event.
 
@@ -65,7 +65,7 @@ Users can setup email notifications on the following:
 8. If an invoice is flagged as contended,
 9. If invoices are transferred to a Collection Agency
 
-## Invoice and Cash Receipts Options <a href="#_toc458780183" id="_toc458780183"></a>
+## Invoice and Cash Receipts Options <a href="#toc458780183" id="toc458780183"></a>
 
 These are options of invoices and cash. For example, automatically allocate credits, whether to enter cost of sales amount on invoice, publication entry to be required to enter on a miscellaneous invoice entry, enforce the tax code on the miscellaneous invoice entry, the tax G/L account number and name, the maximum amount a G/L user can write off, and so forth.
 
@@ -81,7 +81,7 @@ For example, some of these fields are ones that may not be self-explanatory:
 * A/R Invoices - Print and Email (9 & 10): These are only used for FabSoft forms. If using Naviga HTML Forms, see Invoice Forms setup below.
 * Auto Assign New Batch IDs by default (11): This option, if checked as yes, will give all batch IDs which user creates an ID. If this option is not checked and its value is “No”, then user can enter their own batch ID. User can always override this by checking the box in the G/L Cash entry or payment entry screens to “Yes” and let the system provide an automatic batch ID.
 
-## Invoice Forms <a href="#_toc70321838" id="_toc70321838"></a>
+## Invoice Forms <a href="#toc70321838" id="toc70321838"></a>
 
 This section determines the HTML Invoice forms setup and defaults. See [Invoice Template Setup](../invoices/#\_toc112341266) in AR Invoices section for information on the fields in this section
 
@@ -101,7 +101,7 @@ Override Email From Address - This will display the desired from address (perhap
 
 Override Email To Address - This will override the To email address to be a specific email address. This comes in handy when you are testing a new statement form, or during an implementation where you don't want to risk sending test statements out to actual clients.
 
-## Write-offs and Refunds <a href="#_toc458780185" id="_toc458780185"></a>
+## Write-offs and Refunds <a href="#toc458780185" id="toc458780185"></a>
 
 This is the section for the write offs and refunds settings in A/R.
 
@@ -109,27 +109,29 @@ This is the section for the write offs and refunds settings in A/R.
 
 They include the company name and write off and refund G/L accounts ID and description. User can add more than one line to the list.
 
-## Client Defaults <a href="#_toc70321840" id="_toc70321840"></a>
+## Client Defaults <a href="#toc70321840" id="toc70321840"></a>
 
 This section defines the pre-populated values for new clients, which users create in the system.
 
-<figure><img src="../../../.gitbook/assets/image (964).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 For example, the default payment terms, tax, credit limit, control status, automatically approve new clients or require a manager to approve them and if prepayment is mandatory on all orders by new clients. If this is mandatory, then orders will remain in the reserved or quote status until a prepayment is attached to them. If there is an [Advertising Client Type](../../advertising/setup/client-types.md#client-type-defaults-setup) set on the client, then those defaults will override those that are set here.
 
-## European Union Tax Settings <a href="#_toc70321841" id="_toc70321841"></a>
+\#15 - Address required for Approval of accounts - This setting will  apply to approvals from the Approve Pending accounts screen as well as manual approval of the account in Name Maintenance, and during campaign entry if user's group security permits the user to approve accounts.
+
+## European Union Tax Settings <a href="#toc70321841" id="toc70321841"></a>
 
 These are the settings for EU tax rules to be used or not, default values for EU tax code, EU tax exempt code and non-EU exempt code.
 
 <figure><img src="../../../.gitbook/assets/image (87) (1).png" alt=""><figcaption></figcaption></figure>
 
-## Client Budget/ Forecast Entry Restrictions <a href="#_toc458780187" id="_toc458780187"></a>
+## Client Budget/ Forecast Entry Restrictions <a href="#toc458780187" id="toc458780187"></a>
 
 User can set dates where the budgets and/or forecasts cannot be changed after a certain date. These restrictions can be erased using the x red button. More lines can be added using the + sign and user can fill in more restrictions per different years.
 
 <figure><img src="../../../.gitbook/assets/image (88) (1).png" alt=""><figcaption></figcaption></figure>
 
-## Email Pay Link Settings <a href="#_toc124065024" id="_toc124065024"></a>
+## Email Pay Link Settings <a href="#toc124065024" id="toc124065024"></a>
 
 This section is only for Naviga clients licensed to use the Client Portal.
 
