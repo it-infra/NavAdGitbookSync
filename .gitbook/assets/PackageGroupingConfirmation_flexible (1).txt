@@ -386,12 +386,12 @@ billing schedule
 <br />
 <!-- #FOOTER_END# -->
 <!-- #BILLING_SCHEDULE_END# -->
+<!-- #LINES_BY_PACKAGE_START# -->
+<!-- #HEADER_START# -->
 <div style="width: 100%; margin: 5px auto;">
 <div style="text-align: left; font-family: arial; background-color: #008DA5; color: #fff; box-sizing: border-box; width: 100%; padding: 5px; font-size: 16px; line-height: 16px;">
 Package Details
 </div>
-<!-- #LINES_BY_PACKAGE_START# -->
-<!-- #HEADER_START# -->
 <table class="packageTable" style="width: 100%;border-collapse: collapse;border: 1px solid #ccc;">
     <thead>
         <tr>
@@ -449,7 +449,7 @@ Package Details
                     <!-- #ITEM_START# -->
                     <tr>
                         <td>
-                        #LINE_DESC#
+                        #PRODUCT_NAME# - #LINE_DESC#
                         </td>
                         <td>
                         #EST_QTY#
@@ -533,6 +533,13 @@ This insertion order is subject to and governed by Naviga's standard Advertising
 <p style="font-size: 14px;font-family: arial;text-align: left;color: #555;line-height: 18px;">
 <strong>I have read and understood this Agreement. By clicking "I accept" below I represent that I have the authority to bind the entity named above and accept the terms of the agreement.</strong>
 </p>
+<!-- #SIGNATURE_TEMPLATE_START# -->
+<div style="width:100%; margin-top:25px; text-align:center;">
+<div style="padding:10px;">
+<a style="font-size:16px; text-transform: uppercase; font-family: Arial;" href="#DIRECT_VIEW#"></a>
+</div>
+</div>
+<!-- #SIGNATURE_TEMPLATE_END# -->
 <!-- #SIGNATURE_TEMPLATE_START# -->
 <div style="width:100%; margin-top:25px; text-align:center;background-color:#f1f1f1;">
 <div style="padding:10px;">

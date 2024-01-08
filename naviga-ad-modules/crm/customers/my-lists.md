@@ -152,11 +152,11 @@ Enter the description at the top of the list - this is mandatory.
 
 Choose one or more sales rep(s) by highlighting the name and clicking on the right arrow. The reps available in this list will be filtered based on the logged in user's User Security (Access Control settings)
 
-<figure><img src="../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The way that this rep filter works is different from the "Ad List" or "Exhibitor List" sales rep selection. In this search it is based on customers that the selected user(s) have accessed. It can be further filtered below to show only "My Customers" or all the companies I have accessed. The reps who have accessed a particular customer is displayed here on the customer account:
 
-<figure><img src="../../../.gitbook/assets/image (9) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 In the above example, I was logged into the system as Donna and I can see that both Donna and Kelly have worked with this account. So when the CRM-related "My List" is run for either of these users, this account will be displayed. But notice that logged in as Donna, the "Add to My Customers" star is not enabled, so it isn't considered to be one of her "My Customers" - so when Donna is the selected rep in the search, the Keswick Theatre will be returned in the search if "My Customers (below) is set to Select All Comanies, but it will not be returned in the search if "Select only companies in My Database" is selected.
 

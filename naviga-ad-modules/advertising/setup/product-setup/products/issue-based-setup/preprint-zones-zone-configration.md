@@ -56,7 +56,7 @@ The Zone import is also imported per product. The Zone import by date range can 
 
 Navigate to the menu Setup -> Product Setup -> Zone Import. Choose the product from the drop-down menu. Only issue based products display in the list.
 
-Click the field “Create Missing Zones” to change its value to “Yes” if you would like the import to create the zones. If the zones are new, and do not exist in the system, this must be a “Yes”. If left as “No”, the template must have Zone IDs that match ones already in the system for the issues.
+Click the field “Create Missing Zones” to change its value to “Yes” if you would like the import to create the zones. If the zones are new, and do not exist in the system, this must be a “Yes”. If left as “No”, the template must have Zone IDs that match ones in the system for the issues.
 
 Click the button “Download Template”. This opens a spreadsheet template with the following fields which you can fill out and save to your desktop.
 
@@ -88,7 +88,7 @@ Follow the same steps to import as in the previous section of this document.
 
 Navigate to **Setup -> Product Setup** and select the Zone Export/Import node on the left side navigation tree. The important differences in this new import when compared to the other existing imports is that this import is only for configuration imports and updates.  **It is NOT for importing Zone counts for the issues as there are no quantities in this template...this is just importing for Zone Setup.** Continue to use the existing Zone Import or Zone Import by Date Range for importing the distribution counts for issues.
 
-<figure><img src="../../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (259).png" alt=""><figcaption></figcaption></figure>
 
 If the desire is to create brand new Zones from scratch, user can start with the "Download Template" option to download a blank template to then fill in all the required and desired optional fields. If the desire is to update existing data, or do a combination of updating and new zones, then the user can start by Exporting existing data into excel, making modifications, and then importing back in.
 
@@ -100,11 +100,11 @@ The following fields are available in this template:
 
 This import has a new screen to visualize the data and confirm it prior to import.  Once the template is filled in with all the desired details, navigate to that file location by clicking on the select button and selecting that file.
 
-<figure><img src="../../../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (271).png" alt=""><figcaption></figcaption></figure>
 
 Then click the button Test Import File.  Screen will appear with columns from the spreadsheet and results displayed if items are new, changed or unchanged.  This gives the user a visual and a chance to go back to the spreadsheet and make modifications if this is different than expected.  For example, If I thought I was creating 3 new Zones below, when I saw this and noticed that two of the Zones already existed and what I was importing was different than what was already there, I might want to look at those changed items and see what was there already and make sure I wasn't making a mistake.
 
-<figure><img src="../../../../../../.gitbook/assets/image (119).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (276).png" alt=""><figcaption></figcaption></figure>
 
 If the above screen is displaying what I expected to see, then I can click the button at the bottom of the screen to go ahead and import that data.  Click Cancel to go back to the previous screen.  If there were errors that needed to be changed, click the X to remove the file, then open it in Excel to make desired changes and re-do the select and Test Import file process.
 

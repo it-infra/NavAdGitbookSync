@@ -64,9 +64,9 @@ A pop-up with Account Approval Priority displays where user can enter free text 
 
 The status displays with the new request priority.
 
-This allows user who approves accounts to view the priority user entered on approval requests under the A/R menu of **Customers -> Accounts Pending Approval**.
+This allows user who approves accounts to view the priority user entered on approval requests under the A/R menu of **Customers -> Accounts Pending Approval**. This same screen can be found in Advertising Module under **Customers -> Approve Pending Accounts**
 
-<figure><img src="../../../.gitbook/assets/image (193).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (164).png" alt=""><figcaption></figcaption></figure>
 
 User can then check these accounts and approve them in a priority as set by the request.
 

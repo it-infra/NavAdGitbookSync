@@ -108,29 +108,29 @@ Note - if using the feature to create Ad hoc billing address in order entry, the
 <summary><mark style="color:purple;"><strong>Some nuances to understand regarding who gets the advertising invoice</strong></mark></summary>
 
 In **Name Maintenance, on the A/R Setup Node**, there is a field for the Default Billing Contact. This will be used as the Billing Contact on the Campaign header if there isn't an override set on the Advertising Setup node or on the Brand. This can be typed in as a manual billing contact, or it can be selected from a dropdown list as a contact person\
-![](<../../../.gitbook/assets/image (2) (1) (1).png>)
+![](<../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png>)
 
 In **Name Maintenance, on the Advertising Setup**, there are two sections related to billing contacts. In the first highlighted box below, this field will override any billing contact set on the default above.\
-![](<../../../.gitbook/assets/image (3) (1).png>)
+![](<../../../.gitbook/assets/image (3) (1) (1) (1).png>)
 
 Similarly, on the brand, if there is an override here, it will override what is on the Advertising setup or A/R Setup:\
-![](<../../../.gitbook/assets/image (5) (1).png>)
+![](<../../../.gitbook/assets/image (5) (1) (1) (1).png>)
 
 If all three of these billing contacts are blank - then the billing contact on the campaign will also be blank.
 
-<img src="../../../.gitbook/assets/image (4) (1).png" alt="" data-size="original">
+<img src="../../../.gitbook/assets/image (4) (1) (1) (1).png" alt="" data-size="original">
 
 This field is what is used to populate the #BILLTO\_CONTACTNAME# tag on the form itself.
 
 When invoices are mailed, not having a billing contact might not be an issue, since the billing address is still there, but when emailing invoices, you need to have someone to send the invoices to. Typically, if you set the delivery method to Email or Print & Email on the Advertiser Setup, the system will not allow save unless a contact person with an email address is entered in (Either in the top dropdown for the Billing Contact, or in the section below it where you can add one or multiple contacts.) There is a system setting, though, in **Setup -> Admin -> System Parameters** that allows that setting to be overwritten:\
-![](<../../../.gitbook/assets/image (6) (1).png>)
+![](<../../../.gitbook/assets/image (6) (1) (1).png>)
 
 If the above is set to yes, the system would expect that the billing information is always entered either on the brand or on the A/R Setup node, otherwise you might have an issue in billing where we can't bill b/c we don't know where to send the emailed invoice.
 
 **\*\*\*Very Important Nuance**\*\*\*
 
 If you are EMAILING Invoices....and you are setting up who to email the Invoice to on the Advertiser, as I mentined above, there are two places on advertiser setup that relate to emailing invoices (highlighted below):\
-![](<../../../.gitbook/assets/image (3) (1).png>)
+![](<../../../.gitbook/assets/image (3) (1) (1) (1).png>)
 
 Those same two sections are also on the **Brand setup -> Billing** overrides node
 
