@@ -70,7 +70,7 @@ Click Ad New at the top of the Ad Type screen, or select an existing Ad Type to 
 
 **Navigate to Setup -> Advertising -> Insert Rating Schedules**
 
-This inserts workflow does not use the standard rate cards that other kinds of ads use.  This uses a rule-based engine that determines which price to use based on how closely it matches one of these definitions.  Insert Rating Schedules are used with [Size Codes](../naviga-ad-modules/advertising/setup/advertising-setup/ad-sizes.md) flagged as "For Preprints" and [Ad Types](../naviga-ad-modules/advertising/setup/advertising-setup/ad-types.md) flagged as "Is for Preprints"
+This inserts workflow does not use the standard rate cards that other kinds of ads use.  This uses a rule-based engine that determines which price to use based on how closely it matches one of these definitions.  Insert Rating Schedules are used with [**Size Codes**](../naviga-ad-modules/advertising/setup/advertising-setup/ad-sizes.md) flagged as "For Preprints" and [**Ad Types**](../naviga-ad-modules/advertising/setup/advertising-setup/ad-types.md) flagged as "Is for Preprints"
 
 Click New to create a new schedule and give it an ID and a Description. &#x20;
 
