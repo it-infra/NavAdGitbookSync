@@ -1,4 +1,4 @@
-# Size Setup
+# Ad Sizes
 
 ## Size Setup
 
@@ -6,18 +6,17 @@ This menu displays the sizes which can be used in orders. Add new sizes and save
 
 You can then also include the line equivalency for the Modular ad size.
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (235).png" alt=""><figcaption></figcaption></figure>
 
-To manually create an ad size, click + Ad New at the top of the screen. (see [below ](ad-sizes.md#toc111625567)for importing Ad Sizes)
+To manually create an ad size, click + Ad New at the top of the screen. (see below for importing Ad Sizes)
 
 * Add a **Size Code** and a **Size Description**.
-* **Line Eq** will only be relevant for Print ads, so it is only editable on Ads with Dimension type of Inches, CM or MM. This is where reports in the system will look to get the Page Eq for **modular** type ads. See Page Eq discussion [below ](ad-sizes.md#page-eq-equivalency-for-print-a-ds)for more on Page Eq for different kinds of ads.
+* **Line Eq** will only be relevant for Print ads, so it is only editable on Ads with Dimension type of Inches, CM or MM. This is where reports in the system will look to get the Page Eq for **modular** type ads. See Page Eq discussion below for more on Page Eq for different kinds of ads.
 * **Width and Depth** - This will be the physical size of the ad, in whatever dimension type was selected above. For a digital banner this might be 320x50 in Pixels. In a Print ad it might be a 9.83 x 21 Inches for a Full Page Broadsheet, etc.
 * **For Print** - Will indicate that this is a print ad
-* For Preprints - Will indicate that this is for a Preprint Ad Type using the workflow introduced with 2023.6.  These sizes will only be displayed in the wizard workflow, so do not check it if you are using the Full Line Entry workflow for entering preprints.
 * **Inactive** - select Yes to mark this as inactive and it will no longer be selectable in Order Entry.
 
-## Size Import <a href="#toc111625567" id="toc111625567"></a>
+## Size Import <a href="#_toc111625567" id="_toc111625567"></a>
 
 Navigate to the menu Setup -> Advertising Setup -> Size Import. The import screen displays. Click the “Download Template” button.
 
@@ -33,7 +32,7 @@ Click the “Import File” button to import the section to the product. Click O
 
 Navigate to the menu Setup -> Advertising Setup -> Size Setup. The imported sizes(s) display with ID and description in alphabetical order. These types are ready to be used in the advertising system.
 
-### Size Import Template <a href="#toc111625568" id="toc111625568"></a>
+### Size Import Template <a href="#_toc111625568" id="_toc111625568"></a>
 
 These are the fields in the excel template with a sample of data entry and conditions on their data.
 

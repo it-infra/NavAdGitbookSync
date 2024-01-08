@@ -8,7 +8,7 @@ description: >-
 
 ## **Outbound Emails via Naviga**
 
-<img src="../../../.gitbook/assets/image (7) (1) (1).png" alt="" data-size="line"> **Customer needs this in their Mail SPF TXT record for ALL email domains they think might send**
+<img src="../../../.gitbook/assets/image (7) (1).png" alt="" data-size="line"> **Customer needs this in their Mail SPF TXT record for ALL email domains they think might send**
 
 An SPF record is a DNS record that the customer has on their end.
 
