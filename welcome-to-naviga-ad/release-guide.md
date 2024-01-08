@@ -522,6 +522,14 @@ The screen for Adding/Removing Clients from Credit Stop will now also display th
 
 Navigate to **Credit Control or Accounts Receivable Module -> Credit Control -> Add/Remove customers from Credit Stop** or a user who is an A/R Manager can also access this report by clicking the Add/Remove Clients from Credit Stop button from the navigation bar in the credit control module
 
+### Do Not Send Statement Option
+
+There is now an option on Customer Maintenance to generate a statement, but not to actually send a statement
+
+<figure><img src="../.gitbook/assets/image (260).png" alt=""><figcaption></figcaption></figure>
+
+Navigate to Customers -> Advertiser / Agency Maintenance in the Advertising module or Customers -> Name/Address Maintenance and then select the A/R Setup node.  In the Credit Info section, if the Generate Statements flag is set to yes, then the customer will have a statement generated.  In previous releases, the options were to Print, Email, or Print & Email.  There is now a 4th option to not send the statement.  This will create a separate batch for these, with the delivery method set to Do Not Send.  If using an external printing company to print & mail statements, this allows for these statements to be segregated and not sent out for delivery.  The statement will still be generated, and will be accessible as needed for manual sending from the customer record.
+
 ## Advertiser Portal
 
 ### Mark Inactive/Delete Profiles

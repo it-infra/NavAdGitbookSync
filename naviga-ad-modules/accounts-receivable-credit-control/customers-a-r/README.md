@@ -187,7 +187,9 @@ If the Delivery Method in the Misc Billing Details section of this page is set t
 
 #### Statement Details
 
-This is the section for defining the recipient and delivery method for A/R Statements.
+This is the section for defining the recipient and delivery method for A/R Statements. Available options are Print & Email, Print, Email, and Do NOT Send.  If you select Do not send, the statement will still be generated (assuming flag in Credit Info section is set to YES to generate statements), but the statements will be separated into it's own batch which will not be printed, but the statement itself will still be available on the client account for manual sending as needed.
+
+<figure><img src="../../../.gitbook/assets/image (265).png" alt=""><figcaption></figcaption></figure>
 
 #### Also Pays For
 
