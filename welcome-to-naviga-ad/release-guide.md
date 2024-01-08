@@ -30,7 +30,7 @@ In 2023.6 there is a new option for setting up, pricing, and managing preprints,
 
 #### Page Types
 
-Navigate to Setup -> Advertising Setup -> Page Types.  Setup one or more page types as needed for the types of inserts/preprints that you offer.  Page types will set defaults for weight and spoilage %. You may also have certain metadata questions that need to be answered and possibly passed on to the printer to allow them to print the insert properly.
+Navigate to **Setup -> Advertising Setup -> Page Types**.  Setup one or more page types as needed for the types of inserts/preprints that you offer.  Page types will set defaults for weight and spoilage %. You may also have certain metadata questions that need to be answered and possibly passed on to the printer to allow them to print the insert properly.
 
 <figure><img src="../.gitbook/assets/image (134).png" alt=""><figcaption></figcaption></figure>
 
@@ -68,19 +68,25 @@ Click Ad New at the top of the Ad Type screen, or select an existing Ad Type to 
 * Linked Products - Select the products which allow this Ad Type. Only required if you restrict certain ad types to certain products.  Can also select ad types during product setup if desired.
 * Page Types (Preprints/Inserts) tab - _**Optional**_ - can set allowed Page Types for this Ad Type. If none are selected, all page types will be available in order entry for this Ad Type.
 
-#### Insert Rating Schedules
-
 **Navigate to Setup -> Advertising -> Insert Rating Schedules**
 
-The new inserts workflow does not use the standard rate cards that other kinds of ads use.  This uses a rule-based engine that determines which price to use based on how closely it matches one of these definitions.
+This inserts workflow does not use the standard rate cards that other kinds of ads use.  This uses a rule-based engine that determines which price to use based on how closely it matches one of these definitions.  Insert Rating Schedules are used with [Size Codes](../naviga-ad-modules/advertising/setup/advertising-setup/ad-sizes.md) flagged as "For Preprints" and [Ad Types](../naviga-ad-modules/advertising/setup/advertising-setup/ad-types.md) flagged as "Is for Preprints"
 
-Click New to create a new schedule and give it an ID and a Description.  There is an inactive flag as well in case you wish to no longer use it at some point in the future.
+Click New to create a new schedule and give it an ID and a Description. &#x20;
+
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+After clicking "New" you can click the option to copy from another schedule if there is a similar schedule you wish to copy and edit rather than create the new one from scratch.
+
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+There is an inactive flag as well in case you wish to no longer use it at some point in the future. &#x20;
 
 #### In the Basic Settings section:
 
 <figure><img src="../.gitbook/assets/image (144).png" alt=""><figcaption></figcaption></figure>
 
-* select the Price Type to be used.  Options include Quantity based CPM, Quantity Based, or Flat Rate. &#x20;
+* Select the Price Type to be used.  Options include Quantity based CPM, Quantity Based, or Flat Rate. &#x20;
 * Optional - Enter a Start Date and Valid through date to limit when this rate can be used.
 * Priority Code - The appropriate schedule is chosen by the system based on the number of matching qualifiers.  For example, there might be multiple schedules that could potentially be used in order entry.  One schedule might match on just one qualifier, and another one might match several qualifiers. In the event that two rate schedules match on the same number of qualifiers, the priority code will determine which schedule to use.
 
@@ -90,28 +96,32 @@ Click New to create a new schedule and give it an ID and a Description.  There i
 
 There are currently 7 attributes or qualifiers that can be checked to determine which rate schedule to use.
 
-1. Specific Advertiser - Select a specific advertiser if the advertiser has negotiated a custom price
-2. Page Types - Select one or more relevant page types for this rating schedule
-3. Product Group - If applicable select a product group that this rating schedule is valid for
-4. Product(s) - Select one or more allowed products for this rating schedule
-5. Client Type - Select a client type that is allowed to use this rate schedule
-6. Ad Type(s) - Select one or more ad types that can use this rate schedule (Note these ad types are filtered to only ad types flagged with the "Is for Preprints" flag
-7. Matching Days of the week - Select one or more days of the week which can use this rating schedule.
+1. **Specific Advertiser** - Select a specific advertiser if the advertiser has negotiated a custom price
+2. **Page Types** - Select one or more relevant page types for this rating schedule
+3. **Product Group** - If applicable select a product group that this rating schedule is valid for
+4. **Product(s)** - Select one or more allowed products for this rating schedule
+5. **Client Type** - Select a client type that is allowed to use this rate schedule
+6. **Ad Type(s)** - Select one or more ad types that can use this rate schedule (Note these ad types are filtered to only ad types flagged with the "Is for Preprints" flag
+7. **Matching Days of the week** - Select one or more days of the week which can use this rating schedule.
 
 #### Price Escalations&#x20;
 
 <figure><img src="../.gitbook/assets/image (146).png" alt=""><figcaption></figcaption></figure>
 
-For each Rate Schedule, you can have one or more sets of prices that can be used, based on the number of pages (which also links to weight based on Page Type Setup) and number if inserts.  These prices can be flat prices, per insert prices, or per thousand prices based on the Price Type selected in the Basic Settings section. &#x20;
+For each Rate Schedule, you can have one or more sets of prices that can be used, based on the number of pages (which also links to weight based on Page Type Setup) and number if inserts.  These prices will be flat prices, per insert prices, or per thousand prices based on the Price Type selected in the Basic Settings section. &#x20;
 
 * Select Add New Escalation or click the pencil icon to edit an existing one
+* Click the red x in the right column to delete an escalation
 * Alternatively, Click copy escalations from another schedule to save some time and copy and edit from a similar schedule.
+* Click Clear All Escalations to delete the escalation grid and start over.
 
 <figure><img src="../.gitbook/assets/image (147).png" alt=""><figcaption></figcaption></figure>
 
+Click Save to save the changes
+
 #### End User Experience
 
-An end user booking an order with this new workflow will begin on the Line Items tab and select a Product and an AdType, as they normally would for a full line entry order.  The Ad Type, if it is one that is flagged in setup as being for Preprints, will trigger the new workflow rather than traditional full line entry
+An end user booking an order with this new workflow will begin on the Line Items tab and select a Product and an Ad Type, as they normally would for a full line entry order.  The Ad Type, if it is one that is flagged in setup as being for Preprints, will trigger the new workflow rather than traditional full line entry
 
 <figure><img src="../.gitbook/assets/image (113).png" alt=""><figcaption></figcaption></figure>
 
@@ -197,16 +207,16 @@ Click next to proceed to the Inset Details
 
 <figure><img src="../.gitbook/assets/image (124).png" alt=""><figcaption></figcaption></figure>
 
-* Pages - select desired number of pages for the insert.  Available numbers here will be based on the Page Type setup
-* Total Weight - this will default based on the pages selected and the page type setup.  Can be overridden by the user
-* Spoilage Percent - again will default from the Page Type and # of Pages selected, but can be overridden by the user.
-* Total Distribution - not editable - this is the quantity from the Zone selection on the previous step
-* Size Code - Default based on the Page Type Setup.  Can be overridden by the user to another size code.  Only Size Codes flagged as being Insert/Preprint Size codes will be in the dropdown.  May be further filtered by Size Codes allowed on the product.
-* Spoilage Qty -  Calculated field equal to the Total Distribution \* Default Spoilage % - can be overridden
-* Base Print Qty - Equal to the Total distribution plus the Spoilage
-* Optional Metadata fields - if custom fields were configured on the page setup, they will be displayed here, and the user can answer the questions
+* **Pages** - select desired number of pages for the insert.  Available numbers here will be based on the Page Type setup
+* **Total Weight** - this will default based on the pages selected and the page type setup.  Can be overridden by the user
+* **Spoilage Percent** - again will default from the Page Type and # of Pages selected, but can be overridden by the user.
+* **Total Distribution** - not editable - this is the quantity from the Zone selection on the previous step
+* **Size Code** - Default based on the Page Type Setup.  Can be overridden by the user to another size code.  Only Size Codes flagged as being Insert/Preprint Size codes will be in the dropdown.  May be further filtered by Size Codes allowed on the product.
+* **Spoilage Qty** -  Calculated field equal to the Total Distribution \* Default Spoilage % - can be overridden
+* **Base Print Qty** - Equal to the Total distribution plus the Spoilage
+* **Optional Metadata fields** - if custom fields were configured on the page setup, they will be displayed here, and the user can answer the questions
 
-Click next to continue to overruns
+Click **next** to continue to overruns
 
 #### Overruns
 
@@ -214,7 +224,7 @@ This optional tab is used if there are any overruns requested on on the order.  
 
 <figure><img src="../.gitbook/assets/image (126).png" alt=""><figcaption></figcaption></figure>
 
-There is no rate setup in the background for this.  The user simply types in the information based on the agreed upon price with the client.  Overruns will create additional line items on the order, so Ad Type is important, to properly charge for it and have it map to the correct G/L.  the Ad Type drop down will only display CPM, FF, or CPU line types.
+There is no rate setup in the background for overruns.  The user simply types in the information based on the agreed upon price with the client.  Overruns will create additional line items on the order, so Ad Type is important, to properly charge for it and have it map to the correct G/L.  the Ad Type drop down will only display CPM, FF, or CPU line types.
 
 A CPU ad type will calculate the Price by multiplying Qty \* Rate
 
@@ -234,7 +244,7 @@ Enter one or more adjustment codes as necessary (optional) and click next
 
 #### Price and Book
 
-Most of the fields on this final screen are read only.  Only the Billing Quantity can be edited here. There is a "Price it out" button at the top to re-calculate the price.  Generally this isn't needed, but is there in case there is a price change that didn't automatically calculate upon opening this screen.  There is a "Show Rate Selection" button as well which will display which rate was chosen and why (See [Insert Rating Schedules](release-guide.md#insert-rating-schedules) for info on how we determine what rate to charge).
+Most of the fields on this final screen are read only.  Only the Billing Quantity can be edited here. There is a "Price it out" button at the top to re-calculate the price.  Generally this isn't needed, but is there in case there is a price change that didn't automatically calculate upon opening this screen.  There is a "Show Rate Selection" button as well which will display which rate was chosen and why (See [**Insert Rating Schedules**](release-guide.md#insert-rating-schedules) for info on how we determine what rate to charge).
 
 <figure><img src="../.gitbook/assets/image (129).png" alt=""><figcaption></figcaption></figure>
 
@@ -258,13 +268,13 @@ Once the line has been invoiced, the user experience will differ slightly.  The 
 
 <figure><img src="../.gitbook/assets/image (110).png" alt=""><figcaption></figcaption></figure>
 
-Overruns Tab - on the overruns tab, no new overruns can be added and within an overrun, only the description and delivery address can be edited after billing.
+**Overruns Tab** - on the overruns tab, no new overruns can be added and within an overrun, only the description and delivery address can be edited after billing.
 
 <figure><img src="../.gitbook/assets/image (112).png" alt=""><figcaption></figcaption></figure>
 
 **Adjustments Tab** - Nothing on the adjustments tab can be edited post-billing.  If adjustments are needed after billing, Post-Billing adjustment tickets should be the workflow used to request an adjustment.
 
-**Price and book Tab -** Nothing on this tab is editable after billing. User can click on the Show Rate Selection button to see what rate was selected (and if there were other possible matching rates that were not selected.)
+**Price and Book Tab -** Nothing on this tab is editable after billing. User can click on the Show Rate Selection button to see what rate was selected (and if there were other possible matching rates that were not selected.)
 
 <figure><img src="../.gitbook/assets/image (107).png" alt=""><figcaption></figcaption></figure>
 
@@ -306,7 +316,7 @@ Navigate to **Setup -> Product Setup** and select the new "**Price Adjustments I
 
 1. Click the button to Download Template to get the excel file needed to import adjustment codes.  Fill in adjustment codes according to the following template:
 
-<table><thead><tr><th>Field</th><th>Example</th><th width="311">Description</th><th>Required?</th></tr></thead><tbody><tr><td>Product ID</td><td>DEMO123</td><td>Alpha-Numeric field representing the ID for the Product</td><td>Yes</td></tr><tr><td>Description</td><td>Premium Surcharge</td><td>Alpha-Numeric field used to describe the adjustment. This is what the user will see when selecting an adjustment in order entry and what the customer may see on the invoice/order confirmation</td><td>Yes</td></tr><tr><td>External ID</td><td>ABC123</td><td>Alpha-numeric field which may be used in interfaces to external systems</td><td>Optional</td></tr><tr><td>Allow Description Override</td><td>Y</td><td>This is a Y/N field to indicate if the Description can be overwritten by a user in order entry screen.</td><td>Optional.  If left blank an answer of No (unchecked) will be applied.</td></tr><tr><td>Plus/Minus</td><td>-</td><td>+/- field which indicates if the adjustment should be positive (surcharge) or negative (discount).  If left blank, the user will be able to select a positive or a negative adjustment in order entry</td><td>Optional</td></tr><tr><td>Type</td><td>GROSS</td><td>These are hard coded options in the system.  Use the following to indicate the correct option:<br>GROSS = Percent of Gross<br>NET = Percent of Net<br>AMOUNT = AMOUNT</td><td>Yes</td></tr><tr><td>Prompt for Value</td><td>Y</td><td>If set to Yes (Y) the user will be allowed to enter in a value for the discount during order entry.  If set to No (blank or N), the value will need to be set in the "Value" field</td><td>Optional</td></tr><tr><td>Prompt for Qty</td><td>Y</td><td>Only valid if the Type is set to AMOUNT.<br>If type is AMOUNT, this can be set to Y for Yes or it can be blank or N for No.<br>If Type is GROSS or NET, this should be left blank.</td><td>Optional</td></tr><tr><td>Value</td><td>-50</td><td>If the plus/minus field is negative, this must also be negative. If Prompt for Value field is Y, this should be left blank.</td><td>Optional, but if Prompt for Value is No, this should be filled in with a value</td></tr><tr><td>Hide on Forms</td><td>Y</td><td>Y for Yes, N or blank for No</td><td>Optional</td></tr><tr><td>Currency</td><td>POUND</td><td>Only use this for <strong>foreign</strong> currencies.  For amounts in the system's default currency, this should be left blank.  </td><td>Optional, but if used the currency ID from currency setup is what is expected here.</td></tr><tr><td>Ad Type(s)</td><td>CPCI,DCI</td><td>This will allow the adjustment to only be available for certain ad types.  Leave blank to allow for all ad types. Multiple ad types can be entered and comma separated</td><td>Optional, but if used, the values entered here must match the Ad Type ID's in Ad Type setup</td></tr><tr><td>Plan Position Code</td><td>FIRST</td><td>Used for Sorting in Naviga Plan. See <a href="../naviga-ad-modules/advertising/setup/product-setup/products/pricing-rules/price-adjustments.md#plan-position-code">Price adjustment Setup</a> for details</td><td>Optional. Leave blank if not using Naviga Plan</td></tr><tr><td>Section(s)</td><td>NEWS,LOCAL</td><td>This will allow the adjustment to only be available for certain sections.  Leave blank to allow for all sections. Multiples can be entered and comma separated</td><td>Optional, but if used, the values entered here must match the section ID in Product Setup</td></tr><tr><td>Position(s)</td><td>BP</td><td>This will allow the adjustment to only be available for certain sections.  Leave blank to allow for all sections. Multiples can be entered and comma separated.  If Positions are defined within a section according to product setup, then the section must also be entered on the template for position to be accepted.</td><td>Optional, but if used, the values entered here must match the Position ID in Product Setup.</td></tr><tr><td>Override G/L Account</td><td>01*002*123*1234</td><td>This will allow the Adjustment to be applied to a different G/L than the revenue for the order line.  See <a href="../naviga-ad-modules/advertising/setup/product-setup/products/pricing-rules/price-adjustments.md#override-g-l">Price Adjustment setup</a> for details on using this optional field.</td><td>Optional, but if used it must match a G/L code defined in the G/L setup</td></tr><tr><td>Application Rule</td><td>LAST</td><td>This is only used in Booking Wizard order Entry and allows for the adjustment to be applied only to the First insertion, Last Insertion, or All insertions.  Valid options here are FIRST, LAST, and ALL.  A Blank will assume all insertions.</td><td>Optional</td></tr><tr><td>Inactive</td><td>Y</td><td>Leave blank for No.  This sets the Adjustment code to Inactive if set to Yes.</td><td>Optional</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Example</th><th width="311">Description</th><th>Required?</th></tr></thead><tbody><tr><td>Product ID</td><td>DEMO123</td><td>Alpha-Numeric field representing the ID for the Product</td><td>Yes</td></tr><tr><td>Description</td><td>Premium Surcharge</td><td>Alpha-Numeric field used to describe the adjustment. This is what the user will see when selecting an adjustment in order entry and what the customer may see on the invoice/order confirmation</td><td>Yes</td></tr><tr><td>External ID</td><td>ABC123</td><td>Alpha-numeric field which may be used in interfaces to external systems</td><td>Optional</td></tr><tr><td>Allow Description Override</td><td>Y</td><td>This is a Y/N field to indicate if the Description can be overwritten by a user in order entry screen.</td><td>Optional.  If left blank an answer of No (unchecked) will be applied.</td></tr><tr><td>Plus/Minus</td><td>-</td><td>+/- field which indicates if the adjustment should be positive (surcharge) or negative (discount).  If left blank, the user will be able to select a positive or a negative adjustment in order entry</td><td>Optional</td></tr><tr><td>Type</td><td>GROSS</td><td>These are hard coded options in the system.  Use the following to indicate the correct option:<br>GROSS = Percent of Gross<br>NET = Percent of Net<br>AMOUNT = AMOUNT</td><td>Yes</td></tr><tr><td>Prompt for Value</td><td>Y</td><td>If set to Yes (Y) the user will be allowed to enter in a value for the discount during order entry.  If set to No (blank or N), the value will need to be set in the "Value" field</td><td>Optional</td></tr><tr><td>Prompt for Qty</td><td>Y</td><td>Only valid if the Type is set to AMOUNT.<br>If type is AMOUNT, this can be set to Y for Yes or it can be blank or N for No.<br>If Type is GROSS or NET, this should be left blank.</td><td>Optional</td></tr><tr><td>Value</td><td>-50</td><td>If the plus/minus field is negative, this must also be negative. If Prompt for Value field is Y, this should be left blank.</td><td>Optional, but if Prompt for Value is No, this should be filled in with a value</td></tr><tr><td>Hide on Forms</td><td>Y</td><td>Y for Yes, N or blank for No</td><td>Optional</td></tr><tr><td>Currency</td><td>POUND</td><td>Only use this for <strong>foreign</strong> currencies.  For amounts in the system's default currency, this should be left blank.  </td><td>Optional, but if used the currency ID from currency setup is what is expected here.</td></tr><tr><td>Ad Type(s)</td><td>CPCI,DCI</td><td>This will allow the adjustment to only be available for certain ad types.  Leave blank to allow for all ad types. Multiple ad types can be entered and comma separated</td><td>Optional, but if used, the values entered here must match the Ad Type ID's in Ad Type setup</td></tr><tr><td>Plan Position Code</td><td>FIRST</td><td>Used for Sorting in Naviga Plan. See <a href="../naviga-ad-modules/advertising/setup/product-setup/products/pricing-rules/price-adjustments.md#plan-position-code"><strong>Price adjustment Setup</strong></a> for details</td><td>Optional. Leave blank if not using Naviga Plan</td></tr><tr><td>Section(s)</td><td>NEWS,LOCAL</td><td>This will allow the adjustment to only be available for certain sections.  Leave blank to allow for all sections. Multiples can be entered and comma separated</td><td>Optional, but if used, the values entered here must match the section ID in Product Setup</td></tr><tr><td>Position(s)</td><td>BP</td><td>This will allow the adjustment to only be available for certain sections.  Leave blank to allow for all sections. Multiples can be entered and comma separated.  If Positions are defined within a section according to product setup, then the section must also be entered on the template for position to be accepted.</td><td>Optional, but if used, the values entered here must match the Position ID in Product Setup.</td></tr><tr><td>Override G/L Account</td><td>01*002*123*1234</td><td>This will allow the Adjustment to be applied to a different G/L than the revenue for the order line.  See <a href="../naviga-ad-modules/advertising/setup/product-setup/products/pricing-rules/price-adjustments.md#override-g-l"><strong>Price Adjustment setup</strong></a> for details on using this optional field.</td><td>Optional, but if used it must match a G/L code defined in the G/L setup</td></tr><tr><td>Application Rule</td><td>LAST</td><td>This is only used in Booking Wizard order Entry and allows for the adjustment to be applied only to the First insertion, Last Insertion, or All insertions.  Valid options here are FIRST, LAST, and ALL.  A Blank will assume all insertions.</td><td>Optional</td></tr><tr><td>Inactive</td><td>Y</td><td>Leave blank for No.  This sets the Adjustment code to Inactive if set to Yes.</td><td>Optional</td></tr></tbody></table>
 
 2. Once the spreadsheet is filled in with your data, save the file to your computer or desired network location.
 3. Click the Select button and navigate to the file location&#x20;
@@ -480,7 +490,7 @@ With the new group security flag set to "no", the opportunity would behave like 
 
 ### List of Imported Payments
 
-Minor makeover on the List of Imported Payments.  Navigate to Payments -> List of Payments -> List of Imported Payments. Note that the Company ID has been added as a new column and there is now a row of filters at the top of the columns.
+Minor makeover on the List of Imported Payments.  Navigate to **Payments -> List of Payments -> List of Imported Payments**. Note that the Company ID has been added as a new column and there is now a row of filters at the top of the columns.
 
 <figure><img src="../.gitbook/assets/image (173).png" alt=""><figcaption></figcaption></figure>
 
@@ -513,7 +523,7 @@ To Setup:
    * Enter ID, Description, and upload file
    * Click + to add to logos and click save.
 2. Link the new logo to the bank setup
-   * Navigate to Setup -> System Tables Setup -> Bank Setup
+   * Navigate to **Setup -> System Tables Setup -> Bank Setup**
    * Select the desired bank
    * Select the new logo from the logo dropdown\
      ![](<../.gitbook/assets/image (191).png>)
@@ -526,7 +536,7 @@ Logo will be displayed on the Receipt:\
 
 <figure><img src="../.gitbook/assets/image (217).png" alt=""><figcaption></figcaption></figure>
 
-### <img src="../.gitbook/assets/image (240).png" alt="" data-size="line">Credit Stop Report - Credit Rating added
+### <img src="../.gitbook/assets/image (240).png" alt="" data-size="line"> Credit Stop Report - Credit Rating added
 
 The screen for Adding/Removing Clients from Credit Stop will now also display the customer's credit rating:
 
@@ -540,7 +550,7 @@ There is now an option on Customer Maintenance to generate a statement, but not 
 
 <figure><img src="../.gitbook/assets/image (260).png" alt=""><figcaption></figcaption></figure>
 
-Navigate to Customers -> Advertiser / Agency Maintenance in the Advertising module or Customers -> Name/Address Maintenance and then select the A/R Setup node.  In the Credit Info section, if the Generate Statements flag is set to yes, then the customer will have a statement generated.  In previous releases, the options were to Print, Email, or Print & Email.  There is now a 4th option to not send the statement.  This will create a separate batch for these, with the delivery method set to Do Not Send.  If using an external printing company to print & mail statements, this allows for these statements to be segregated and not sent out for delivery.  The statement will still be generated, and will be accessible as needed for manual sending from the customer record.
+Navigate to **Customers -> Advertiser / Agency Maintenance** in the Advertising module or **Customers -> Name/Address Maintenance** and then select the A/R Setup node.  In the Credit Info section, if the Generate Statements flag is set to yes, then the customer will have a statement generated.  In previous releases, the options were to Print, Email, or Print & Email.  There is now a 4th option to not send the statement.  This will create a separate batch for these, with the delivery method set to Do Not Send.  If using an external printing company to print & mail statements, this allows for these statements to be segregated and not sent out for delivery.  The statement will still be generated, and will be accessible as needed for manual sending from the customer record.
 
 <figure><img src="../.gitbook/assets/image (268).png" alt=""><figcaption></figcaption></figure>
 
@@ -561,7 +571,7 @@ Two new functions are now available in the Advertiser Portal setup.  For any pro
 ***
 
 {% hint style="info" %}
-<img src="../.gitbook/assets/image (7) (2).png" alt="" data-size="line"> In 2022 we introduced the idea of a Customer Enhancement Portal, where you all get to add feature requests, look at feature requests submitted by others, add comments, and vote on things you would like to see us implement in the system. Items that were voted up in the Enhancement Portal will have this check mark next to the feature in the release guide.
+<img src="../.gitbook/assets/image (7) (2).png" alt="" data-size="line"> A couple years ago, we introduced the idea of a Customer Enhancement Portal, where you all get to add feature requests, look at feature requests submitted by others, add comments, and vote on things you would like to see us implement in the system. Items that were voted up in the Enhancement Portal will have this check mark next to the feature in the release guide.  **In 2023 alone, over 60 items from the Enhancement Portal were implemented in Naviga Ad.  Keep those ideas coming and be sure to vote up good ideas from others!**
 
 <img src="../.gitbook/assets/image (7) (2) (1).png" alt="" data-size="line">  Click on the Video Icon in the heading to be directed to the release video page.  Topics that were included in the release video will display this icon.
 
