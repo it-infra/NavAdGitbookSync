@@ -84,6 +84,30 @@ You can import zones also by start and end date range for a product. Once the en
 
 Follow the same steps to import as in the previous section of this document.
 
+### Zone Export/Import for Preprints
+
+Navigate to **Setup -> Product Setup** and select the Zone Export/Import node on the left side navigation tree. The important differences in this new import when compared to the other existing imports is that this import is only for configuration imports and updates.  **It is NOT for importing Zone counts for the issues as there are no quantities in this template...this is just importing for Zone Setup.** Continue to use the existing Zone Import or Zone Import by Date Range for importing the distribution counts for issues.
+
+<figure><img src="../../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+If the desire is to create brand new Zones from scratch, user can start with the "Download Template" option to download a blank template to then fill in all the required and desired optional fields. If the desire is to update existing data, or do a combination of updating and new zones, then the user can start by Exporting existing data into excel, making modifications, and then importing back in.
+
+#### Zone Export/Import Template
+
+The following fields are available in this template:
+
+<table><thead><tr><th>Field</th><th width="123">Example</th><th>Description</th><th>Required?</th></tr></thead><tbody><tr><td>Product ID</td><td>DEMO10</td><td>The ID must match that of a product in the advertising system</td><td>Yes</td></tr><tr><td>Zone ID</td><td>19456</td><td>The Zone ID must match the zone ID in the advertising system</td><td>Yes</td></tr><tr><td>Zone Description</td><td>Anycity</td><td>Text describing the zone</td><td>Yes - This is what the user selects in the UI - so while the import won't fail if it is empty, it won't be very useful if it's blank, so DO fill it in.</td></tr><tr><td>Parent ID</td><td>NE</td><td>The zone group / parent ID of the zone for the zone to be imported and must match the value in the advertising system</td><td>Optional, but it's a good idea for ease of use for the end users to have at least one Zone Group.</td></tr><tr><td>Sort Code</td><td>1</td><td>Value by which the zone is sorted in the list as displayed on menus for users.</td><td>Optional</td></tr><tr><td>Country Code</td><td>US</td><td>This is the 2-digit ISO Country Code.</td><td>Optional for the Import - will be required for Geocoding if intent is to allow users to select zones from a map in order entry</td></tr><tr><td>Postal Code</td><td>19456</td><td>5-digit zip code for the zone.</td><td>Optional for the Import - will be required for Geocoding if intent is to allow users to select zones from a map in order entry</td></tr><tr><td>External Reference</td><td>ABC123</td><td>Alpha-numeric Field used in integration with 3rd party</td><td>Optional</td></tr><tr><td>External Group</td><td>ABC</td><td>Alpha-numeric Field used in integration with 3rd party</td><td>Optional</td></tr><tr><td>Is Inactive</td><td>TRUE</td><td>TRUE/FALSE field for whether or not the Zone is Inactive.</td><td>Optional</td></tr></tbody></table>
+
+This import has a new screen to visualize the data and confirm it prior to import.  Once the template is filled in with all the desired details, navigate to that file location by clicking on the select button and selecting that file.
+
+<figure><img src="../../../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+Then click the button Test Import File.  Screen will appear with columns from the spreadsheet and results displayed if items are new, changed or unchanged.  This gives the user a visual and a chance to go back to the spreadsheet and make modifications if this is different than expected.  For example, If I thought I was creating 3 new Zones below, when I saw this and noticed that two of the Zones already existed and what I was importing was different than what was already there, I might want to look at those changed items and see what was there already and make sure I wasn't making a mistake.
+
+<figure><img src="../../../../../../.gitbook/assets/image (119).png" alt=""><figcaption></figcaption></figure>
+
+If the above screen is displaying what I expected to see, then I can click the button at the bottom of the screen to go ahead and import that data.  Click Cancel to go back to the previous screen.  If there were errors that needed to be changed, click the X to remove the file, then open it in Excel to make desired changes and re-do the select and Test Import file process.
+
 ## Issue Zone Configuration
 
 For the most part, Zones and Zone counts will always be imported. It just isn't practical to manually enter in so many zones...ain't nobody got time for that!

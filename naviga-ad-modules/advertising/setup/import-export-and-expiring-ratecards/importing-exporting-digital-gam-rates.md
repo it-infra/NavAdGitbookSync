@@ -87,10 +87,10 @@ On the rate setup above, this UDF is 1000000, so that is what is set after the p
 On the rate setup above, the UDF is set to 10/31/2028, so that is what is after the pipe\
 
 
-<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 \
 4 - **INET.LINE\***_**PICKLIST\***_**1|R;M** tells us this is field #1 in the Multi-select fields.  With multi-select fields multiple answers are separated with semi-colons.  The preset fields on this ratecard example have answers of the Value R and M\
 
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

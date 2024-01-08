@@ -6,7 +6,7 @@ description: This will only display if Client Access Codes are enabled by Naviga
 
 Also See [Name Maintenance](../../accounts-receivable-credit-control/customers-a-r/#a-r-setup) for additional information on Client Access Codes
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 Navigate to **System Settings module -> Setup -> Client Access Code Setup**.  Note this will only be displayed as an option if Naviga support/implementation personnel have enabled the system to use access codes.  Please contact support if you need this to be enabled.
 
