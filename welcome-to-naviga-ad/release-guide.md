@@ -12,7 +12,7 @@ description: >-
 **These are the most important takeaways / impactful changes that you **_**need**_** to pay attention to:**
 
 * There is a new workflow option for Inserts / Preprints.  The older workflow will still be supported, to ease the transition, but we think many of you will want to take advantage of this new workflow. [**See below for details**](release-guide.md#new-workflow-option-for-inserts-preprints)
-* There are a couple new Group Security Changes in both [**Advertising** ](release-guide.md#group-security-change)and [**CRM** ](release-guide.md#group-security-change-1)modules
+* There are a couple new Group Security Changes in both [**Advertising** ](release-guide.md#group-security-change)and [**CRM** ](release-guide.md#group-security-change-1)modules which you should probably check out and set accordingly.
 
 ## Advertising Module
 
